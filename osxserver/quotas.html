@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Linux, Macintosh, QNX Info" />
+    <title>Mac OS X Server and Quotas</title>
+
+    <!-- Bootstrap -->
+    <link href="http://wiki.victor3d.com.br/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <div class="navbar-brand"><img src="http://wiki.victor3d.com.br/img/classicmac.gif" width=24 height=31></div>
+      <a class="navbar-brand" href="http://wiki.victor3d.com.br/">Wiki</a>
+    </div>
+        <form class="navbar-form navbar-left" role="search" action="https://duckduckgo.com/" method="get">
+        <div class="form-group">
+          <input type="text" placeholder="Search wiki" class="form-control" name="q" id="q">	
+	<input type="hidden" name="sites" value="wiki.victor3d.com.br">
+        </div>
+
+        <button type="submit" class="btn btn-default">Search</button>
+      </form>
+
+  <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.google.com/recaptcha/mailhide/d?k=01MUDgC_dbbmgUXg66PjkbZg==&c=30d-wikjS5CWPbvZPBnBWhAfd39_adr_D1ylDoUa0vo=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k=01MUDgC_dbbmgUXg66PjkbZg==&c=30d-wikjS5CWPbvZPBnBWhAfd39_adr_D1ylDoUa0vo=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">E-mail</a></li>
+</ul>
+  </div><!-- /.container -->
+</nav>
+<div class="container text-center">
+<iframe data-aa='326661' src='https://ad.a-ads.com/326661?size=728x90' scrolling='no' style='width:728px; height:90px; border:0px; padding:0;overflow:hidden' allowtransparency='true' frameborder='0'></iframe>
+</div>
+<br>
+</div>
+
+
+    <div class="container">
+
+      <div class="starter-template text-center">
+        <h1>Mac OS X Server and Quotas</h1>
+      </div>
+
+    </div><!-- /.container -->
+
+  <div class="container">
+ <div class="row">
+  <div class="col-md-8 col-md-offset-2">
+<p>There are a number of ways to handle quotas in Mac OS X Server. To enable quotas is simple enough. If you open Server Admin and then click on Share Points and then the volume, you can check the box for enable quotas on this volume. It will take awhile for the data to load once you’ve clicked save, but then it will show you how much space is in each users quota.</p>
+<p>You’ll then notice the .quota.ops.user and .quota.user files at the root of the file system you just enabled quotas for. If you enable group quotas then you will see .quota.group and .quota.ops.group as well. Since these are not created automatically, you can create an empty shell for the .quota.ops.group with touch:</p>
+<pre>touch .quota.ops.group</pre>
+<p>At this point, if you attempt to look at the user quota files then you aren’t going to see anything of interest as they’re binary files. You can then use the quota, edquota and reqquota commands to manage the quota.</p>
+<p>If you use the repquota command, you can see similar output to what you see in Server Admin, but with a little more information (here we’ll use the -a and -v options to see quotas for all volumes (the -a) and see a list of which volume each listing is for (the -v option):</p>
+<pre>repquota -av</pre>
+<p>Next, we can set a quota. If you have an existing user then you can set the quota for that user and then base subsequent users from that one using the edquota command. In the following example, we’ll take a look at a user called mytemplate and base the quota for a user called newuser on the one used for mytemplate:</p>
+<pre>edquota -u -p mytemplate newuser</pre>
+<p>Alternatively, you could replace these with the $templateuser and $newuser variable if you were scripting this:</p>
+<pre>edquota -u -p $templateuser $newuser</pre>
+<p>You can also enable a group quota for a specific group by using the edquota command:</p>
+<pre>edquota -g mygroupname</pre>
+<p>Once you’ve enabled quotas, you can check each user quota using the quota command with the -u option or the -g for groups. I like to add a -v for posterity. So you if you ended up with a user named cedge you could use:</p>
+<pre>quota -vu cedge</pre>
+
+
+</div></div></div>
+
+ <br>
+
+<div class="container text-center">
+<iframe data-aa='326665' src='https://ad.a-ads.com/326665?size=468x60' scrolling='no' style='width:468px; height:60px; border:0px; padding:0;overflow:hidden' allowtransparency='true' frameborder='0'></iframe>
+</div>
+  <div id="footer">
+      <div class="container">
+        <p class="text-muted text-center">2017&copy;Victor3D</p>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://wiki.victor3d.com.br/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://wiki.victor3d.com.br/js/bootstrap.min.js"></script>
+  </body>
+</html>

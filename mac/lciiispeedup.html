@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Linux, Macintosh, QNX Info" />
+    <title>LCIII (P450) Speedup</title>
+
+    <!-- Bootstrap -->
+    <link href="http://wiki.victor3d.com.br/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <div class="navbar-brand"><img src="http://wiki.victor3d.com.br/img/classicmac.gif" width=24 height=31></div>
+      <a class="navbar-brand" href="http://wiki.victor3d.com.br/">Wiki</a>
+    </div>
+        <form class="navbar-form navbar-left" role="search" action="https://duckduckgo.com/" method="get">
+        <div class="form-group">
+          <input type="text" placeholder="Search wiki" class="form-control" name="q" id="q">	
+	<input type="hidden" name="sites" value="wiki.victor3d.com.br">
+        </div>
+
+        <button type="submit" class="btn btn-default">Search</button>
+      </form>
+
+  <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.google.com/recaptcha/mailhide/d?k=01MUDgC_dbbmgUXg66PjkbZg==&c=30d-wikjS5CWPbvZPBnBWhAfd39_adr_D1ylDoUa0vo=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k=01MUDgC_dbbmgUXg66PjkbZg==&c=30d-wikjS5CWPbvZPBnBWhAfd39_adr_D1ylDoUa0vo=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">E-mail</a></li>
+</ul>
+  </div><!-- /.container -->
+</nav>
+<div class="container text-center">
+<iframe data-aa='326661' src='https://ad.a-ads.com/326661?size=728x90' scrolling='no' style='width:728px; height:90px; border:0px; padding:0;overflow:hidden' allowtransparency='true' frameborder='0'></iframe>
+</div>
+<br>
+</div>
+
+
+    <div class="container">
+
+      <div class="starter-template text-center">
+        <h1>LCIII (P450) Speedup</h1>
+      </div>
+
+    </div><!-- /.container -->
+
+  <div class="container">
+ <div class="row">
+  <div class="col-md-8 col-md-offset-2">
+
+<p>This is a modification that can be performed on a LCIII (P450) to speed it up to 33MHz. The author of this file would like to remain anonymous. </p>
+<p>Keep in mind that this will void your warranty. Dealers or Apple may refuse to accept the board as an exchange in or out of warranty with this modification.</p>
+<p>You should also keep in mind that the circuits on your LCIII (P450) have not been tested to guarantee they will work properly at 33MHz, so if it doesn't work correctly (especially when it gets really warmed-up) just put the resistor back. In my experience it always worked fine, but that is no guarantee.</p>
+<ul>
+<li>Get a copy of the latest version of the system enabler 308 - it's the one shipped in the Performa 46x series. Drop this file into the system folder on your LCIII (P450). Without this file once you make the following modification the system software will refuse to boot up because it won't recognize the hardware. The early version of the 308 enabler that shipped with the Performa 45x series won't recognize the hardware either. </li>
+<li>Or get the new version of System Enabler 003, 1.1 for the LCIII (P450)</li>
+<li>Or use system 7.5</li>
+</ul>
+<ol>
+<li>Remove the chip-resistor in position R14 (0 ohm, jumper). It is located on the top of the main logic board near the RAM simm connector. (Since a few people have asked about this, you need to remove it with a soldering iron (or two) and the part is labeled 000.)</li>
+<li>Install the chip-resistor you just removed in position R74. It is located on the bottom of the main logic board.</li>
+</ol>
+<p><b>Note:</b></p>
+<ul>
+<li>People seem distressed that a 33MHz LCIII (P450) only identifies itself as a Mac. This lack of name string is true of many new Macs. Apple does this to avoid the need to localize the string and can enable future release of alternate configurations without testing new software (the alternate configs are tested when the original machine is developed). The only potential problem I know of is that some developers set their hardware or software up so it must know what machine it is running on. Since Apple has already released 33MHz versions of the LCIII, commercial hardware/software should have been updated to recognize the new ID.</li>
+<li>According to the manufacturer the Diimo 128k L2 cache card sold for the LCIII/P450 will not work in the P460 (LCIII@33MHz). A tech support person said that it can't keep up with the higher clock speed. This has not been verified.</li>
+</ul>
+
+</div></div></div>
+
+ <br>
+
+<div class="container text-center">
+<iframe data-aa='326665' src='https://ad.a-ads.com/326665?size=468x60' scrolling='no' style='width:468px; height:60px; border:0px; padding:0;overflow:hidden' allowtransparency='true' frameborder='0'></iframe>
+</div>
+  <div id="footer">
+      <div class="container">
+        <p class="text-muted text-center">2017&copy;Victor3D</p>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://wiki.victor3d.com.br/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://wiki.victor3d.com.br/js/bootstrap.min.js"></script>
+  </body>
+</html>

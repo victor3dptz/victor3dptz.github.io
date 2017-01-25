@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Linux, Macintosh, QNX Info" />
+    <title>Enabling Spotlight Web Search</title>
+
+    <!-- Bootstrap -->
+    <link href="http://wiki.victor3d.com.br/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <div class="navbar-brand"><img src="http://wiki.victor3d.com.br/img/classicmac.gif" width=24 height=31></div>
+      <a class="navbar-brand" href="http://wiki.victor3d.com.br/">Wiki</a>
+    </div>
+        <form class="navbar-form navbar-left" role="search" action="https://duckduckgo.com/" method="get">
+        <div class="form-group">
+          <input type="text" placeholder="Search wiki" class="form-control" name="q" id="q">	
+	<input type="hidden" name="sites" value="wiki.victor3d.com.br">
+        </div>
+
+        <button type="submit" class="btn btn-default">Search</button>
+      </form>
+
+  <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.google.com/recaptcha/mailhide/d?k=01MUDgC_dbbmgUXg66PjkbZg==&c=30d-wikjS5CWPbvZPBnBWhAfd39_adr_D1ylDoUa0vo=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k=01MUDgC_dbbmgUXg66PjkbZg==&c=30d-wikjS5CWPbvZPBnBWhAfd39_adr_D1ylDoUa0vo=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">E-mail</a></li>
+</ul>
+  </div><!-- /.container -->
+</nav>
+<div class="container text-center">
+<iframe data-aa='326661' src='https://ad.a-ads.com/326661?size=728x90' scrolling='no' style='width:728px; height:90px; border:0px; padding:0;overflow:hidden' allowtransparency='true' frameborder='0'></iframe>
+</div>
+<br>
+</div>
+
+
+    <div class="container">
+
+      <div class="starter-template text-center">
+        <h1>Enabling Spotlight Web Search</h1>
+      </div>
+
+    </div><!-- /.container -->
+
+  <div class="container">
+ <div class="row">
+  <div class="col-md-8 col-md-offset-2">
+<i>This article supersedes the discussion of mod_spotlight_apple in the Web Technologies Admin Guide.</i>
+<p>Mac OS X Server 10.4 no longer supports the Sherlock-based searching capability provided by the mod_sherlock_apple Apache module and the indexfolder command-line tool. The Spotlight-based mod_spotlight_apple Apache module replaces it. Like its predecessor, it allows web browsers to search the content of your website.</p>
+<p>Note that the indexing function of Spotlight is disabled by default in Mac OS X Server 10.4. Thus if you want to provide Spotlght-based search capability for Web Service, you must take the following steps.</p>
+<h3>Enable Spotlight indexing</h3>
+<p>To enable indexing for a volume, use the mdutil tool in Terminal. For example, to enable it on the root volume:</p>
+<pre>sudo mdutil -i on /</pre>
+<p>See the man page for mdutil(1) for further information. Note that there may be performance implications. Indexing must remain enabled for the Spotlight Web Search facility to operate.</p>
+<h3>Import content</h3>
+<p>Next, import your web content into the Spotlight MetaData store. The /Library/WebServer/Documents folder is not normally monitored by the MetaData Import processes, so you will need to manually import it, both initially and whenever you want any changes to be reflected. It's a good practice to create a different folder or folders to hold the contents of your virtual hosts; you'll need to manually import and update those as well.</p>
+<p>This is done with the mdimport command-line tool:</p>
+<pre>sudo mdimport -f /Library/WebServer/Documents/example-vhost/</pre>
+<p>The "-f" option is necessary to force the mdimport tool to process the contents of the specified folder. Note that it may take some time to import large volumes of content. See the man page for mdimport(1) for more detail.</p>
+<p>A variety of mdimporter extensions are pre-installed for most common content formats. If you have custom document formats, they may not be supported.</p>
+<h3>In Server Admin...</h3>
+<p>Enable the mod_spotlight_apple module in Server Admin's Web panel, and make sure Web Service is enabled. As always, it's a good idea to make sure the Web Performance Cache is enabled only if you have a specific need for it.</p>
+<h3>Copy the template.spotlight file</h3>
+<p>Copy the template.spotlight file from /Library/WebServer/Documents into the Document Root of each virtual host for which you want the spotlight search to be available. You may customize the title, maximum allowed hits, and other aspects of the presentation by modifying the copy of this file.</p>
+<h3>Access from clients</h3>
+<p>To access the search capability, instruct your web clients to append ".spotlight" to the URL for your virtual hosts, like this:</p>
+<pre>http://vhost1.example.com/.spotlight</pre>
+<p>This presents a simple search page that performs a content search on the contents of the DocumentRoot for the virtual host. Results are sorted with the most relevant hit first, although no relevance score is presented.</p>
+
+
+
+</div></div></div>
+
+ <br>
+
+<div class="container text-center">
+<iframe data-aa='326665' src='https://ad.a-ads.com/326665?size=468x60' scrolling='no' style='width:468px; height:60px; border:0px; padding:0;overflow:hidden' allowtransparency='true' frameborder='0'></iframe>
+</div>
+  <div id="footer">
+      <div class="container">
+        <p class="text-muted text-center">2017&copy;Victor3D</p>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://wiki.victor3d.com.br/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://wiki.victor3d.com.br/js/bootstrap.min.js"></script>
+  </body>
+</html>
