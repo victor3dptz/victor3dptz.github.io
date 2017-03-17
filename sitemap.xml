@@ -8,80 +8,112 @@
 
 <url>
   <loc>http://wiki.victor3d.com.br/</loc>
-  <lastmod>2017-01-27T16:52:44+00:00</lastmod>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>1.00</priority>
 </url>
 <url>
   <loc>http://wiki.victor3d.com.br/linux/faq/</loc>
-  <lastmod>2017-01-27T16:52:44+00:00</lastmod>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://wiki.victor3d.com.br/mac/68kmachints.html</loc>
-  <lastmod>2017-01-27T16:52:44+00:00</lastmod>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://wiki.victor3d.com.br/mac/hdscpatcher.html</loc>
-  <lastmod>2017-01-27T16:52:44+00:00</lastmod>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://wiki.victor3d.com.br/mac/lciiispeedup.html</loc>
-  <lastmod>2017-01-27T16:52:44+00:00</lastmod>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://wiki.victor3d.com.br/mac/nzmd/</loc>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://wiki.victor3d.com.br/osx/abrmacosxfaq.html</loc>
-  <lastmod>2017-01-27T16:52:44+00:00</lastmod>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://wiki.victor3d.com.br/osxserver/spotlight.html</loc>
-  <lastmod>2017-01-27T16:52:44+00:00</lastmod>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://wiki.victor3d.com.br/osxserver/headless.html</loc>
-  <lastmod>2017-01-27T16:52:44+00:00</lastmod>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://wiki.victor3d.com.br/osxserver/quotas.html</loc>
-  <lastmod>2017-01-27T16:52:44+00:00</lastmod>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://wiki.victor3d.com.br/qnx/qnx4_install.html</loc>
-  <lastmod>2017-01-27T16:52:44+00:00</lastmod>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://wiki.victor3d.com.br/beos/beos_and_bfs.html</loc>
-  <lastmod>2017-01-27T16:52:44+00:00</lastmod>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://wiki.victor3d.com.br/linux/faq/virtconsblank.html</loc>
-  <lastmod>2017-01-27T16:52:44+00:00</lastmod>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://wiki.victor3d.com.br/linux/faq/links2tty.html</loc>
-  <lastmod>2017-01-27T16:52:44+00:00</lastmod>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://wiki.victor3d.com.br/linux/faq/keyboardbr.html</loc>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://wiki.victor3d.com.br/mac/nzmd/beornotbe.html</loc>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://wiki.victor3d.com.br/mac/nzmd/past_and_doom.html</loc>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://wiki.victor3d.com.br/mac/nzmd/pippin.html</loc>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://wiki.victor3d.com.br/mac/nzmd/trackpad.html</loc>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://wiki.victor3d.com.br/mac/nzmd/happy_birthday_apple.html</loc>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://wiki.victor3d.com.br/mac/nzmd/page.html</loc>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://wiki.victor3d.com.br/mac/nzmd/3d.html</loc>
+  <lastmod>2017-03-17T19:46:37+00:00</lastmod>
+  <changefreq>monthly</changefreq>
 </url>
 </urlset>
