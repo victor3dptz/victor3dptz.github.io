@@ -12,7 +12,7 @@ I've got ST-Lab A-390 (Sata150, 2 int/Raid, PCI) for 568 rub. You may also buy a
 ### Insert your Serial-ATA controller card to the PowerMac G4
 ![Inside](/osx/sata/inside.jpg)
 
-### Download a firmware [here](http://wiki.victor3d.com.br/osx/sata/SATA.zip)
+### Download a firmware [here](http://wiki.victor3d.com.br/osx/sata/sata.zip)
 ![Sata1](http://wiki.victor3d.com.br/osx/sata/sata1.png)
 
 ### Run a FlashTool
