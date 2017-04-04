@@ -1,7 +1,9 @@
 ---
 layout: page
-title: ABR's Mac OS X FAQ: Advanced
+title: ABRs Mac OS X FAQ: Advanced
 ---
+
+
 
 ### Чиним доступ по AFP c классики на 10.4.9 и выше
 
