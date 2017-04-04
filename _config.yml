@@ -25,7 +25,11 @@ author:
 version:             2.0.0
 github:
   repo:              https://github.com/victor3dptz/wiki
-
+  
+# This is the list of pages to include in the header of the website.
+pages_list:       
+  Linux FAQ: '/faq.html'
+  
 # Gems
 gems:
   - jekyll-paginate
