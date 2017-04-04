@@ -1,30 +1,34 @@
 ---
 layout: page
-title: About
+title: Welcome
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+### Linux
+![Linux](/img/linux.gif)
+[Linux FAQ](/faq.html)
 
-In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+### Vintage Macintosh
+![Vintage Macintosh](/img/mac.gif)
+[О чем идет речь](/mac/68kmachints.html)
+[HD SC Setup 7.3.5 patcher](/mac/hdscpatcher.html)
+[LCIII (P450) Speedup](/mac/lciiispeedup.html)
+[Н.Ж.М.Д.](/mac/nzmd/)
 
-There are currently two themes built on Poole:
+### Mac OS X
+![Mac OS X](/img/osx.gif)
+[ABR's Mac OS X FAQ: Advanced](/osx/abrmacosxfaq.html)
+[PowerMac G4 SATA Support](/osx/sata/)
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+### Mac OS X Server
+![Mac OS X Server](/img/osxserver.gif)
+[Enabling Spotlight Web Search](/osxserver/spotlight.html)
+[Headless Mac mini OSX Server installation](/osxserver/headless.html)
+[Mac OS X Server and Quotas](/osxserver/quotas.html)
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+### QNX
+![QNX](/img/qnx.gif)
+[Инсталляция системы QNX4](/qnx/qnx4_install.html)
 
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+### BeOS
+![BeOS](/img/beos.gif)
+[BeOS and BFS](/beos/beos_and_bfs.html)
