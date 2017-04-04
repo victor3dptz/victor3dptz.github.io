@@ -3,7 +3,7 @@ permalink:           none
 
 # Setup
 title:               Wiki
-tagline:             The Jekyll Butler
+tagline:             Info
 url:                 http://wiki.victor3d.com.br
 paginate:            1
 baseurl:             ""
