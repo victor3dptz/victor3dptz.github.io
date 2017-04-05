@@ -16,7 +16,7 @@ title: Welcome
 
 ### Mac OS X
 ![Mac OS X](/assets/osx.gif)
-* [ABR's Mac OS X FAQ: Advanced](/osx/)
+* [ABR's Mac OS X FAQ: Advanced](/osx/abrmacosxfaq/)
 * [PowerMac G4 SATA Support](/osx/sata/)
 
 ### Mac OS X Server
