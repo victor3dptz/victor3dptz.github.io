@@ -6,3 +6,18 @@ layout: default
   <h1 class="page-title">{{ page.title }}</h1>
   {{ content }}
 </article>
+
+<aside class="related">
+  <h3>Related posts</h3>
+  <ul class="related-posts">
+      {% for page in site.pages limit:3 %}{% if page.layout != null %}
+      <li>
+        <a href="{{ site.baseurl }}{{ page.url }}">
+          {{ page.title }}
+          <small>{{ page.date | date_to_string }}</small>
+        </a>
+      </li>
+    {% endif %}{% endfor %}
+  </ul>
+</aside>
+
