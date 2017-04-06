@@ -7,17 +7,3 @@ layout: default
   {{ content }}
 </article>
 
-<aside class="related">
-  <h3>Related posts</h3>
-  <ul class="related-posts">
-{% assign pages_list = (site.pages | sort: page.date ) %}
-      {% for page in pages_list limit:3 %}{% if page.layout != null %}
-      <li>
-        <a href="{{ site.baseurl }}{{ page.url }}">
-          {{ page.title }}
-        </a>
-      </li>
-    {% endif %}{% endfor %}
-  </ul>
-</aside>
-
