@@ -3,6 +3,12 @@ layout: page
 title: HD SC Setup 7.3.5 patcher
 ---
 
+All versions of Apple's HD SC Setup program only recognize Apple supplied SCSI harddisks. The reason for this is not totally clear; most likely it is because Apple does not want to be bothered with people asking support when they cannot get an obscure brand of harddisk working.
+
+However, it is a nuisance. Sometimes it might be advisable to use Apple's disk drivers (put on the disk with HD SC Setup) since these might work best with the latest release of the SCSI Manager.
+
+During the last years a number of people have come up with patches for the various HD SC Setup versions. Some of these work, some don't. The best one I have found follows. I have picked this one since it patches HD SC Setup 7.3.5 (which is the latest version, found to work well with SCSI Manager 4.3), using ResEdit 2.1.3 by altering just one (!) byte. 
+
 This program, created with the excellent tool ResCompare, automatically patches Apple's HD SC Setup 7.3.5 so that it recognizes all SCSI drives. It will ask you where your copy of 'HD SC Setup 7.3.5' is located and then creates a patched copy, not surprisingly called 'HD SC Setup 7.3.5 (patched)'. It does not change the original.
 
 To create a working copy of HD SC Setup 7.3.5 patcher:

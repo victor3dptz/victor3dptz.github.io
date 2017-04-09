@@ -14,6 +14,7 @@ title: Welcome
 * [LCIII (P450) Speedup](/mac/lciiispeedup.html)
 * [Н.Ж.М.Д.](/mac/nzmd/)
 * [Apple Macintosh Emulators](/mac/emulators/)
+* [Executor versus vMac](/mac/emulators/executorvsvmac.html)
 
 ### Mac OS X
 ![Mac OS X](/assets/osx.gif)
