@@ -13,6 +13,7 @@ title: Welcome
 * [HD SC Setup 7.3.5 patcher](/mac/hdscpatcher.html)
 * [LCIII (P450) Speedup](/mac/lciiispeedup.html)
 * [Н.Ж.М.Д.](/mac/nzmd/)
+* [Apple Macintosh Emulators](/mac/emulators/)
 
 ### Mac OS X
 ![Mac OS X](/assets/osx.gif)
