@@ -9,7 +9,7 @@ title: Welcome
 
 ### Vintage Macintosh
 ![Vintage Macintosh](/assets/mac.gif)
-* [О чем идет речь](/mac/68kmachints.html)
+* [Программы для Макинтоша](/mac/68kmachints.html)
 * [HD SC Setup 7.3.5 patcher](/mac/hdscpatcher.html)
 * [LCIII (P450) Speedup](/mac/lciiispeedup.html)
 * [Н.Ж.М.Д.](/mac/nzmd/)
