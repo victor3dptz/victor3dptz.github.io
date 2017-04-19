@@ -30,6 +30,7 @@ title: Welcome
 ### QNX
 ![QNX](/assets/qnx.gif)
 * [Инсталляция системы QNX4](/qnx/qnx4_install.html)
+* [Создание bootable CD для QNX 4.25](/qnx/qnx4_bootcd.html)
 
 ### BeOS
 ![BeOS](/assets/beos.gif)
