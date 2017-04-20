@@ -16,6 +16,7 @@ title: Welcome
 * [Apple Macintosh Emulators](/mac/emulators/)
 * [Executor versus vMac](/mac/emulators/executorvsvmac.html)
 * [Совместимость комплектующих Mac/PC](/mac/hardware.html)
+* [Покупка Макинтоша б/у](/mac/buyusedmac.html)
 
 ### Mac OS X
 ![Mac OS X](/assets/osx.gif)
