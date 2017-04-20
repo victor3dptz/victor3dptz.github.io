@@ -3,6 +3,8 @@ layout: page
 title: Welcome
 ---
 
+![Main Logo](/assets/serverheader.jpg)
+
 ### Linux
 ![Linux](/assets/linux.gif)
 * [Linux FAQ](/faq.html)
