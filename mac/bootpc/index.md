@@ -50,7 +50,7 @@ No problem. Fortunately for us, there is a RAWRITE image of this disk - RAWRITE 
 
 * In your command window, change the working directory to that of the RAWRITE2 application. Use the command "CD". i.e. CD e:\vintagemac\rawrite2
 
-![rawrite](/mac/bootpc/4.jpg)
+![rawrite](/mac/bootpc/4.gif)
 
 * Assuming you got this RAWRITE from the Linintosh server package, it will contain the required image file (MacNWAcc.img). Write the image to your newly formatted floppy by using the command "rawrite2 macnwacc.img a:" (again without the quotes), where a: is the drive letter of your floppy device.
 
