@@ -20,6 +20,7 @@ title: Welcome
 * [Совместимость комплектующих Mac/PC](/mac/hardware.html)
 * [Покупка Макинтоша б/у](/mac/buyusedmac.html)
 * [21 More Uses for a 68K Mac](/mac/21uses68k.html)
+* [Bootstrap your vintage Ethernet equipped Mac from your Windows PC](/mac/bootpc/)
 
 ### Mac OS X
 ![Mac OS X](/assets/osx.gif)
