@@ -122,7 +122,7 @@ Right!
 
 You will then see a bunch of stuff scrolling up the screen as the Linintosh Server appliance loads up. At this point you will need a DHCP server active on your network to provide the Linintosh Server an IP Address (if you want to be able to access it via your Windows XP machine). Once the virtual machine has booted, you should see a screen that looks similar to this
 
-![Boot](/mac/bootpc/9.jpg)
+![Boot](/mac/bootpc/9.gif)
 
 Examining this advanced graphic we can see that
 
