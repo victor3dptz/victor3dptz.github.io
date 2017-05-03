@@ -3,9 +3,9 @@ layout: page
 title: Speedometer Benchmark
 ---
 
-Download [Speedometer 3.2.3](/mac/speedometer/speedometer323.bin).
+![icon](/mac/speedometer/icon1.png) Download [Speedometer 3.2.3](/mac/speedometer/speedometer323.bin).
 
-[Latest Results from Speedometer](/mac/speedometer/MachineRecords.bin)
+![icon](/mac/speedometer/icon2.png) [Latest Results from Speedometer](/mac/speedometer/MachineRecords.bin)
 
 ### Macintosh LCIII vs. Macintosh LCIII overclocked to 33Mhz
 
