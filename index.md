@@ -3,7 +3,7 @@ layout: page
 title: Welcome
 ---
 
-This website mostly contains information taken from Internet. The purpose is personal knowledge base. If you like it, please donate some bitcoins, please! Thanks!
+This website mostly contains information taken from Internet. The purpose is personal knowledge base. If you like it, please donate me some bitcoins, please! Thanks!
 
 BTC: **1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW**
 
