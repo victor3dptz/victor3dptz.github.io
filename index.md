@@ -9,7 +9,7 @@ BTC: **1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW**
 
 ![Main Logo](/assets/serverheader.jpg)
 
-If you are an author of any article published here and you wish to remove it, please [contact me](http://www.google.com/recaptcha/mailhide/d?k=01veliQERnOsSbdb6NNPSRPQ==&c=QUGRsenLNRgI6V8ZikGfwuAAVDGV11rXXMscOAjELiA=).
+If you are an author of any article published here and you want me to remove it, please [contact me](http://www.google.com/recaptcha/mailhide/d?k=01veliQERnOsSbdb6NNPSRPQ==&c=QUGRsenLNRgI6V8ZikGfwuAAVDGV11rXXMscOAjELiA=).
 
 ### Linux
 ![Linux](/assets/linux.gif)
