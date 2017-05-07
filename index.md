@@ -3,11 +3,11 @@ layout: page
 title: Welcome
 ---
 
-![Main Logo](/assets/serverheader.jpg)
-
 This website mostly contains information taken from Internet. The purpose is personal knowledge base. If you like it, please donate some bitcoins, please! Thanks!
 
 BTC: **1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW**
+
+![Main Logo](/assets/serverheader.jpg)
 
 If you are an author of any article published here and you wish to remove it, please [contact me](http://www.google.com/recaptcha/mailhide/d?k=01veliQERnOsSbdb6NNPSRPQ==&c=QUGRsenLNRgI6V8ZikGfwuAAVDGV11rXXMscOAjELiA=).
 
