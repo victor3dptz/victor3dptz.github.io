@@ -43,3 +43,4 @@ title: Welcome
 ### BeOS
 ![BeOS](/assets/beos.gif)
 * [BeOS and BFS](/beos/beos_and_bfs.html)
+* [BeOS or NeXT. Did Apple Make the Wrong Choice?](/beos/choice.html)
