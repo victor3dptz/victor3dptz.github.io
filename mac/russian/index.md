@@ -5,7 +5,7 @@ title: Русификация Mac OS 9
 
 ### Как полнокровно русифицировать свой Макинтош применяя только Cyrillic Language Kit, идущий в комплекте установки системы, начиная с Mac OS 9.0
 
-*Впрочем так же беззастенчиво можно поступить и с другими, до 9-ой, системами, но для этого придется установить [Cyrillic Language Kit 1.0](/mac/russianCyrillicLanguageKit1.0.sit) (5.07 MB) и не забыть при этом сделать [update](/mac/russian/MacOS8LanguageKitUpdate.sit) (4.03 MB) этому Киту.
+*Впрочем так же беззастенчиво можно поступить и с другими, до 9-ой, системами, но для этого придется установить [Cyrillic Language Kit 1.0](/mac/russian/CyrillicLanguageKit1.0.sit) (5.07 MB) и не забыть при этом сделать [update](/mac/russian/MacOS8LanguageKitUpdate.sit) (4.03 MB) этому Киту.
 
 Ещё можно сгрузить программку [Language Register](/mac/russian/LanguageRegister.sit) для регистрирования программ на русский язык (правда я никогда не проверял будет ли она работать с восьмой системой... дорогой OS 8 mac user! у тебя есть шанс проверить! :O))*
 
