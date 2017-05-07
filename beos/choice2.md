@@ -1,6 +1,6 @@
 ---
 layout: page
-title: BeOS or NeXT: The Right Choice
+title: BeOS or NeXT. The Right Choice
 ---
 
 ### Multitasking
