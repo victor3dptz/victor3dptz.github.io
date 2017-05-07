@@ -23,6 +23,7 @@ title: Welcome
 * [Bootstrap your vintage Ethernet equipped Mac from your Windows PC](/mac/bootpc/)
 * [Speedometer Benchmark](/mac/speedometer/)
 * [A/UX System Software](/mac/aux/)
+* [Русификация Mac OS 9](/mac/russian/)
 
 ### Mac OS X
 ![Mac OS X](/assets/osx.gif)
