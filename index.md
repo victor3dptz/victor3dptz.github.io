@@ -5,7 +5,7 @@ title: Welcome
 
 This website mostly contains information taken from Internet. It's my personal knowledge base. You may use it freely. If you like it, please donate me some bitcoins, please! Thanks!
 
-BTC: **1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW**
+BTC: **[1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW](https://blockchain.info/address/1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW)**
 
 ![Main Logo](/assets/serverheader.jpg)
 
