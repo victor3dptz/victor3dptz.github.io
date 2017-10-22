@@ -30,6 +30,7 @@ If you are an author of any article published here and you want me to remove it,
 * [Speedometer Benchmark](/mac/speedometer/)
 * [A/UX System Software](/mac/aux/)
 * [Русификация Mac OS 9](/mac/russian/)
+* [Планы и перспективы Apple - мнение дилера](/mac/applefuture.html)
 
 ### Mac OS X
 ![Mac OS X](/assets/osx.gif)
