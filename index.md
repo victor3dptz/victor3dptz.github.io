@@ -33,6 +33,7 @@ If you are an author of any article published here and you want me to remove it,
 * [Планы и перспективы Apple - мнение дилера](/mac/applefuture.html)
 * [Apple Bugs](/mac/apple_bugs.html)
 * [Apple Codenames](/mac/apple_codenames.html)
+* [PowerMac 6100 Upgrade Guide](/mac/powermac6100/)
 
 ### Mac OS X
 ![Mac OS X](/assets/osx.gif)
