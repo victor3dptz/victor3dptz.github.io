@@ -3,11 +3,11 @@ layout: page
 title: PowerMac 6100 Upgrade Guide
 ---
 
+![PowerMac 6100](/mac/powermac6100/img/6100_with_mon.jpg)
+
 ### Introduction
 
 This site is a comprehensive resource for a variety of upgrades to the Apple PowerMac 6100 and related machines. Contrary to popular press and opinion, the PowerMac 6100 is a very expandable and upgradeable machine! From its humble beginnings as a "beginner's" Performa, my venerable PowerMac is now a G3-powered, multimedia authoring workhorse machine with all manner of options, input devices, peripherals and cross-platform capabilities. It took a little elbow grease and a **lot** of reading, but now that the leg work has been done, it's really quite easy! Here's a table of contents:
-
-![PowerMac 6100](/mac/powermac6100/img/6100_with_mon.jpg)
 
 ### Contents
 
