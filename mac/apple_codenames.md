@@ -3,7 +3,7 @@ layout: page
 title: Apple Codenames
 ---
 
-*The web's largest source for **Mac codenames** *
+*The web's largest source for **Mac codenames***
 
 ### Apple II
 
