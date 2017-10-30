@@ -31,6 +31,7 @@ If you are an author of any article published here and you want me to remove it,
 * [A/UX System Software](/mac/aux/)
 * [Русификация Mac OS 9](/mac/russian/)
 * [Планы и перспективы Apple - мнение дилера](/mac/applefuture.html)
+* [Apple Bugs](/mac/apple_bugs.html)
 
 ### Mac OS X
 ![Mac OS X](/assets/osx.gif)
