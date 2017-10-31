@@ -37,7 +37,7 @@ Performa 6118 CD | ?? | 601/60 | 30 MHz | 32 K | 0 K | 8 MB | 500 MB | 2x | Mac 
 WG Server 6150 | 4/17/95 | 601/60 | 30 MHz | 32 K | 0 K | 8 MB | 500 MB | 2x | Mac OS 7.1.2
 WG Server 6150/66 | ?? | 601/60 | 33 MHz | 32 K | 0 K | 8 MB | 700 MB | 2x | Mac OS 7.5
 My Configuration | NA | G3/210 | 30 MHz | 64 K | 512 K | 136 MB | 4.5 GB | 2x int., 4x4x16 CD-RW ext. |	Mac OS 8.6, MkLinux DR3
-Max. Configuration | NA | G4/300 | 42 MHz* | 64 K | 1 MB | 264 MB | ??** | 24x | Mac OS 9.x***, MkLinux DR3, Virtual PC****
+Max. Configuration | NA | G4/300 | 42 MHz* | 64 K | 1 MB | 264 MB | ??** | 24x | Mac OS 9.x*** , MkLinux DR3, Virtual PC ****
 
 *Bus speeds above 33 MHz achieved by over-clocking. Overclocking is potentially damaging to your system. 
 
