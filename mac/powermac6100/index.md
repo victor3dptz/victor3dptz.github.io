@@ -11,7 +11,7 @@ This site is a comprehensive resource for a variety of upgrades to the Apple Pow
 
 ### Contents
 
-* [Default configuration](/mac/powermac6100/default.html) Describes the original hardware and software configurations of this series.
+* [Default configuration](/mac/powermac6100/default.html)
 * Cache upgrades--A 30% speed increase for $15? Read on
 * RAM upgrades--Calculate how much RAM you can afford, then buy a little bit more than that. **You can have up to 520 MB in your 6100!**
 * CPU upgrades--Increase your speed up to 16 times with a G3 or G4 processor. Affordably!

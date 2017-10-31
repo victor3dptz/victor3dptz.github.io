@@ -3,7 +3,7 @@ layout: page
 title: PowerMac 6100 Default Configuration
 ---
 
-This page describes the as-shipped configurations of the Power Mac 6100 series, as well as some of the alternative configurations.
+![Logo](/mac/powermac6100/img/01default.gif) This page describes the as-shipped configurations of the Power Mac 6100 series, as well as some of the alternative configurations.
 
 ### Introduction
 
