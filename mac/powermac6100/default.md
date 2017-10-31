@@ -37,15 +37,12 @@ Performa 6118 CD | ?? | 601/60 | 30 MHz | 32 K | 0 K | 8 MB | 500 MB | 2x | Mac 
 WG Server 6150 | 4/17/95 | 601/60 | 30 MHz | 32 K | 0 K | 8 MB | 500 MB | 2x | Mac OS 7.1.2
 WG Server 6150/66 | ?? | 601/60 | 33 MHz | 32 K | 0 K | 8 MB | 700 MB | 2x | Mac OS 7.5
 My Configuration | NA | G3/210 | 30 MHz | 64 K | 512 K | 136 MB | 4.5 GB | 2x int., 4x4x16 CD-RW ext. |	Mac OS 8.6, MkLinux DR3
-Max. Configuration | NA | G4/300 | 42 MHz* | 64 K | 1 MB | 264 MB | ??** | 24x | Mac OS 9.x*** , MkLinux DR3, Virtual PC ****
+Max. Configuration | NA | G4/300 | 42 MHz | 64 K | 1 MB | 264 MB | ?? | 24x | Mac OS 9.x, MkLinux DR3, Virtual PC
 
-*Bus speeds above 33 MHz achieved by over-clocking. Overclocking is potentially damaging to your system. 
-
-**Maximum HD size is determined only by the maximum size currently shipped by HD manufacturers in the standard 1" form factor. IBM currently is shipping 73GB drives, and drive sizes will continue to increase over time. Most modern drives require a SCSI adapter to work inside a 6100, which makes it somewhat more difficult to use a video card in tandem, but it can be done. The largest drive I know of that has a 50 pin connector (i.e. it does not need an adapter) is the 18 GB Seagate Barracuda 9LP.
-
-***Mac OS 9 will run on a 6100, and the next release (9.1 or 9.5) will probably as well. Sonnet's G3/G4 driver is OS 9 compatible, and an OS 9 compatible version of Newer's G3 driver is currently in beta
-
-****While VirtualPC is not an operating system, it permits you to run many PC (i.e. x86) operating systems in emulation on the Macintosh. MS-DOS, Windows 3.x, Win9x, WinNT, Linux, OPENStep and OS/2 have been run successfully on top of VirtualPC.
+* Bus speeds above 33 MHz achieved by over-clocking. Overclocking is potentially damaging to your system. 
+* Maximum HD size is determined only by the maximum size currently shipped by HD manufacturers in the standard 1" form factor. IBM currently is shipping 73GB drives, and drive sizes will continue to increase over time. Most modern drives require a SCSI adapter to work inside a 6100, which makes it somewhat more difficult to use a video card in tandem, but it can be done. The largest drive I know of that has a 50 pin connector (i.e. it does not need an adapter) is the 18 GB Seagate Barracuda 9LP.
+* Mac OS 9 will run on a 6100, and the next release (9.1 or 9.5) will probably as well. Sonnet's G3/G4 driver is OS 9 compatible, and an OS 9 compatible version of Newer's G3 driver is currently in beta
+* While VirtualPC is not an operating system, it permits you to run many PC (i.e. x86) operating systems in emulation on the Macintosh. MS-DOS, Windows 3.x, Win9x, WinNT, Linux, OPENStep and OS/2 have been run successfully on top of VirtualPC.
 
 ### Supported video input and output
 
@@ -55,7 +52,7 @@ PM 6100/60 | 640 K DRAM | None | HDI45-DB15 | None | None
 PM 6100/60 AV | 640 K DRAM | 2 MB AV | S Video-Composite I/O | None | None
 PM 6100/66 | 640 K DRAM | None | HDI45-DB15 | None | None
 PM 6100/66 AV | 640 K DRAM | 2 MB AV | S Video-Composite I/O | None | None
-PM 6100/60 DOS | 640 K DRAM | 512K VGA*** | HDI45-DB15 | None | None
+PM 6100/60 DOS | 640 K DRAM | 512K VGA | HDI45-DB15 | None | None
 Performa 6110 CD | 640 K DRAM | None | HDI45-DB15 | Apple Multiple Scan 15" | None
 Performa 6112 CD | 640 K DRAM | None | HDI45-DB15 | Apple Multiple Scan 15" | None
 Performa 6115 CD | 640 K DRAM | None | HDI45-DB15 | Apple Multiple Scan 15" | None
@@ -65,10 +62,8 @@ Performa 6118 CD | 640 K DRAM | None | HDI45-DB15 | Apple Multiple Scan 15" | No
 WG Server 6150/60 | 640 K DRAM | None | HDI45-DB15 | Apple Multiple Scan 15" | None
 WG Server 6150/66 | 640 K DRAM | None | HDI45-DB15 | Apple Multiple Scan 15" | None
 My Configuration | 640 K DRAM | 2 MB AV | S Video-Composite I/O + HDI45-DB15 | Apple Multiple Scan 15" | Sony 17"
-Max. Configuration | 640 K DRAM | 2 MB AV or 4 MB HPV* | S Video-Composite I/O + HDI45-DB15 | 17 "** | 21"
+Max. Configuration | 640 K DRAM | 2 MB AV or 4 MB HPV | S Video-Composite I/O + HDI45-DB15 | 17 " | 21"
 
-*One PDS card can be installed in the 6100 series. The HPV cards provide slightly higher graphics performance, but the AV card provides S-video input and output.
-
-**The primary (DRAM) video output will drive resolutions up to 832x624. A 4MB HPV card installed in the PDS will drive resolutions up to 1152x870
-
-***The secondary video is for the DOS side only, e.g. if you're using a DOS card you can have the DOS display either on a shared display or on a separate display. But you can't use the second display on the Mac side.
+* One PDS card can be installed in the 6100 series. The HPV cards provide slightly higher graphics performance, but the AV card provides S-video input and output.
+* The primary (DRAM) video output will drive resolutions up to 832x624. A 4MB HPV card installed in the PDS will drive resolutions up to 1152x870
+* The secondary video is for the DOS side only, e.g. if you're using a DOS card you can have the DOS display either on a shared display or on a separate display. But you can't use the second display on the Mac side.
