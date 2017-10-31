@@ -14,7 +14,7 @@ This site is a comprehensive resource for a variety of upgrades to the Apple Pow
 * [Default configuration](/mac/powermac6100/default.html)
 * [Cache upgrades](/mac/powermac6100/cache.html)
 * [RAM upgrades](/mac/powermac6100/memory.html)
-* CPU upgrades--Increase your speed up to 16 times with a G3 or G4 processor. Affordably!
+* [CPU upgrades](/mac/powermac6100/cpu.html)
 * Hard drives--Replace your exhausted HD with a multi-gigabyte drive. **You may even be able to use an IDE drive!** Includes detailed installation instructions.
 * CD-ROM Drives--Faster CD-ROM drives, plus CD-R and CD-RW drives, too. Includes detailed installation instructions.
 * Graphics upgrades--Drive big, high resolution monitors with more colors, or add AV capabilities
