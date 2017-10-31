@@ -22,7 +22,7 @@ The information below is taken from the online Apple Spec Database, and is belie
 ### CPU, HD and RAM
 
 Model | Date Disc. | CPU / Speed | Bus Speed | L1 Cache | L2 Cache | RAM | HD | CD-ROM | OS
------------------------------------------------------------------------------------------
+----- | ---------- | ----------- | --------- | -------- | -------- | --- | -- | ------ | --
 PM 6100/60 | 1/3/95 | 601/60 | 30 MHz | 32 K | 0 K | 8 MB | 250 MB | Opt'l | Mac OS 7.1.2
 PM 6100/60 AV | 9/12/94 | 601/60 | 30 MHz | 32 K | 256 K | 8 MB | 350 MB | Opt'l | Mac OS 7.1.2
 PM 6100/66 | 10/14/95 | 601/66 | 33 MHz | 32 K | 256 K | 8 MB | 350 MB | Opt'l | Mac OS 7.5
@@ -50,7 +50,7 @@ Max. Configuration | NA | G4/300 | 42 MHz* | 64 K | 1 MB | 264 MB | ??** | 24x |
 ### Supported video input and output
 
 Model | Motherboard Video | Secondary (PDS) Video | Adapter cables | Bundled Monitor | 2nd Monitor
---------------------------------------------------------------------------------------------------
+----- | ----------------- | --------------------- | -------------- | --------------- | -----------
 PM 6100/60 | 640 K DRAM | None | HDI45-DB15 | None | None
 PM 6100/60 AV | 640 K DRAM | 2 MB AV | S Video-Composite I/O | None | None
 PM 6100/66 | 640 K DRAM | None | HDI45-DB15 | None | None
