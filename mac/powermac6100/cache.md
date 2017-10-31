@@ -3,7 +3,7 @@ layout: page
 title: PowerMac 6100 L2 Cache
 ---
 
-![Logo](/mac/powermac6100/img/01cache.gif) This page describes the options for upgrading the Level 2 (L2) cache on the Power Mac 6100 series. It also provides a very high-level description of what cache is and what cache does. 
+![Logo](/mac/powermac6100/img/02cache.gif) This page describes the options for upgrading the Level 2 (L2) cache on the Power Mac 6100 series. It also provides a very high-level description of what cache is and what cache does. 
 
 ### Introduction
 
