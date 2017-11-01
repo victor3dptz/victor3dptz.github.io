@@ -158,7 +158,7 @@ After your Mac has finished booting, go ahead and run your third party drive set
 
 Once you've finished setting up the drive, copy over the contents of your old drive. You can use a simple drag-and-drop approach. The only downside to this approach is that some of your aliases may get broken, and you'll have to re-create them.
 
-Once you've copied everything over, check the new copy of your System Folder. Check the icon, either in the icon view or by selecting and choosing Get Info from the File Menu. It should have an icon like
+Once you've copied everything over, check the new copy of your System Folder. Check the icon, either in the icon view or by selecting and choosing Get Info from the File Menu. It should have an icon like:
 
 ![HDD](/mac/powermac6100/img/SystemFolder.gif)
 
