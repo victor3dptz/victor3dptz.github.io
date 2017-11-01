@@ -13,7 +13,7 @@ The DRAM video supports a maximum resolution of 832x624@8 bits (256 colors), or 
 
 In a DRAM-based video scheme, ~640K of system memory is dedicated to the frame buffer. Simply put, DRAM-based video sucks. In addition to eating up RAM and being extremely slow, DRAM-based video also suffers from an inability to be upgraded. There is no way in to increase the amount of DRAM that is allocated to video. The only way to upgrade is to add a card.
 
-Here's a question that's been asked many times on Usenet: what happens to the 640K of DRAM when the HDI-45 port is not being used? According to Apple's Technical Info library, this memory is freed up if no monitor is detected at the HDI-45 port. This is borne out by my experience. After booting with extensions off, I selected **About This Macintosh* from the **Apple Menu* and looked at the **System Software** size:
+Here's a question that's been asked many times on Usenet: what happens to the 640K of DRAM when the HDI-45 port is not being used? According to Apple's Technical Info library, this memory is freed up if no monitor is detected at the HDI-45 port. This is borne out by my experience. After booting with extensions off, I selected **About This Macintosh** from the **Apple Menu** and looked at the **System Software** size:
 
 Resolution/Bit depth | System Software Size with DRAM Video | System Software Size with HPV Card | Difference
 -------------------- | ------------------------------------ | -----------------------------------------------
