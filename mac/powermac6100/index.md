@@ -15,7 +15,7 @@ This site is a comprehensive resource for a variety of upgrades to the Apple Pow
 * [Cache upgrades](/mac/powermac6100/cache.html)
 * [RAM upgrades](/mac/powermac6100/memory.html)
 * [CPU upgrades](/mac/powermac6100/cpu.html)
-* Hard drives--Replace your exhausted HD with a multi-gigabyte drive. **You may even be able to use an IDE drive!** Includes detailed installation instructions.
+* [Hard drives](/mac/powermac6100/hdd.html)
 * CD-ROM Drives--Faster CD-ROM drives, plus CD-R and CD-RW drives, too. Includes detailed installation instructions.
 * Graphics upgrades--Drive big, high resolution monitors with more colors, or add AV capabilities
 * Monitors--A brief introduction to the types and sizes of monitors supported by this machine
