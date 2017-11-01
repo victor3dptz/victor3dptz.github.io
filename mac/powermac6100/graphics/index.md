@@ -23,7 +23,7 @@ Compatible w/DOS card | Yes | No | No | No | No | No | No
 Each of these options has different features and tradeoffs, so this section of the site is quite a bit longer than the other sections. Thus, it's broken out into sub-pages:
 
 * [Hardware](/mac/powermac6100/graphics/hardware.html)
-* The HPV card--The High Performance Video card, aka HPV card, aka VRAM Expansion Card
+* [The HPV card](/mac/powermac6100/graphics/hpv.html)
 * The Apple AV Card--The AV card, providing video input and output
 * Nubus video cards--I know very little about these. Please send data.
 * Installation--Installing an upgrade card
