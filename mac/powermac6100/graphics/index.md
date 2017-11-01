@@ -24,7 +24,7 @@ Each of these options has different features and tradeoffs, so this section of t
 
 * [Hardware](/mac/powermac6100/graphics/hardware.html)
 * [The HPV card](/mac/powermac6100/graphics/hpv.html)
-* The Apple AV Card--The AV card, providing video input and output
+* [The Apple AV Card](/mac/powermac6100/graphics/av.html)
 * Nubus video cards--I know very little about these. Please send data.
 * Installation--Installing an upgrade card
 * Test Results--Methodology, MacBench results, and Marathon 2 frame rates.
