@@ -29,7 +29,7 @@ Each of these options has different features and tradeoffs, so this section of t
 * [Installing an upgrade card](/mac/powermac6100/graphics/install.html)
 * [Test Results](/mac/powermac6100/graphics/test.html)
 * [Other benefits of Expansion Cards](/mac/powermac6100/graphics/benefits.html)
-* My conclusions--The quick and dirty low-down. 
+* [My conclusions](/mac/powermac6100/graphics/conclusions.html) 
 
 ### Sidebar: All PDS cards are not the same
 
