@@ -26,7 +26,7 @@ Each of these options has different features and tradeoffs, so this section of t
 * [The HPV card](/mac/powermac6100/graphics/hpv.html)
 * [The Apple AV Card](/mac/powermac6100/graphics/av.html)
 * [Nubus video cards](/mac/powermac6100/graphics/nubus.html)
-* Installation--Installing an upgrade card
+* [Installing an upgrade card](/mac/powermac6100/graphics/install.html)
 * Test Results--Methodology, MacBench results, and Marathon 2 frame rates.
 * Other benefits of Expansion Cards--Explains support for a second monitor and more resolutions.
 * My conclusions--The quick and dirty low-down. 
