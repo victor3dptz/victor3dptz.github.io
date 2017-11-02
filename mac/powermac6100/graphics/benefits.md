@@ -55,7 +55,7 @@ Desired resolution | None (640K) | 7100 HPV (1MB) | 7100 HPV (2MB) | 8100 HPV (2
 
 To get 1024x768 on my Apple Multiscan 15, I chained two adapters together. I used the MacView adapter discussed above along with a generic Mac-monitor-to-PC adapter. So the cable chain goes:
 
-Mac HPV card-->MacView adapter-->Mac-PC adapter-->Apple monitor
+``Mac HPV card-->MacView adapter-->Mac-PC adapter-->Apple monitor``
 
 which is ugly. Furthermore, it sticks out the back of the computer about 6 inches. But it works.
 
