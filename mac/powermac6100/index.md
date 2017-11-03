@@ -18,7 +18,7 @@ This site is a comprehensive resource for a variety of upgrades to the Apple Pow
 * [Hard drives](/mac/powermac6100/hdd.html)
 * [CD-ROM Drives](/mac/powermac6100/cdrom.html)
 * [Graphics upgrades](/mac/powermac6100/graphics/)
-* Monitors--A brief introduction to the types and sizes of monitors supported by this machine
+* [Monitors](/mac/powermac6100/monitors.html)
 * Operating System--My subjective impression of what Mac OS versions and alternative operating systems work well with this machine, including Linux
 * Networking--Exchange files with and talk to other types of computers, including PCs! See the top of the page for a wireless solution, or this page for a more comprehensive view of my network.
 * Windows Interoperability--How to live in a world dominated by Windows machines
