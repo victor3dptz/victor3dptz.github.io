@@ -25,8 +25,7 @@ This site is a comprehensive resource for a variety of upgrades to the Apple Pow
 * [DOS cards](/mac/powermac6100/dos.html)
 * [Peripherals](/mac/powermac6100/peripherals.html)
 * [Frequently Asked Questions](/mac/powermac6100/faq.html)
-* From scratch--**New section!!** The basics on setting up a Power Mac 6100 from scratch, including links to operating systems, utilities and applications. All free!
-* Maintenance--**New section!!** Under construction, but here are some basic maintenance tips
+* [Maintenance](/mac/powermac6100/maintenance.html)
 
 Caveats: I'm running these tests on my own equipment and maintaining this page during my free time. I don't have the budget to purchase equipment for testing purposes, so I have to rely on readers' data for some of the test results. On that note, if you have data that supports, contradicts, or fills in the gaps of mine, please send it to me and I'll incorporate it into the page. Feedback is always welcome, but please read the FAQ before you ask a question that may already have been answered.
 
