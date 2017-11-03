@@ -25,7 +25,6 @@ This site is a comprehensive resource for a variety of upgrades to the Apple Pow
 * [DOS cards](/mac/powermac6100/dos.html)
 * [Peripherals](/mac/powermac6100/peripherals.html)
 * [Frequently Asked Questions](/mac/powermac6100/faq.html)
-* Sources--A summary of what I've got, where I bought, what I paid, etc., with some current street prices and sources where available. **Buy some of my surplus parts!!**
 * From scratch--**New section!!** The basics on setting up a Power Mac 6100 from scratch, including links to operating systems, utilities and applications. All free!
 * Maintenance--**New section!!** Under construction, but here are some basic maintenance tips
 
