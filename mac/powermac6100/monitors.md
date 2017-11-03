@@ -40,7 +40,7 @@ There are a maximum of 256 shades of gray for the Mac. Any setting over 256 auto
 
 256 colors requires 8 bits/pixel. Thousands of colors requires 16 bits/pixel. Millions of colors requires **32 bits/pixel**. (I emphasize this last point because Millions of colors is often referred to as 24-bit color. While millions of colors does indeed use only 24 bits for color, it also uses an additional 8 bits/pixel for the translucency mask.) Take this total number of bits, divide by 8 to get bytes, then divide by 1,048,576 to get MegaBytes. Ah heck. I won't make you do the math. Here's a table showing the bit depth/resolutions achievable with various sizes of frame buffers:
 
-Desired Resolution | 128 K | 256 K | 512 K | 640 K | 768 K | 1 MB | 2 MB | 4 MB | 8 MB
+Desired Resolution | 128K | 256K | 512K | 640K | 768K | 1MB | 2MB | 4MB | 8MB
 ------------------ | ----- | ----- | ----- | ----- | ----- | ---- | ---- | ---- | ----
 512x384 | 4 bit | 8 bit | 16 bit | 16 bit | 24/32 bit | 24/32 bit | 24/32 bit | 24/32 bit | 24/32 bit
 640x400 | 4 bit | 8 bit | 16 bit | N/A | 16 bit | 24/32 bit | 24/32 bit | 24/32 bit | 24/32 bit
