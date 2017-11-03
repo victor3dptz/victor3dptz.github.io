@@ -21,7 +21,7 @@ This site is a comprehensive resource for a variety of upgrades to the Apple Pow
 * [Monitors](/mac/powermac6100/monitors.html)
 * [Operating System](/mac/powermac6100/os.html)
 * [Networking](/mac/powermac6100/network.html)
-* Windows Interoperability--How to live in a world dominated by Windows machines
+* [Windows Interoperability](/mac/powermac6100/winmac.html)
 * DOS cards--How to run Windows on your Mac, via a hardware compatibility card or via software emulation
 * Other Resources--Other useful resources and links on the Web, including a way to search for aliens with your 6100 
 * Peripherals--Notes on miscellaneous peripherals that I've attached to my 6100
