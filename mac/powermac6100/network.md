@@ -5,7 +5,7 @@ title: The Quick & Dirty Network for Macs & PCs
 
 ![Logo](/mac/powermac6100/img/10network.gif) This page describes the basics of putting together a small, closed Ethernet LAN wherein Macs and PCs can talk to each other. By "closed" I mean that Internet access will still need to be handled via modem at each individual machine. The resulting network is suitable for kludged filesharing, a simple intranet, and for multi-player games. It will **not** permit true, peer-to-peer networking.
 
-This page assumes that every machine on the network already has Ethernet installed. If your computers don't have Ethernet, they should. See my page on [Ethernet hardware](/mac/powermac6100/ethernet.html) for details on how to install Ethernet.
+This page assumes that every machine on the network already has Ethernet installed. If your computers don't have Ethernet, they should.
 
 Macs should be running System 7 or later, and Wintels should be running Windows 95 or 98.
 
