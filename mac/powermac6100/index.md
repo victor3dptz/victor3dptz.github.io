@@ -23,8 +23,7 @@ This site is a comprehensive resource for a variety of upgrades to the Apple Pow
 * [Networking](/mac/powermac6100/network.html)
 * [Windows Interoperability](/mac/powermac6100/winmac.html)
 * [DOS cards](/mac/powermac6100/dos.html)
-* Other Resources--Other useful resources and links on the Web, including a way to search for aliens with your 6100 
-* Peripherals--Notes on miscellaneous peripherals that I've attached to my 6100
+* [Peripherals](/mac/powermac6100/peripherals.html)
 * The FAQ--Frequently Asked Questions. Some with answers!
 * Sources--A summary of what I've got, where I bought, what I paid, etc., with some current street prices and sources where available. **Buy some of my surplus parts!!**
 * From scratch--**New section!!** The basics on setting up a Power Mac 6100 from scratch, including links to operating systems, utilities and applications. All free!

@@ -31,5 +31,4 @@ Virtual PC is what's known as a "bare metal" emulator, in that it creates (or at
 * Windows 2000 Professional
 * OPENStep
 * Linux (various flavors)
-* others? 
 
