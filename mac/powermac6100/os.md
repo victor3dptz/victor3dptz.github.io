@@ -15,7 +15,7 @@ I have no empirical data, but I'd feel pretty safe saying that 99% of Power Mac 
 
 The 6100 series can run anything from System 7.1.2 all the way up to Mac OS 9.04. Each new version fixes some bugs, creates new bugs, adds some features, and eats more RAM. So choose wisely. Not everyone needs to upgrade to the latest and greatest just because it's available. The following is a summary of the various versions. Note that, between 7.5 and 7.6, the numbering scheme was pretty darn bizarre, due to the ever-changing strategy and the enormous complications resulting from a change in processor families (from 680x0 to PowerPC) and a change in architecture (from Nubus to PCI).
 
-The following lists some of the features of the different OS versions, plus my opinion of each. My opinion on whether to run each version is generic to all Macs, not just to 6100's.
+The following lists some of the features of the different OS versions.
 
 Version	| Code Name | Release date | General Comments
 ------- | --------- | ------------ | ----------------
