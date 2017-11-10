@@ -34,6 +34,7 @@ If you are an author of any article published here and you want me to remove it,
 * [Apple Bugs](/mac/apple_bugs.html)
 * [Apple Codenames](/mac/apple_codenames.html)
 * [PowerMac 6100 Upgrade Guide](/mac/powermac6100/)
+* [The Definitive Guide to Connecting your SE/30](/mac/se30-network/)
 
 ### Mac OS X
 ![Mac OS X](/assets/osx.gif)
