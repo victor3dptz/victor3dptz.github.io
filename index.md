@@ -37,6 +37,7 @@ If you are an author of any article published here and you want me to remove it,
 * [The Definitive Guide to Connecting your SE/30](/mac/se30-network/)
 * [Getting a Color Classic on the Internet](/mac/cc/internet.html)
 * [Upgrading a Color Classic](/mac/cc/upgrade.html)
+* [Macintosh KOI8-R](/mac/koi8/)
 
 ### Mac OS X
 ![Mac OS X](/assets/osx.gif)
