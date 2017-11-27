@@ -5,7 +5,7 @@ title: Welcome
 
 This website mostly contains information taken from Internet. It's my personal knowledge base. You may use it freely. If you like it, please donate me some bitcoins, please! Thanks!
 
-Bitcoin (BTC): **[1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW](bitcoin:1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW?label=wiki)**
+Bitcoin (BTC): **[1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW](bitcoin:1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW)**
 
 ![Main Logo](/assets/serverheader.jpg)
 
@@ -35,6 +35,7 @@ If you are an author of any article published here and you want me to remove it,
 * [Apple Codenames](/mac/apple_codenames.html)
 * [PowerMac 6100 Upgrade Guide](/mac/powermac6100/)
 * [The Definitive Guide to Connecting your SE/30](/mac/se30-network/)
+* [Getting a Color Classic on the Internet](/mac/color_classic_internet.html)
 
 ### Mac OS X
 ![Mac OS X](/assets/osx.gif)
