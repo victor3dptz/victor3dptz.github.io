@@ -35,7 +35,8 @@ If you are an author of any article published here and you want me to remove it,
 * [Apple Codenames](/mac/apple_codenames.html)
 * [PowerMac 6100 Upgrade Guide](/mac/powermac6100/)
 * [The Definitive Guide to Connecting your SE/30](/mac/se30-network/)
-* [Getting a Color Classic on the Internet](/mac/color_classic_internet.html)
+* [Getting a Color Classic on the Internet](/mac/cc/internet.html)
+* [Upgrading a Color Classic](/mac/cc/upgrade.html)
 
 ### Mac OS X
 ![Mac OS X](/assets/osx.gif)
