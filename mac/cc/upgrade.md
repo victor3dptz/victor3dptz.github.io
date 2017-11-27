@@ -25,7 +25,7 @@ Since I wrote the above I have found a source for 128 mb 72 pin simms on eBay. T
 
 An LC 580 also exists and it has two 72 pin simm slots according to NewerTech's GURU. However I have not seen a reference to anyone using this MB in a CC.
 
-** Sky reports that the LC 580 motherboard will not work as 'it's a completely different board with different connectors.' Also sent in a neat idea, swap out the LC68040 process or for a full 040 with FPU, all you need to do is pull the old cpu and put in the new one.**
+**Sky reports that the LC 580 motherboard will not work as 'it's a completely different board with different connectors.' Also sent in a neat idea, swap out the LC68040 process or for a full 040 with FPU, all you need to do is pull the old cpu and put in the new one.**
 
 Other motherboards such as the LC 630 are reported to work and some have even been able to install 6200 class MB's with some voltage modifications.
 
