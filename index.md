@@ -38,6 +38,7 @@ If you are an author of any article published here and you want me to remove it,
 * [Getting a Color Classic on the Internet](/mac/cc/internet.html)
 * [Upgrading a Color Classic](/mac/cc/upgrade.html)
 * [Macintosh KOI8-R](/mac/koi8/)
+* [Макинтош FAQ](/mac/faq/)
 
 ### Mac OS X
 ![Mac OS X](/assets/osx.gif)
