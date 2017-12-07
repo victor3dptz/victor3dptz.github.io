@@ -9,3 +9,4 @@ title: Макинтош FAQ
 * [Использование русского языка](/mac/faq/russian.html)
 * [Интернет](/mac/faq/internet.html)
 * [Аппаратура](/mac/faq/hardware.html)
+* [Локальная сеть](/mac/faq/localnet.html)
