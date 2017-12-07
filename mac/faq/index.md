@@ -10,3 +10,4 @@ title: Макинтош FAQ
 * [Интернет](/mac/faq/internet.html)
 * [Аппаратура](/mac/faq/hardware.html)
 * [Локальная сеть](/mac/faq/localnet.html)
+* [Разное](/mac/faq/misc.html)
