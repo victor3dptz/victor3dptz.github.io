@@ -16,3 +16,5 @@ title: Макинтош FAQ
 * [Разное](/mac/faq/misc.html)
 
 ### Справочники
+
+* [LocalTalk](/mac/faq/localtalk.html)
