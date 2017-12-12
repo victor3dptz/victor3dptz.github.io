@@ -17,4 +17,5 @@ title: Макинтош FAQ
 
 ### Справочники
 
+* [Совместимость Макинтошей и Mac OS 7](/mac/faq/macos7-support.html)
 * [LocalTalk](/mac/faq/localtalk.html)
