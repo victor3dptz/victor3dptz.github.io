@@ -154,18 +154,18 @@ PowerMac 7100/66 | PowerPC Enabler | 7.1.2 | 1.0.2 |
 PowerMac 7100/80 | PowerPC Enabler | 7.5 | 1.1.1 | 	 
 PowerMac 7200/75 | System Enabler 701 | 7.5.2 | 1.1 | 	 
 PowerMac 7200/90 | System Enabler 701 | 7.5.2 |	1.1 | 	 
-PowerMac 7300 Series | System Enabler 702 | 7.5.5 | | +
+PowerMac 7300 Series | System Enabler 702 | 7.5.5 | | C
 PowerMac 7500/100 | System Enabler 701 | 7.5.2 | 1.2 |	 
 PowerMac 8100/80 | PowerPC Enabler | 7.1.2 | 1.0.2 | 
 PowerMac 8100/100 | PowerPC Enabler | 7.5 | 1.1.1 |	 
 PowerMac 8100/110 | PowerPC Enabler | 7.5 | 1.1.1 |	 
 PowerMac 8500/120 | System Enabler 701 | 7.5.2 | 1.2 |	 
-PowerMac 8600/200 | System Enabler 702 | 7.5.5 | | +
+PowerMac 8600/200 | System Enabler 702 | 7.5.5 | | C
 PowerMac 9500/120 | System Enabler 701 | 7.5.2 | 1.1 |	 
 PowerMac 9500/132 | System Enabler 701 | 7.5.2 | 1.1 |	 
-PowerMac 9600 Series | System Enabler 702 | 7.5.5 | | +
+PowerMac 9600 Series | System Enabler 702 | 7.5.5 | | C
 
-+ Эти компьютеры продавались с MacOS 7.5.5, для ее работы необходим входивший в поставку Enabler. Mac OS 7.6 не может быть установлена, требуется Mac OS 7.6.1.
+C Эти компьютеры продавались с MacOS 7.5.5, для ее работы необходим входивший в поставку Enabler. Mac OS 7.6 не может быть установлена, требуется Mac OS 7.6.1.
 
 ##### PowerBook
 
