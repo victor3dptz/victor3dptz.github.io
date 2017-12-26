@@ -13,7 +13,7 @@ title: Минимальная MacOS 7.5 для Internet
 
 Программы, работающие с этой Системой:
 
-*Примечание: Для некоторых программ требуется дополнительно установить расширения (*)Drag & Drop и/или (#)Thread Manager.*
+Примечание: Для некоторых программ требуется дополнительно установить расширения (*)Drag & Drop и/или (#)Thread Manager.
 
 Disk First Aid 7.2 | # InstantSpace 1.0.0 | ShrinkWrap 2.1
 Disinfectant 3.7.1 | Virex 5.9.1 | SimpleText 1.3.1
