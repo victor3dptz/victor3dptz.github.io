@@ -17,6 +17,7 @@ title: Макинтош FAQ
 
 ### Справочники
 
+* [Минимальная MacOS 7.5 для Internet](/mac/faq/macos-internet.html)
 * [Совместимость Макинтошей и Mac OS 7](/mac/faq/macos7-support.html)
 * [Совместимость Макинтошей и Mac OS 8, Mac OS 9](/mac/faq/macos89-support.html)
 * [LocalTalk](/mac/faq/localtalk.html)
