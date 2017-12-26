@@ -22,3 +22,4 @@ title: Макинтош FAQ
 * [Совместимость Макинтошей и Mac OS 8, Mac OS 9](/mac/faq/macos89-support.html)
 * [LocalTalk](/mac/faq/localtalk.html)
 * [Батарейки](/mac/faq/battery.html)
+* [Подключение модема к Макинтошу](/mac/faq/modem.html)
