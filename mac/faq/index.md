@@ -23,3 +23,4 @@ title: Макинтош FAQ
 * [LocalTalk](/mac/faq/localtalk.html)
 * [Батарейки](/mac/faq/battery.html)
 * [Подключение модема к Макинтошу](/mac/faq/modem.html)
+* [Подключение мониторов к Макинтошам](/mac/faq/monitors.html)
