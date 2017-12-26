@@ -1,0 +1,79 @@
+---
+layout: page
+title: Совместимость Макинтошей и Mac OS 8, Mac OS 9
+---
+
+№ |  Обозначения
+- | ------------ 
+√ | Поддерживается
+(*) | Условно поддерживается
+- | Не поддерживается
+
+Модель Macintosh | 8.0 | 8.1 | 8.5 | 8.6 | 9.0 | 9.1 | 9.2.1 | 9.2.2
+---------------- | --- | --- | --- | --- | --- | --- | ----- | -----
+Centris / Quadra 6xx, 7xx, 8xx, 9xx | √ | √ | - | - | - | - | - | -  	  	  	 
+Macintosh LC 475, LC 575, LC 580 (2) | √ | √ | - | - | - | - | - | - 	  	  	  	  	 
+Power Macintosh 6100 (2), 7100, 8100 | √ | √ | √ | √ | √ | (4) | - | -	  	 
+PowerBook 190, 520, 540 | √ | √ | - | - | - | - | - | - 	  	  	  	  	  	 
+PowerBook 2300 |  | √ | √ | √ | √ | √ | - | -  	 
+PowerBook 5300 | √ | √ | √ | √ | √ | √ | - | -	  	 
+PowerBook 1400 | √ | √ | √ | √ | √ | (6) | - | -	  	 
+PowerBook 3400 | √ | √ | √ | √ | √ | (5) | - | -  	 
+Power Macintosh 4400 | √ | √ | √ | √ | √ | √ | - | - 	  	 
+Power Macintosh 5200, 6200 (2) | √ | √ | √ | √ | √ | √ | - | -	  	 
+Power Macintosh 5300, 6300 (2) | √ | √ | √ | √ | √ | √ | - | -  	 
+Power Macintosh 5400, 6400 (2) | √ | √ | √ | √ | √ | √ | - | -	  	 
+Power Macintosh 5500, 6500 (2) | √ | √ | √ | √ | √ | √ | - | -	  	 
+Power Macintosh 7200 | √ | √ | √ | √ | √ | √ | - | -  	 
+Power Macintosh 7300 | √ | √ | √ | √ | √ | √ | - | -	  	 
+Power Macintosh 7500, 8500 | √ | √ | √ | √ | √ | √ | - | -	  	 
+Power Macintosh 7600, 8600, 9600 | √ | √ | √ | √ | √ | √ | - | -	  	 
+Twentieth Anniversary Macintosh | √ | √ | √ | √ | √ | √ | - | -
+
+№ |  Обозначения
+- | ------------ 
+√ | Поддерживается
+(*) | Условно поддерживается
+- | Не поддерживается
+
+Модель Macintosh | 8.0 | 8.1 | 8.5 | 8.6 | 9.0 | 9.1 | 9.2.1 | 9.2.2
+---------------- | --- | --- | --- | --- | --- | --- | ----- | -----
+Power Macintosh G3 All-In-One, Desktop, Tower | √ | √ | √ | √ | √ | √ | √ | √
+Power Macintosh G3 (Blue and White) | - | - | (3) | √ |	√ | √ | √ | √
+iMac | - | (3) | √ | √ | √ | √ | √ | √
+iMac (266 MHz, 333 MHz) | - | - | √ | √ | √ | √ | √ | √
+iMac (Slot Loading) (1) | - | - | - | (3) | √ |	√ | √ | √
+iMac (лето 2000) 	  	  	  	  	(3) 	√ 	√ 	√
+iMac (начало 2001) 	  	  	  	  	  	(3) 	√ 	√
+iMac (лето 2001) 	  	  	  	  	  	(3) 	√ 	√
+iMac (Flat Panel) 	  	  	  	  	  	  	  	√
+iMac (Flat Panel) (с февраля 2003) 	  	  	  	  	  	  	  	(8)
+iMac (17-inch 1 GHz) 	  	  	  	  	  	  	  	(8)
+eMac 	  	  	  	  	  	  	  	√
+eMac (ATI Graphics) - CD-ROM and Combo Drive 	  	  	  	  	  	  	  	(3)
+eMac (ATI Graphics) - SuperDrive 	  	  	  	  	  	  	  	(8)
+PowerBook G3 	  	√ 	√ 	√ 	√ 	√ 	  	 
+PowerBook G3 Series 	  	√ 	√ 	√ 	√ 	√ 	√ 	√
+PowerBook (FireWire) 	  	  	  	  	(3) 	√ 	√ 	√
+PowerBook G4 	  	  	  	  	  	(3) 	√ 	√
+PowerBook G4 (Gigabit Ethernet) 	  	  	  	  	  	(3) 	√ 	√
+PowerBook G4 (DVI) 	  	  	  	  	  	(3) 	√ 	√
+PowerBook G4 (1 GHz, 867 MHz) 	  	  	  	  	  	  	  	√
+PowerBook G4 (12-inch, 17-inch) 	  	  	  	  	  	  	  	(8)
+iBook (1) 	  	  	  	(3) 	√ 	√ 	√ 	√
+iBook (FireWire) 	  	  	  	  	(3) 	√ 	√ 	√
+iBook (Dual USB) 	  	  	  	  	  	(3) 	√ 	√
+iBook (конец 2001) 	  	  	  	  	  	(3) 	√ 	√
+iBook (14.1 LCD) 	  	  	  	  	  	  	  	√
+iBook (16 VRAM) 	  	  	  	  	  	  	  	√
+iBook (Opaque 16 VRAM) 	  	  	  	  	  	  	  	√
+iBook (32 VRAM) 	  	  	  	  	  	  	  	√
+iBook (начало 2003) 	  	  	  	  	  	  	  	(3)
+Power Mac G4 (PCI Graphics / AGP Graphics) (1) 	  	  	  	(3) 	√ 	√ 	√ 	√
+Power Mac G4 (Gigabit Ethernet) 	  	  	  	  	(3) 	√ 	√ 	√
+Power Mac G4 Cube 	  	  	  	  	(3) 	√ 	√ 	√
+Power Mac G4 (Digital Audio) 	  	  	  	  	  	(3) 	√ 	√
+Power Mac G4 (QuickSilver) 	  	  	  	  	  	  	(7) 	(7)
+Power Mac G4 (QuickSilver 2002) 	  	  	  	  	  	  	  	√
+Power Mac G4 (Mirrored Drive Doors) 	  	  	  	  	  	  	  	√
+Power Mac G4 (FW 800) 	  	  	  	  	  	  	  	(8)
