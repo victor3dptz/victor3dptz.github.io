@@ -15,7 +15,7 @@ layout: null
    <email>{{ site.author.email }}</email>
  </author>
 
- {% for page in site.pages %}
+ {% for page in site.pages %}{% if page.layout == page %}
  <entry>
    <title>{{ page.title | xml_escape }}</title>
    <link href="{{ site.url }}{{ site.baseurl }}{{ page.url }}"/>
@@ -23,6 +23,6 @@ layout: null
    <id>{{ site.url }}{{ page.url }}</id>
    <content type="html">{{ page.content | xml_escape }}</content>
  </entry>
- {% endfor %}
+ {% endif %}{% endfor %}
 
 </feed>
