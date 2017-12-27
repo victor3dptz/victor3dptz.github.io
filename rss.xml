@@ -15,7 +15,7 @@ layout: null
    <email>{{ site.author.email }}</email>
  </author>
 
- {% for page in site.pages %}{% if page.layout == page %}
+ {% for page in site.pages %}{% if page.layout = page %}
  <entry>
    <title>{{ page.title | xml_escape }}</title>
    <link href="{{ site.url }}{{ site.baseurl }}{{ page.url }}"/>
