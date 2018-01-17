@@ -7,16 +7,16 @@ This website mostly contains information taken from Internet. It's my personal k
 
 Bitcoin (BTC): **[1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW](bitcoin:1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW)**
 
-![Main Logo](/assets/serverheader.jpg)
+![Main Logo](/img/serverheader.jpg)
 
 If you are an author of any article published here and you want me to remove it, please [contact me](http://www.google.com/recaptcha/mailhide/d?k=01veliQERnOsSbdb6NNPSRPQ==&c=QUGRsenLNRgI6V8ZikGfwuAAVDGV11rXXMscOAjELiA=).
 
 ### Linux
-![Linux](/assets/linux.gif)
+![Linux](/img/linux.gif)
 * [Linux FAQ](/faq.html)
 
 ### Classic Macintosh
-![Classic Macintosh](/assets/mac.gif)
+![Classic Macintosh](/img/mac.gif)
 * [Программы для Макинтоша](/mac/68kmachints.html)
 * [HD SC Setup 7.3.5 patcher](/mac/hdscpatcher.html)
 * [LCIII (P450) Speedup](/mac/lciiispeedup.html)
@@ -41,23 +41,23 @@ If you are an author of any article published here and you want me to remove it,
 * [Макинтош FAQ](/mac/faq/)
 
 ### Mac OS X
-![Mac OS X](/assets/osx.gif)
+![Mac OS X](/img/osx.gif)
 * [ABR's Mac OS X FAQ: Advanced](/osx/abrmacosxfaq/)
 * [PowerMac G4 SATA Support](/osx/sata/)
 
 ### Mac OS X Server
-![Mac OS X Server](/assets/osxserver.gif)
+![Mac OS X Server](/img/osxserver.gif)
 * [Enabling Spotlight Web Search](/osxserver/spotlight.html)
 * [Headless Mac mini OSX Server installation](/osxserver/headless.html)
 * [Mac OS X Server and Quotas](/osxserver/quotas.html)
 
 ### QNX
-![QNX](/assets/qnx.gif)
+![QNX](/img/qnx.gif)
 * [Инсталляция системы QNX4](/qnx/qnx4_install.html)
 * [Создание bootable CD для QNX 4.25](/qnx/qnx4_bootcd.html)
 
 ### BeOS
-![BeOS](/assets/beos.gif)
+![BeOS](/img/beos.gif)
 * [BeOS and BFS](/beos/beos_and_bfs.html)
 * [BeOS or NeXT. Did Apple Make the Wrong Choice?](/beos/choice.html)
 * [BeOS or NeXT. The Right Choice](/beos/choice2.html)
