@@ -7,7 +7,7 @@ This website mostly contains information taken from Internet. It's my personal k
 
 Bitcoin (BTC): **[1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW](bitcoin:1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW)**
 
-![Main Logo](/img/serverheader.jpg)
+![Main Logo](http://wiki.victor3d.com.br/img/serverheader.jpg)
 
 If you are an author of any article published here and you want me to remove it, please [contact me](http://www.google.com/recaptcha/mailhide/d?k=01veliQERnOsSbdb6NNPSRPQ==&c=QUGRsenLNRgI6V8ZikGfwuAAVDGV11rXXMscOAjELiA=).
 
