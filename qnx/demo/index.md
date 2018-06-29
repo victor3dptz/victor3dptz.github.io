@@ -75,7 +75,7 @@ ksh_tmp pterm -z -R /dev/pty/ /tmp_ram/ksh.qnxde
 ksh_tmp<TAB><SPACE_or_any_symbol><TAB>pterm -z -R /dev/pty/ /tmp_ram/ksh.qnxde) **
 
 * Download and install [telnet.qnxde](/qnx/demo/telnet.qnxde) extension. 
-* Download ksh.qnxde from external web server but when installer window pops up DO NOT press anything. Leave it running. 
+* Download [ksh.qnxde](/qnx/demo/ksh.qnxde) from external web server but when installer window pops up DO NOT press anything. Leave it running. 
 * Open QNX PWM menu and execute new line ksh_tmp 
 * Oh well, you have shell. quite simple, isn't it?
 
@@ -93,7 +93,7 @@ ftp_tmp pterm -z -R /dev/pty/ /tmp_ram/ftp.qnxde
 ftp 21/tcp
 ```
 * Refresh PWM menu by downloading and installing [utils1.qnxde](/qnx/demo/utils1.qnxde) official extension
-* Download ftp.qnxde from external web server but when installer window pops up DO NOT press anything. Leave it running.
+* Download [ftp.qnxde](/qnx/demo/ftp.qnxde) from external web server but when installer window pops up DO NOT press anything. Leave it running.
 * Open QNX PWM menu and execute new line ftp_tmp
 * Test ftp connection and have fun :)
 
@@ -112,7 +112,7 @@ pfm /fd/pfm
 -
 ```
 * Download [fsys.qnxde](/qnx/demo/fsys.qnxde) from external web server; when installer window pops up execute "fsys" line from PWM menu. Leave terminal window open. Close installer by pressing "CANCEL"
-* Download fsys.floppy.qnxde from external web server; when installer window pops up execute "fsysfl" line from PWM menu. Leave terminal window open. Close installer by pressing "CANCEL"
+* Download [fsys.floppy.qnxde](/qnx/demo/fsys.floppy.qnxde) from external web server; when installer window pops up execute "fsysfl" line from PWM menu. Leave terminal window open. Close installer by pressing "CANCEL"
 * Insert QNX4 formatted floppy disk. Again, download [mount.qnxde](/qnx/demo/mount.qnxde) from external web server; when installer window pops up execute "mount" line from PWM menu. Leave terminal window open. Close installer by pressing, "CANCEL". Now, via File browser you can see contents of the floppy in folder /fd
 
 The floppy is yours. Again, it should be QNX4 formatted. You can place on it and execute almost ANY QNX4 terminal and Photon applications. 
