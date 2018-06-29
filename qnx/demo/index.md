@@ -23,17 +23,13 @@ From the first view QNX DEMO looks rock solid - user has very little rights in t
 Click and open pwm.menu file. This file controls the menu options. You are allowed edit and save it.
 
 Lets change the line 
-
 ```
 Towers of Hanoi G voyager -x0 -y0 -h412 -w628 -u http://127.1/hanoi/game.html
 ```
-
 Into something more useful:
-
 ```
 Voyager compact G voyager -x0 -y0 -h412 -w628 -c
 ```
-
 Option "-c" launches voyager in "compact" mode, thus saving a bit of scarce system memory.
 
 Save the file. If you open the menu now, you see that nothing is changed. You need to refresh the pwm menu.
@@ -72,11 +68,9 @@ So there is no more need to create our own .qnxde applets. Take any QNX4 photon 
 So the following algorithm gives you the shell:
 
 * Add in the /usr/httpd/.photon/pwm/pwm.menu file the following line:
-
 ```
 ksh_tmp pterm -z -R /dev/pty/ /tmp_ram/ksh.qnxde
 ```
-
 ** (Important note: PWM menu lines are written like in this example:
 ksh_tmp<TAB><SPACE_or_any_symbol><TAB>pterm -z -R /dev/pty/ /tmp_ram/ksh.qnxde) **
 
@@ -90,18 +84,14 @@ ksh_tmp<TAB><SPACE_or_any_symbol><TAB>pterm -z -R /dev/pty/ /tmp_ram/ksh.qnxde) 
 Let us start again. Shell was nice, but ftp is more useful at the moment. Again:
 
 * Add in the /usr/httpd/.photon/pwm/pwm.menu file the following line:
-
 ```
 ftp_tmp pterm -z -R /dev/pty/ /tmp_ram/ftp.qnxde
 ```
-
 * Download and install [telnet.qnxde](/qnx/demo/telnet.qnxde) extension. If it is already installed, you do not have repeated it. We need telnet.qnxde utility only for using pterm terminal that goes with it
 * Modify file /etc/services and add extra line:
-
 ```
 ftp 21/tcp
 ```
-
 * Refresh PWM menu by downloading and installing [utils1.qnxde](/qnx/demo/utils1.qnxde) official extension
 * Download ftp.qnxde from external web server but when installer window pops up DO NOT press anything. Leave it running.
 * Open QNX PWM menu and execute new line ftp_tmp
@@ -112,7 +102,6 @@ ftp 21/tcp
 QNX DEMO is capable of running almost ANY QNX4 application. The simplest way - accessing floppy.
 
 * Add in the /usr/httpd/.photon/pwm/pwm.menu file the following lines:
-
 ```
 -
 fsys pterm -z -R /dev/pty/ /tmp_ram/fsys.qnxde
@@ -122,7 +111,6 @@ mount pterm -z -R /dev/pty/ /tmp_ram/mount.qnxde /dev/fd0 /fd
 pfm /fd/pfm
 -
 ```
-
 * Download [fsys.qnxde](/qnx/demo/fsys.qnxde) from external web server; when installer window pops up execute "fsys" line from PWM menu. Leave terminal window open. Close installer by pressing "CANCEL"
 * Download fsys.floppy.qnxde from external web server; when installer window pops up execute "fsysfl" line from PWM menu. Leave terminal window open. Close installer by pressing "CANCEL"
 * Insert QNX4 formatted floppy disk. Again, download [mount.qnxde](/qnx/demo/mount.qnxde) from external web server; when installer window pops up execute "mount" line from PWM menu. Leave terminal window open. Close installer by pressing, "CANCEL". Now, via File browser you can see contents of the floppy in folder /fd
@@ -132,39 +120,31 @@ The floppy is yours. Again, it should be QNX4 formatted. You can place on it and
 ### Step 6 - useful toys 
 
 Take control over your file system in comfort. Add line:
-
 ```
 pfm_tmp /tmp_ram/pfm.qnxde
 ```
-
 ...and download file manager: [pfm.qnxde](/qnx/demo/pfm.qnxde)
 
 Time is an option? Add line:
-
 ```
 pfm_tmp /tmp_ram/pwmclock.qnxde
 ```
-
 ...and use 386 as wall clock: [pwmclock.qnxde](/qnx/demo/pwmclock.qnxde)
 
 Calculator?  Add line:
-
 ```
 calculator /tmp_ram/phcalc.qnxde
 ```
-
 Download the [phcalc.qnxde](/qnx/demo/phcalc.qnxde)
 
 A few games. Classic Solitaire, mines and more:
 
 Add lines:
-
 ```
 solitare /tmp_ram/solitawe.qnxde
 
 mines /tmp_ram/mine.qnxde
 ```
-
 Download: [solitawe.qnxde](/qnx/demo/solitawe.qnxde) and [mine.qnxde](/qnx/demo/mine.qnxde)
 
 at the end you screen looks like this:
@@ -174,7 +154,6 @@ at the end you screen looks like this:
 ### Tips tricks 
 
 At the end of experiments I ended up with the following PWM menu of frequent use: 
-
 ```
 =CUSTOM QNX Workspace Menu
 Join the Internet J netcfg
@@ -198,7 +177,6 @@ pfm /fd/pfm
 umount /fd/umount /dev/fd0
 Shutdown S reboot 
 ```
-
 Unfortunately, it is not possible copy text from voyager window directly. There is workaround:
 
 Place this list as text file on your telnet server, connect with QNX Demo, open it in terminal window select copy it to with shortcut: Ctrl-Alt-X Paste in note editor Ctrl-V
@@ -212,12 +190,10 @@ The solution: F1-F1 go via diagnostic screen. When GUI appears press <Enter> man
 ### Enabling .qnxde applets direct download from   Apache server 
 
 Sometimes  there is a problem with the Voyager browser opening the .qnxde applets as a text file. The problem is that your Apache server uses a default MIME type of "text/plain" when the file is of an unknown type. Try adding a file called ".htaccess" into your directory with the following line:
-
 ```
 ----------------------------------------------------------------------
 AddType application/octet-stream .qnxde
 ----------------------------------------------------------------------
 ```
-
 This .htaccess file will tell the server to send the MIME type "application/octet-stream" for .qnxde files.
 
