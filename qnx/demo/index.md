@@ -71,8 +71,7 @@ So the following algorithm gives you the shell:
 ```
 ksh_tmp pterm -z -R /dev/pty/ /tmp_ram/ksh.qnxde
 ```
-** (Important note: PWM menu lines are written like in this example:
-ksh_tmp<TAB><SPACE_or_any_symbol><TAB>pterm -z -R /dev/pty/ /tmp_ram/ksh.qnxde) **
+**(Important note: PWM menu lines are written like in this example: ksh_tmp<TAB><SPACE_or_any_symbol><TAB>pterm -z -R /dev/pty/ /tmp_ram/ksh.qnxde)**
 
 * Download and install [telnet.qnxde](/qnx/demo/telnet.qnxde) extension. 
 * Download [ksh.qnxde](/qnx/demo/ksh.qnxde) from external web server but when installer window pops up DO NOT press anything. Leave it running. 
@@ -183,7 +182,7 @@ Place this list as text file on your telnet server, connect with QNX Demo, open 
 
 Yuo can press <Cancel> in the installer after program is on the screen and download next .qnxde applet
 
-*HW issue*: Some types of keyboards refuse to work under Photon. Although they respond perfectly normal during startup phase, they "freeze" when GUI is started.
+**HW issue**: Some types of keyboards refuse to work under Photon. Although they respond perfectly normal during startup phase, they "freeze" when GUI is started.
 
 The solution: F1-F1 go via diagnostic screen. When GUI appears press <Enter> many times. Generally 20-40 hits are enough to "wake up" the keyboard and start working under QNX Demo. 
 
