@@ -55,6 +55,7 @@ If you are an author of any article published here and you want me to remove it,
 ![QNX](http://wiki.victor3d.com.br/img/qnx.gif)
 * [Инсталляция системы QNX4](/qnx/qnx4_install.html)
 * [Создание bootable CD для QNX 4.25](/qnx/qnx4_bootcd.html)
+* [Extending possibilities of QNX Demo Disk](/qnx/demo/)
 
 ### BeOS
 ![BeOS](http://wiki.victor3d.com.br/img/beos.gif)
