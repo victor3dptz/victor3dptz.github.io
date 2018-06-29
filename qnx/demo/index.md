@@ -71,7 +71,7 @@ So the following algorithm gives you the shell:
 ```
 ksh_tmp pterm -z -R /dev/pty/ /tmp_ram/ksh.qnxde
 ```
-**(Important note: PWM menu lines are written like in this example: ksh_tmp<TAB><SPACE_or_any_symbol><TAB>pterm -z -R /dev/pty/ /tmp_ram/ksh.qnxde)**
+(Important note: PWM menu lines are written like in this example: ksh_tmp<TAB><SPACE_or_any_symbol><TAB>pterm -z -R /dev/pty/ /tmp_ram/ksh.qnxde)
 
 * Download and install [telnet.qnxde](/qnx/demo/telnet.qnxde) extension. 
 * Download [ksh.qnxde](/qnx/demo/ksh.qnxde) from external web server but when installer window pops up DO NOT press anything. Leave it running. 
