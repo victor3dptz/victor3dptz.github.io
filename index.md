@@ -39,6 +39,7 @@ If you are an author of any article published here and you want me to remove it,
 * [Upgrading a Color Classic](/mac/cc/upgrade.html)
 * [Macintosh KOI8-R](/mac/koi8/)
 * [Макинтош FAQ](/mac/faq/)
+* [Занятная заметка про Rhapsody (1997)](/mac/rhapsody.html)
 
 ### Mac OS X
 ![Mac OS X](http://wiki.victor3d.com.br/img/osx.gif)
