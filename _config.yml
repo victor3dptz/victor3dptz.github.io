@@ -4,9 +4,9 @@ permalink:           none
 # Setup
 title:               Wiki
 tagline:             Info
-url:                 http://wiki.victor3d.com.br
+url:                 https://wiki.victor3d.com.br
 paginate:            1
-baseurl:             "http://wiki.victor3d.com.br"
+baseurl:             "https://wiki.victor3d.com.br"
 
 # Assets
 #
@@ -18,7 +18,7 @@ sass:
 # About/contact
 author:
   name:              Victor3D
-  url:               http://www.victor3d.com.br
+  url:               https://www.victor3d.com.br
   email:             webmaster@victor3d.com.br
 
 # Custom vars
