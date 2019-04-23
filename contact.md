@@ -27,7 +27,7 @@ title: Contact Me
   </div>
   <div class="form-group">
     <div class="col-sm-7">
-      <textarea class="form-control" rows="4" name="comment" required></textarea>
+      <textarea class="form-control" rows="4" cols=35 name="comment" required></textarea>
     </div>
   </div>
   <div class="form-group">
