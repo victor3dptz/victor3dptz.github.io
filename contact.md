@@ -11,7 +11,7 @@ title: Contact Me
 <br>
 <input type="url" placeholder="http://" size="35" NAME = "url">
 <br>
-Message:<textarea class="form-control" placeholder="Message" rows="4" cols="35" name="comment" required></textarea>
+<textarea class="form-control" placeholder="Message" rows="4" cols="35" name="comment" required></textarea>
 <br>
 <button type="submit">Send message</button>
 
