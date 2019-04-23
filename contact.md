@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Fale Conosco
-permalink: /fale_conosco/
+title: Contact Me
 ---
 
 Se você tem alguma dúvida, sugestão, crítica ou um comentário sobre este site, preencha o formulário abaixo ou envie um [e-mail](mailto:webmaster@victor3d.com.br). 
