@@ -3,17 +3,15 @@ layout: page
 title: Contact Me
 ---
 
-Se você tem alguma dúvida, sugestão, crítica ou um comentário sobre este site, preencha o formulário abaixo ou envie um [e-mail](mailto:webmaster@victor3d.com.br). 
-
 <form class="form-horizontal" action="https://vds.victor3d.com.br/fale_conosco/index.php" role="form" Name = "livro" Method = "POST">
   <div class="form-group">
-    <label for="nome" class="col-sm-2 control-label">Seu Nome:</label>
+    <label for="nome" class="col-sm-2 control-label">Name:</label>
     <div class="col-sm-4">
       <input type="text" class="form-control" NAME = "nome" required>
     </div>
   </div>
   <div class="form-group">
-    <label for="email" class="col-sm-2 control-label">Seu e-mail:</label>
+    <label for="email" class="col-sm-2 control-label">E-mail:</label>
     <div class="col-sm-4">
       <input type="email" class="form-control" NAME = "email" required>
     </div>
@@ -25,7 +23,7 @@ Se você tem alguma dúvida, sugestão, crítica ou um comentário sobre este si
     </div>
   </div>
   <div class="form-group">
-    <label for="site" class="col-sm-6 control-label">Comentários, dúvidas, críticas ou sugestões: </label>
+    <label for="site" class="col-sm-6 control-label">Message: </label>
   </div>
   <div class="form-group">
     <div class="col-sm-7">
@@ -39,7 +37,7 @@ Se você tem alguma dúvida, sugestão, crítica ou um comentário sobre este si
   </div>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default">Enviar</button>
+      <button type="submit" class="btn btn-default">Send message</button>
     </div>
   </div>
 
