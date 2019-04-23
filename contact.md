@@ -21,7 +21,7 @@ Name:</td>
   <tr>
     <td>Website:</td>
     <td>
-      <input type="url" class="form-control" NAME = "url">
+      <input type="url" placeholder="http://" NAME = "url">
     </td>
   </tr>
   <tr>
