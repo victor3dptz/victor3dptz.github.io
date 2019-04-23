@@ -7,12 +7,15 @@ title: Contact Me
 
 Name: 
 <input type="text" class="form-control" NAME = "nome" required>
+<br>
 E-mail:
 <input type="email" class="form-control" NAME = "email" required>
+<br>
 Website:
 <input type="url" placeholder="http://" NAME = "url">
+<br>
 Message:<textarea class="form-control" rows="4" cols="35" name="comment" required></textarea>
-
+<br>
 <button type="submit">Send message</button>
 
 
