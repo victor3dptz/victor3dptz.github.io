@@ -3,7 +3,7 @@ layout: page
 title: Contact Me
 ---
 
-{% include expires.html %}
+ from {{ page.date | date: "%Y%m%dT%H%M" }}00Z 
 <form class="form-horizontal" action="https://vds.victor3d.com.br/fale_conosco/index.php" role="form" Name = "livro" Method = "POST">
 
 <input type="text" placeholder="Name" size="35" NAME = "nome" required>
