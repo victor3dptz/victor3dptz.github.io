@@ -1,0 +1,1018 @@
+68000-mac-faq-2002-01
+=====================
+
+This file describes what works on 68000 macs like Plus, SE, Portable,
+Classic and PowerBook 100. The file is formatted as setext so you may use
+Easy View to browse it.
+
+<ftp://ftp.funet.fi//pub/mac/info-mac/text/easy-view-261.hqx>
+
+The version numbers and directories in the URLs may have changed so look
+around. Use a local info-mac mirror, if possible:
+
+<ftp://ftp.funet.fi//pub/mac/info-mac/help/mirror-list.txt>
+<ftp://mirrors.aol.com//pub/info-mac/help/mirror-list.txt>
+
+The latest version of this file is available at:
+
+<http://www.sjoki.uta.fi/~shmhav/68000.txt>
+
+Check also mac-internet-faq at:
+
+<http://www.sjoki.uta.fi/~shmhav/mac-internet-faq.txt>
+
+Matti Haveri <mattiDOThaveriATsjokiDOTutaeiroskaaDOTfi> remove ei roskaa
+<http://www.sjoki.uta.fi/~shmhav/>
+
+68000 compatible software
+-------------------------
+
+Some apps and extensions that still work on 68000 macs. In parentheses
+notes and RAM requirements. (Compatibility tested mainly on 4MB PB100 or
+Plus; System 7.0.1*). Note that also newer versions _might_ work.
+
+System 7.0.1* leaves 3238K free memory on a 4MB PB100 (Extensions off, 32K
+Disk Cache); additional MacTCP 2.0.6 and MacPPP 2.0.1 leave 3122K free
+memory; System 7.5.5 leaves 2917K free memory (Extensions off, 32K Disk
+Cache).
+
+Acrobat Reader 1.0 (*.pdf viewer)
+Anarchie 1.6.0 (ftp-client; newer versions don't work)
+AOL 2.7
+AppDisk 1.7.3 (RAM-disk)
+ApplWindows 2.0.2 (hierarchical application-menu)
+AppSizer 2.21 (modifies app's memory size upon launch; v2.3 crashes)
+AutoDoubler 1.0
+Basic Black 1.4.1 (minimal screensaver)
+BBEdit 4.0.4 (a great text editor)
+BBEdit Lite 4
+BeHierarchic 1.0.5 (hierarchical apple-menu)
+Black Night 1.0.5 (terminal emulator)
+Canvas 3.5
+Carpetbag 1.3 (keeps fonts, sounds and FKeys outside System file or folder)
+CDIconKiller 1.4.1 (suppresses custom icons on CDs and speeds up Finder)
+ChunkJoiner 2.1.2 (concatenates files)
+ClarisDraw 1.0v3
+ClarisWorks 3.0
+CommentKeeper 1.0 (preserves Get Info-comments beyond desktop rebuild)
+Compact Pro 1.50 (*.cpt and *.hqx coder, can also split big files)
+Cricket Draw 1.1
+Cricket Graph 1.3.1
+Cricket Paint 1.0
+DA Piggyback 1.5 (converts DAs into apps)
+DeltaGraph 1.5
+Desktop Mgr 2.0.1 (no desktop rebuilds when switching System 6<->7)
+DeskWriter 3.1 (printer driver)
+Disinfectant 3.7.1 (obsolete anti-virus utility)
+Disk Charmer 3.0.8 (formats floppies in background etc)
+Disk Copy 4.2 (handles *.image files)
+Disk Copy 6.2 (handles *.image files; supports also NDIF format)
+DropStuff w/EE 4.0 (a must-have addition to StuffIt Expander)
+Dynodex 3.5
+Easy View 2.62 (setext- and digest-browser)
+Emailer 1.0 (email-client)
+EndNote Plus 2.0 (bibliography manager)
+Eudora Light 1.3.1 (email-client for System 6)
+Eudora Light 1.5.5 (email-client)
+Eudora Light 3.1.3 (email-client; more features but slower than v1.5.5)
+Excalibur 2.3.1 (LaTeX, plain text and clipboard spelling checker)
+Excel 4.0 (RAM 2048)
+Extensions Manager 2.0
+FaxSTF 2.6.1 (fax-utility)
+FCRppp 1.6 (commercial PPP client)
+Fetch 3.0.3 (ftp-client)
+File Buddy 3.4.8 (handles file-types etc)
+FileMaker Pro 3
+FirstClass Client 3.1
+Flash-It 3.0.2 (screen captures)
+Folder Icon Cleaner 2.0.2 (deletes custom folder icons)
+Forward Delete 1.1.4
+FreeHand 3.1
+FullWrite 2.0.6
+GIFConverter 2.3.7 (opens GIFs, JPGs, TIFs, PICs; RAM 1500)
+GIFwatcher DA 2.2.0 (opens GIFs)
+GnuChessMac 4.0 (chess game)
+GrafEq 2.04a (graphing program, v1.15 is less resource-demanding)
+HyperCard 2.1
+IC Type 1.1 (changes type/creator based on Internet Config's mappings)
+ICTypeChanger 1.3.4 (changes type/creator based on IC's mappings)
+Illustrator 1.9.5
+Internet Config 2.0 (shares internet configs for many apps)
+InterSLIP 1.0.1 (SLIP client)
+Ircle 1.5.6 (irc-client)
+JPEG Convert 1.0 (converts GIF, PNM, RLE, TARGA <-> JPG)
+Kermit 0.99(188) (terminal emulator)
+MacDraw II 1.1v2
+MacGzip 1.1.3 (*.gz coder)
+MacinTalk 1.31 (this is obsolete from 4/89; v2 also works)
+MacinTalk 2 (from the PlainTalk/Text-to-Speech 1.4.1 package)
+MacKnowledge (BBS; RAM 1060)
+MacLink Plus 7.5
+MacLynx 2.7.1b1 (text-only www-client)
+MacMinix 1.5.10.7 (UNIX-like system that runs as an app under MacOS)
+MacPaint 2.0
+MacPPP 2.0.1 (PPP client)
+MacPPP 2.0.1cm4 (MacPPP 2.0.1 with enhancements like background dialing)
+MacPPP 2.1.2SD (MacPPP 2.0.1 with some enhancements)
+MacsBug 6.5.3 (debugger)
+MacSLIP 3.0.3 (PPP and SLIP client)
+MacSOUP 2.4 (off-line news-client; RAM 2500)
+MacTCP 2.0.6
+MacTCP Watcher 1.1.2 (ping crashes v2.0)
+MacWeb 1.00A3.2 (www-client; v1.1.1 E crashes when saving prefs)
+MacWeb 2.0 (more features than in v1.00A3.2 but also slower and buggier)
+MacWrite II 1.1v1
+MacWrite Pro 1.0v4
+MacWWW 1.03 (Samba; crash-prone www-client)
+MailConverter 2.2.4 (converts mail-like text files)
+MaxFax 3.3.2
+MenuChoice 2.0 (hierarchical apple-menu)
+MIDex 1.2.2 (BBEdit extension; converts charsets like mac <-> ISO 8859-1)
+MiniSubstitute 1.7.1 (Finder replacement on System 7 emergency diskettes)
+MountImage 1.2b2 (mounts and creates .image files on System 6)
+Natural Order 1.1 (extension; sorts numbers in list views correctly)
+NCSA Mosaic 1.0.3 (www-client)
+NCSA Telnet 2.7b4 (telnet-client; you may also try v2.6 for System 6)
+Network Time 2.0.1 (timeserver client)
+NewsWatcher 2.2.2 (news-client; v2.0d13m01 for System 6)
+Nisus Compact 3.474c (free word processor)
+Norton Utilities 3.2
+PageMaker 4.0
+Persuasion 2.0
+Photoshop 1.0 (RAM 2048)
+PowerPoint 2.01
+PPP Floater 1.2 (shows connect time and provides a disconnect button)
+Prince of Persia 1.0 (a game)
+Printer Defaults 1.4.3 (stores custom printer driver defaults)
+Public Folder 1.01 (allows also System 6 macs to be file-servers)
+Quark Xpress 3.32 (min RAM 2000, runs on as low as 900)
+RAM Charger 3.0.1 (apps run in less memory than they normally demand)
+RamDisk+ 2.21 (application version of RAM disk)
+RamDisk+ 3.21 (control panel version of RAM disk, also for System 7)
+ResEdit 2.1.3 (resource editor)
+SCSIProbe 4.3 (later versions require SCSI Manager 4.3)
+ShrinkWrap 2.1 (handles *.image files; doesn't create them on a Plus)
+Sound Mover 1.9 (plays various sound files including .*wav)
+StatView SE+Graphics 1.03
+StatWorks 1.1
+StickyClick 1.2 (sticky mousedown á la Windows)
+Strip fat 1.0a1 (unfattens apps)
+StuffIt Deluxe 4.0
+StuffIt Expander 4.0.1 (a must-have decoder; v4.5 & 5.1.2 crash)
+StuffIt Lite 3.6 (crashes occasionally)
+StyleWriter II 1.2 (faster driver for SW I and maybe also for SW 1500)
+SuperClock 4.0.4 (menubar clock)
+SuperPaint 3.0
+System 7.5.5
+System Picker 1.1a3 (switches active Systems on one disk)
+Tex-Edit Plus 2.1 (text editor)
+TextToMac 1.32 (converts end-of-line of text between mac, DOS and unix)
+Thread Manager 2.0.1
+Timbuktu Pro 1.0.3 (remote control via screen sharing)
+TrueType 1.0 (TrueType INIT for Systems 6.0.5-6.0.8)
+TTConverter 1.3 (converts TrueType fonts mac <-> win)
+UULite 2.0 UR (uucoder)
+uuUndo 1.0b5 (uudecoder)
+Valuefax 2.0.9
+Virex 5.0b (obsolete virus utility; v5.9.x requires 68020)
+Vremya 1.6.5 (timeserver client)
+WindowShade 1.2 (collapses windows á la System 8 and later)
+Word 5.1a (RAM 2048)
+WriteNow 4
+Xlator 1.1 (converts eols and charsets of text)
+YA-Base64 1.2.0 (base64 decoder; v1.2.9 crashes)
+YA-NewsWatcher 2.0.3b0 (news-client; v2.3.4 crashes)
+ZipIt 1.3.8 (*.zip coder; handles also segmented zip-files)
+Zippy-Type 1.1 (freeware typing tutor; runs on System 7.1 or newer)
+ZTerm 1.0.1 (terminal emulator)
+
+System software
+---------------
+
+Q: Given enough memory, what is the best System for 68000 macs?
+
+A: It really depends on what software you want to run and with what System
+it is compatible.
+
+System 7.x needs at least (2.5-)4MB RAM. System 7.1 may be the stablest
+7.x. There is some stuff that needs 7.5, but little of it runs on a 68000
+anyway. Of course, 7.1 is not available for free like 7.0*, 7.0.1*,
+7.5.3rev2 and 7.5.5 (which is the last System that runs on 68000 macs).
+
+System 7.5.5 takes a little more memory (2917K vs 3238K free RAM on a 4MB
+PB100, Extensions off, 32K Disk Cache) and somewhat more HD space than
+7.0.1*.
+
+Of Systems 7.0* vs 7.0.1*, it may be easiest to use 7.0.1* with HD floppy
+drives and 7.0* with DD floppy drives (although you can always custom
+install from HD floppies on another mac with HD floppy drive). The biggest
+gain in 7.0.1* was updated math routines, but this speed gain was not
+available to the 68000 anyway. Still, 7.0.1 uses slightly less memory. Both
+systems *need* "Tune Up 1.1.1" installed - this is important both for
+better memory use and not loosing files! You can confirm that the Tune-Up
+is installed by selecting About this Macintosh from the Apple menu - the
+bullet (* or more properly €) after System version means that the Tune-Up
+is active.
+
+When it comes to speed, 6.x is always a lot faster than 7.x but then again,
+most newer software need 7.x. System 6.0.5 is the first to support MacTCP
+2.0.6, MacPPP 2.0.1 and TrueType 1.0. Many prefer 6.0.5, but 6.0.7 or 6.0.8
+can run a few more things (Text to Speech, Sound Manger, AOL 2.7, some
+games and control panels, for example).
+
+System 6.0.7 may be the stablest 6.x and it uses System 6 printing
+software. Actually, if you install the Style Writer (you can use a SW I or
+SW II with System 6) you get updated to System 7 printing software anyway.
+System 6.0.8 is otherwise identical to 6.0.7 but it comes with System 7
+printing software which saves time loading drivers back and forth if you
+are sharing a laser printer on a network of both System 6 and 7 macs. If
+you use a laser printer on a System 6-only network (or a single mac) then
+it is faster to use System 6 printing software that comes with 6.0.7 and
+earlier.
+
+System 6.0.8L is a special version for Classic, Classic II, PowerBook 100,
+LC and LC II (although also 6.0.5 seems to work on a PowerBook 100).
+
+* The last freely distributed System 7.5.3rev2 (this file includes System
+7.5 Update 2.0 and System 7.5.3 Revision 2) and the updater to System
+7.5.5. System 7.5.3rev2 is available as 19 parts of self-mounting Disk Copy
+images. Download all 19 parts to your hard drive and then double-click on
+the first part to mount the compressed disk image on your desktop (this
+takes a while on a 68000 mac!). Note that System 7.5.3 installer's
+self-mounting disk images require System 7.0.1 or later. If you are using a
+version of Mac OS prior to this, you can download System 7.0.1's Disk Tools
+floppy or System 7.5 Network Access floppy disk and boot your Macintosh
+from them to use this software (if your mac boots from 7.0.1 or 7.5).
+
+<ftp://ftp.info.apple.com//Apple_Support_Area/Apple_Software_Updates/
+English-North_American/Macintosh/System/Older_System/
+System_7.5_Version_7.5.3/>
+
+<ftp://ftp.info.apple.com//Apple_Support_Area/Apple_Software_Updates/
+English-North_American/Macintosh/System/System_7.5.5_Update/>
+
+<ftp://ftp.info.apple.com//Apple_Support_Area/Apple_Software_Updates/
+English-North_American/Macintosh/Utilities/
+Network_Access_Disk_7.5.sea.bin>
+
+Q: How to make a System 7.5 emergency boot floppy?
+A: Substitute the Finder in "Network Access" disk with MiniSubstitute's
+Finder (68K version). Now there is also room for a harddrive formatter like
+Apple HD SC Setup 7.3.5 and Disk First Aid 7.2.2 (launch them via
+File/Open...). To make a System 7.5 anti-virus boot floppy, delete
+everything except System and MiniSubstitute's Finder to make room for
+Disinfectant 3.7.1 (Disinfectant 3.7.1 is obsolete, but nevertheless the
+last anti-virus utility for 68000 macs).
+
+<ftp://ftp.info.apple.com//Apple_Support_Area/Apple_Software_Updates/
+English-North_American/Macintosh/Utilities/Disk_Copy/
+Disk_Copy_4.2.sea.bin>
+
+<http://www.geocities.com/SiliconValley/Network/7162/
+others.html#minisubstitute>
+
+<ftp://ftp.info.apple.com//Apple_Support_Area/Apple_Software_Updates/
+English-North_American/Macintosh/Utilities/
+Apple_HD_SC_Setup_7.3.5.sea.bin>
+
+<ftp://ftp.info.apple.com//Apple_Support_Area/Apple_Software_Updates/
+English-North_American/Macintosh/Utilities/Disk_First_Aid/
+Disk_First_Aid_7.2.2.sea.bin>
+
+<ftp://ftp.funet.fi//pub/mac/info-mac/vir/disinfectant-371.hqx>
+
+* System 7.0* (DD floppies) and 7.0.1*; remember to also get the 7.0.x
+tune-up because it prevents data corruption! (Note that although the DD
+floppy version's "Install 1" floppy boots with 7.0, the "Disk Tools" floppy
+boots with 6.0.7).
+
+<ftp://ftp.info.apple.com//Apple_Support_Area/Apple_Software_Updates/
+English-North_American/Macintosh/System/Older_System/System_7.0.x/>
+
+It is possible to squeeze System 7.0 on a 800K floppy if nonessential
+resources are deleted:
+
+<http://home.earthlink.net/~gamba2/bootdisks.html>
+
+* Systems 6.0.3-6.0.8:
+
+<ftp://ftp.info.apple.com//Apple_Support_Area/Apple_Software_Updates/
+English-North_American/Macintosh/System/Older_System/System_6.0.x/>
+
+TrueType INIT and TT-compatible Font/DA Mover for Systems 6.0.5-6.0.8
+(6.0.5 is enough although 6.0.7 is the first officially supported System).
+Note that if the fonts or DAs are "naked", i.e. outside their suitcases
+Font/DA Mover sees them if Option is pressed while Open... is clicked.
+
+<ftp://ftp.info.apple.com//Apple_Support_Area/Apple_Software_Updates/
+English-North_American/Macintosh/System/Older_System/System_6.0.x/
+TrueType/TrueType_1.0.sea.bin>
+
+<ftp://ftp.info.apple.com//Apple_Support_Area/Apple_Software_Updates/
+English-North_American/Macintosh/System/Older_System/System_6.0.x/
+TrueType/Font_DA_Mover_4.1.sea.bin>
+
+System 6.0.8L is a special version for Classic, Classic II, PowerBook 100,
+LC and LC II. Note that after you have created floppies from these disk
+images with Disk Copy 6.x, you have to delete "6.0.8L " from both floppies'
+names in order to get the Installer script to recognize them.
+
+<http://www.bford.demon.co.uk/mac/>
+<http://www.geocities.com/SunsetStrip/Balcony/4978/mac.html>
+
+* Systems 0.1-5.1:
+
+<http://www.mackido.com/History/EarlyMacOS.html>
+
+* Systems 1-7:
+
+<ftp://ftp.fh-konstanz.de//pub/rz/os/mac/_System-Software/>
+
+* List of MacOS download sites:
+
+<http://home.earthlink.net/~gamba2/syslist.html>
+
+* 68k mac System matrix:
+
+<http://home.earthlink.net/~gamba2/matrix.txt>
+
+* 68k mac System memory requirements:
+
+<http://home.earthlink.net/~gamba2/systab.txt>
+
+* System files are often stored as *.image files which can be opened and
+transferred to floppies with Disk Copy 4.2 or v6.x or ShrinkWrap:
+
+<ftp://ftp.info.apple.com//Apple_Support_Area/Apple_Software_Updates/
+English-North_American/Macintosh/Utilities/Disk_Copy/
+Disk_Copy_4.2.sea.bin>
+
+<ftp://ftp.info.apple.com//Apple_Support_Area/Apple_Software_Updates/
+English-North_American/Macintosh/Utilities/Disk_Copy/
+Disk_Copy_6.3.3.smi.bin>
+
+<ftp://ftp.funet.fi//pub/mac/info-mac/disk/shrink-wrap-21.hqx>
+
+* If you don't yet have a bootable mac disk but instead have a working (!)
+PC, you can make a bootable System 7.5 or 6.0.8 mac 1.4MB floppy on a PC:
+Decode and expand Network Access Disk 7.5 or System 6.0.8 image with
+Aladdin Expander-win and write it to a HD floppy using WinImage - this disk
+boots a SuperDrive-equipped mac if it supports System 7.5 or 6.0.8.
+(WinImage doesn't seem to support self mounting image files (.smi), only
+"plain" Disk Copy 4.2 format images so this trick doesn't work with all
+System files on the net).
+
+<ftp://ftp.info.apple.com//Apple_Support_Area/Apple_Software_Updates/
+English-North_American/Macintosh/Utilities/
+Network_Access_Disk_7.5.sea.bin>
+
+<ftp://ftp.info.apple.com//Apple_Support_Area/Apple_Software_Updates/
+English-North_American/Macintosh/System/Older_System/System_6.0.x/
+SSW_6.0.8-1.4MB_Disk1of2.sea.bin>
+
+<http://www.aladdinsys.com/>
+
+<http://www.winimage.com/>
+
+* Q: How to upgrade from System 6 to System 7 if I don't _already_ have
+System 7.0.1* boot disks?
+
+A: You can download System 7.0*, 7.0.1* and 7.5.5 from Apple. However,
+Apple sites now store these as .smi images that can't be opened in System 6
+(or 7.0)! It was not a smart move from Apple to transfer these System 7.0.*
+images from System 6-compatible Disk Copy 4.2 format to .smi which requires
+System 7.0.1... But wait, there is a solution:
+
+1. If possible, use another mac running System 7.0.1 and up to decode .smi
+images to System 6-compatible Disk Copy 4.2 format (and write the disk
+images back to floppies).
+
+If using a lone System 6 mac:
+
+2. Download System 7.0* or 7.0.1* from other sites that have them in Disk
+Copy 4.2 format.
+
+List of MacOS download sites:
+
+<http://home.earthlink.net/~gamba2/syslist.html>
+
+List of boot disk download sites:
+
+<http://home.earthlink.net/~gamba2/bootdisks.html>
+
+This site has System 7.5.3 Disk Tools disks for 68k and PPC macs:
+
+<ftp://ftp.uottawa.ca/pub/uo-net/mac/english/apple/disktools/>
+
+3. Get System 7.0.1 squeezed on 800K floppy and decode System 7.0 or 7.0.1
+.smi files running it (big finder version for the Plus and the SE, the
+mini-finder versions can't mount disk images):
+
+<http://home.earthlink.net/~gamba2/bootdisks.html>
+
+* If you want to have multiple System Folders on one disk, use System
+Picker to select the "blessed" System which boots the mac. Note that if you
+boot into System 7 after using previous Systems, the Desktop file is always
+rebuilt unless "Desktop Mgr" is installed in pre-7 Systems (Desktop Mgr was
+part of AppleShare 2.0.1 and Oscar).
+
+<ftp://ftp.info.apple.com//devworld/Utilities/System_Picker_1.1a3.sit.hqx>
+<ftp://ftp.funet.fi//pub/mac/comm/oscar.sit>
+
+* Be aware that if you put an unlocked System 6.x disk (the same apparently
+applies to pre-6 Systems also) to a mac running System 8.x, this
+"unblesses" the System 6.x disk making it unbootable. You can rebless it by
+booting to System 6.x or 7.x and opening & closing the unblessed System
+Folder - the blessed System Folder should now have the System icon on it.
+...so have at least two _locked_ bootable System disks or .image files in a
+safe place!
+
+* Q: How to add keyboard layouts?
+A: Info-mac has some localized keyboard layouts. With System 6, open the
+System file and the KCHR resource within it with ResEdit. Open the keyboard
+layout you want to add and the KCHR resource within it as another window.
+Copy and paste the KCHR layout to the System file's KCHR resource list and
+save changes. Select the layout from the Keyboard Control Panel. With
+System 7 and up you can just drag 'n drop the layout on top of the System
+Folder.
+
+<ftp://ftp.funet.fi//pub/mac/info-mac/cfg/keyboards.hqx>
+<ftp://ftp.info.apple.com//Apple.Support.Area/Apple.Software.Updates/US/
+Macintosh/Utilities/ResEdit_2.1.3.sea.hqx>
+
+* Note that the Plus and some older SE's don't have a SuperDrive (i.e.
+1.44MB HD floppy drive) so you can only use 800K DD floppies on them (you
+can't use PC-formatted floppies with these old macs).
+Tip 1: ShrinkWrap and Disk Copy 6.x allow you to mount .image files as
+virtual disks on your desktop; this enables macs without SuperDrives to
+access virtual HD floppies and install software from them (you can transfer
+the disk image to the mac via network, compressed and split on multiple DD
+floppies etc). If you have PC Exchange installed, you can also mount
+PC-formatted images this way!
+Tip 2: You can make a boot-up floppy including AppleShare and connect to
+AppleTalk network; this allows CD-ROMless macs to install system software
+from another mac's CD-ROM drive etc.
+
+<ftp://ftp.info.apple.com//Apple_Support_Area/Apple_Software_Updates/
+English-North_American/Macintosh/Utilities/Disk_Copy/
+Disk_Copy_6.3.3.smi.bin>
+
+<ftp://ftp.funet.fi//pub/mac/info-mac/disk/shrink-wrap-21.hqx>
+
+If you are using System 6 you can mount and create disk images with Steve
+Christensen's MountImage 1.2b2. Unfortunately, MountImage has a serious bug
+that can cause data corruption if the original image file is split into
+more than three fragments when stored on disk. In this case, MountImage can
+lose track of some data fragments, blindly reading and writing to blocks
+that may not belong to the image file, which can overwrite and damage other
+files on your drive. Use of MountImage is _highly_ discouraged, even by
+Steve. So with System 7.0.1 and up use Disk Copy 6.x or ShrinkWrap.
+
+<ftp://ftp.funet.fi//pub/mac/diskutil/mountimage12b2.cpt>
+<http://db.tidbits.com/getbits.acgi?tbart=00922>
+
+ ...QueComp (tel: 612-623-0903) should have out-of-business Applied
+Engineering AEHD+ Drives for $99 (you may find one cheaper from flea
+markets or user groups). Resurrect your old Plus or SE that does not have a
+SuperDrive without having to replace the board in the computer (impossible
+on the Plus; expensive on the SE). AE made three external floppy disk
+drives for Macintosh and Apple II computers: 1. AEHD+ Drive - SuperDrive
+Compatibility for the Mac Plus, SE and II. 2. AEHD 3.5" Drive - 1.44MB
+Drive for SuperDrive Equipped Macs. 3. AE 3.5" 800K Drive - 800K Drive for
+Macintosh and Apple II Computers.
+The AE HD+ can read/write/format 1.4MB floppies on 800K floppy based
+compact Macs. The Mac II requires an optional (not included) AE floppy
+interface to use the AE HD+, since the Mac II case does not have a built-in
+external floppy connector. A major drawback is that the AE HD+ cannot be
+the startup disk drive; not as a 1.4MB floppy and not even as a 800K
+floppy. The other drawback is that you've got to have the AEHD+ extension
+(takes 32K on disk) to use the drive even as a 800K floppy drive (i.e. you
+must startup off another drive that contains the AEHD+ extension). AEHD+
+extension is compatible at least with System 6.0.7 and 7.5.5.
+
+There also used to be Drive 2.4 from Kennect Technology that plugged into
+the floppy port of a MacPlus and allowed it to use 1.4MB disks. It could
+also format them to a proprietary 2.4MB size.
+
+<http://quecomp.com/misc.htm>
+
+<http://www.worldlink.com.au/webs/appleserv/apple.II.html> AE homepage
+<mailto:applserv@mars.nettrek.net.au> AE email
+
+Q: How can I get System from HD floppies to a DD-only mac like the Plus?
+A1: Attach the Plus' external hard drive to another mac which has a HD
+floppy drive. Boot the other mac - the external HD should appear on the
+desktop. Do a _custom_ install of the desired System from the HD floppies
+(i.e. install it for the Plus) on the external HD. Reattach the external HD
+onto your Plus. (Shutdown the macs when connecting the SCSI-cables).
+A2: Transfer the HD disk images to the Plus' harddisk via network,
+compressed and split on multiple DD floppies etc. Boot with a System 6 or 7
+floppy (see above for a source for System 7.0.1 squeezed on a 800K floppy).
+Mount the HD System disk images with Mount Image 1.2b2 (System 6) or Shrink
+Wrap (System 7) and install the System from them.
+
+Q: How can I download files via a PC to a Plus or an older SE which don't
+have a SuperDrive?
+A1: The easiest solution is to download via a PC, put the files on a
+PC-formatted floppy, copy the files to a newer Mac's hard disk and then to
+a DD floppy that the Plus/SE can read. Get also StuffIt Expander 4.0.1 as
+you need it to decode the files (don't decode them on a PC!). It is best to
+use DD floppies on the Plus because HD floppies re-formatted as DD are not
+reliable. (If you put a DD formatted HD floppy in a SuperDrive you must
+cover the second hole to fool the SuperDrive into recognizing it as DD,
+otherwise it will assume it is an unformatted HD floppy).
+A2: Use an Iomega Zip drive or other removable media.
+A3: If the Plus/SE is connected to the net it is also possible to email the
+files as attachments or transfer them via ftp, zmodem etc.
+A4: Get a Mac to PC null-modem cable, connect the serial ports and transfer
+files using terminal programs. It is also possible to directly connect two
+modems (thus bypassing the telephone company).
+
+About MacPlus harddrives:
+* MacPlus does not supply internal termination, so the SCSI chain (even one
+external HD) has to be terminated at beginning and end; i.e.
+MacPlus-terminator-HD-terminator.
+* For best performance reformat the drive to 1:3 interleave if you mainly
+use it on a Plus.
+* Note that some SCSI drivers like APS Power Tools 2.8.2 (formerly
+"Alliance Power Tools") don't always work on a Plus: As shipped, the SCSI
+Manager 4.3 compliant driver will not permit the drive to be booted on a
+Plus because the driver is too large to load into the Plus's memory
+(causing a freeze early in the startup process). APT 2.8.2 automatically
+senses the environment in which it is running. If it finds that it is
+running on a Mac Plus, it will install version 5.3 of the NS-SCSI driver,
+which is fully compatible with the Mac Plus and other Mac models; version
+5.3, however, does NOT support SCSI Manager 4.3. If APT 2.8.2 finds itself
+running on a Macintosh other than the Plus, it will assume that the SCSI
+Manager 4.3 compliant driver is to be installed on the target drive. APT
+2.8.2 can also "retrograde" your hard drive by installing the APT driver
+version 5.3 and reconfiguring the driver partition, all without
+reformatting the drive.
+* If you use a Zip drive as a boot drive on a Plus you will need v4.2 Zip
+drivers. Make sure that other Zip drives don't update the drivers
+automatically.
+<http://surf.to/macdrivers/>
+* Apple's HD utility needs a hack to recognize non-Apple labeled harddrives
+(use this at your own risk):
+<ftp://ftp.funet.fi//pub/mac/info-mac/disk/apple-hd-sc-setup-735-patch.hqx>
+* List of harddrive formatter sites:
+<http://home.earthlink.net/~gamba2/hd.html>
+
+Old mac drivers:
+<http://surf.to/macdrivers/>
+
+Q: How to zap PRAM?
+A: On System 6: Hold down Option-Command-Shift and select Control Panels
+from the Apple menu. On System 7 and better: Boot with
+Option-Command-P-R-keys pressed down until the mac beeps two times.
+
+Tips using AppleTalk between macs:
+* AppleTalk is built-in so you may not need to buy anything to get things
+running via LocalTalk. Install System 7.0* or better from the installer
+disks making sure you also check the FileSharing option. Then you can mount
+shared volumes and folders between macs connected via a LocalTalk cable or
+a cheaper and better Farallon PhoneNet cable. Also a simple ImageWriter
+cable does just fine although you can connect only two macs using it.
+(EtherTalk is just a driver which allows AppleTalk protocol to be
+transported by Ethernet).
+* Macs using System 6 can access shared items on newer Systems but if you
+want to make them file-servers you have to buy AppleShare server software.
+* Public Folder 1.01 allows also System 6 macs to be one-way file-servers:
+
+<ftp://ftp.claris.com//pub/USA-Macintosh/x.Shareware-Freeware/
+PublicFolder1.01.bin>
+
+minimum requirements for the net
+--------------------------------
+
+MacPlus, (2.5-)4MB RAM, 20MB harddisk, (2400-)14400 modem, System 7.0* and
+MacTCP 2.0.6 are the practical minimum requirements for PPP connections.
+Only MacPPP 2.0.1, v2.0.1cm4, v2.1.1SD and v2.1.2SD, MacSLIP 3.0.3,
+InterSLIP 1.0.1 and FCRppp 1.6 currently work on 68000 macs.
+
+You need MacTCP for TCP-connections like direct ethernet or PPP- and
+SLIP-connection via modem. MacTCP is included in System 7.5 and above.
+Apple dealers sell MacTCP but also "The Internet Starter Kit for Macintosh"
+(Adam Engst, Hayden Books) book includes it, among other utilities. When
+installing MacTCP, turn AppleTalk ON (Leaving it OFF seems to provoke a
+crash when saving MacTCP prefs for the first time. With some Systems you
+may have to reboot to make AppleTalk active) - to save memory, AppleTalk
+can be turned OFF after the settings are stored.
+
+<http://www.mcp.com/hayden/iskm/mac.html>
+
+MacTCP can also be found on the net:
+
+MacTCP 2.0.4:
+<http://www.mdstud.chalmers.se/pub/internet/mac/MacTCP/MacTCP.hqx>
+
+MacTCP 2.0.6 and some developer stuff:
+<ftp://ftp.info.apple.com//devworld/Development_Kits/MacTCP.sit.hqx>
+
+MacTCP 2.0.x to 2.0.6 updaters:
+<ftp://ftp.info.apple.com//Apple.Support.Area/Apple.Software.Updates/US/
+Macintosh/Networking-Communications/Other_N-C/MacTCP_2.0.6_Update.sea.hqx>
+<ftp://ftp.funet.fi//pub/mac/info-mac/comm/inet/conn/mactcp-206-updt.hqx>
+
+MacPPP 2.0.1, v2.0.1cm4, v2.1.1SD and v2.1.2SD:
+<ftp://ftp.funet.fi//pub/mac/info-mac/comm/inet/conn/ppp/mac-ppp-201.hqx>
+<ftp://ftp.unipg.it//pub/mac/tcpip/mac-ppp-201cm4.hqx>
+<ftp://ftp.sunet.se//pub/mac/mirror-umich/util/comm/macppp2.11sd.sit.hqx>
+<ftp://garbo.uwasa.fi//mac/internet/serial/macppp212sd.sit>
+
+MacPPP 2.1.2SD is recommended as a first choice for System 7.x 68000 macs.
+MacPPP 2.0.1cm4, v2.1.1SD and v2.1.2SD are enhanced versions of MacPPP
+2.0.1; v2.0.1cm4 enables background dialing, for instance - MacPPP 2.1.2SD
+has enhancements like: fixes problem with Config PPP not being able to
+access it's prefs file if the Finder closed the control panel on a low
+memory error, terminal window is larger and scrolling of text off the top
+is a little cleaner, shows the 115K and 230K rates in the Port Speed popup
+(and has 4800 as a slowest port speed vs 1200 on v2.0.1). (Note that MacPPP
+2.0.1 variations fail to redraw the PPP "up" symbols on screen (after the
+1st connection; no reboot between connections) unless you cover and uncover
+them with other windows). If the "Open" button is grayed out in MacPPP make
+sure that PPP is selected in MacTCP. Note that there is a memory related
+bug in MacPPP 2.0.1: If applications have used all available memory, Config
+PPP is forced to close with an error message like: "The control panel
+"Config PPP" cannot be used now, because not enough memory is available."
+It is not possible to reopen the control panel because there is a message:
+"Config PPP Error! Opening Preferences". This prevents one from properly
+closing the internet connection.
+
+Commercial MacSLIP supports SLIP and PPP (requires at least System 6.0.7):
+
+<http://www.zilker.net/~hydepark/>
+
+InterSLIP 1.0.1:
+
+<ftp://ftp.funet.fi//pub/mac/info-mac/comm/inet/conn/
+inter-slip-installer-101.hqx>
+
+LinkUPPP! (formerly FCRppp) supports PPP and SLIP. Commercial FCRppp 1.6
+should work on 68000 macs (v1.1r1 doesn't work on a PB100):
+
+<http://www.fcr.com/LinkUPPP/LinkUPPP.html>
+<ftp://ftp.fcr.com//fcr/LinkUPPP/LinkUPPP_Demo_1.1r1.hqx>
+
+Q: Do all modems work with 68000 macs?
+A: For external (>9600) modems you need a mac hardware handshake cable. It
+connects the DB25 connector on the modem to the mac's 8 pin modem port
+connector. Some modems like Global Village Bronze get their power through
+the ADB port which the Plus, 128K, 512K and 512Ke lack. There are some
+modems that require a power pin, not available on a Plus. There are also
+some limitations such as the the Plus not having incoming flow control.
+This limits the speed you can set the serial port before you have a lot of
+overruns. Some included software may also not work on 68000 macs eventhough
+the modem may otherwise be OK.
+ > Mike Friese: I have successfully interfaced a Global Village Teleport
+Bronze II modem to a Mac Plus. I made a special keyboard cable that tapped
+the +5 volt power from the Plus keyboard cable to a ADB connector (sold as
+a S-video connector at Radio Shack.)
+-Remove the keyboard cable from the Plus.
+-Looking from the cord end of one of these connectors you will see the four
+wires, yellow, green, red, black. Here's how the connector looks when
+viewed from the cord end (use non-proportional font):
+       ___
+      |   |
+  ____|   |____
+ |             |
+ | Yl Gn Rd Bk |
+ |             |
+ |_____________|
+-Cut the outer insulating jacket about one inch from one of the two
+connectors.
+-Cut insulation from the yellow and black wires. Solder a two foot long red
+wire to the keyboard cable's yellow wire. Solder a two foot long black wire
+to the keyboard cable's black wire.
+-Get a female mini-din (S-video) connector. Viewing from the solder end,
+you'll notice the pins arranged in a trapezoid pattern.
+  o  o
+ 
+ o    o      (solder end view)
+-Solder the red wire to the upper left pin. Solder the black wire to the
+upper right pin
+  r  b
+ 
+ o    o      (solder end view)
+-Insulate all your splices.
+-Plug the keyboard cable in with the splices closest to the Mac Plus system
+unit.
+-Plug the Bronze II into the modem port and the other modem cable into the
+s-video cable. You now have a snazzy-looking 2400 baud modem attached to
+your Plus. But wait. There's more!
+-The fax software bundled with the Performa will work with the Plus, but
+the hot ticket is to use the fax software bundled with the Teleport
+Platinum. This software is slick as can be. <
+
+Q: What port speed should I be using with a modem?
+A: Try first 19200 and increase it gradually; do some downloads with Fetch
+to test the speed you're getting (with compressable .txt and uncompressable
+.sit files) and check MacPPP's Stats window for the amount of CRC errors
+and Hdw overruns after the connection. 8MHz 68000 macs (Plus, SE, Classic)
+should handle 28800bps - there's some packet loss but it's more than made
+up for by the extra speed compared to 19200 (note that some modems don't
+support 28800 port speed). 16MHz macs (Portable, PB 100) should be fine at
+38400-57600 although Global Village recommends 19200 for the PB100 &
+PowerPort/Gold 14400 modem. Turning AppleTalk on/off shouldn't be a big
+issue unless you're using your modem and moving a lot of data at the same
+time via FileSharing.
+
+Q: How can I connect slotless macs like the Plus to direct ethernet?
+A: Farallon, Dayna and Asanté have ethernet adapters which connect to the
+mac's SCSI port (Farallon EtherMac MicroSCSI, Dayna DaynaPORT Pocket
+SCSI/Link & DaynaPORT SCSI/Link and Asanté Micro EN/SC & Desktop EN/SC).
+Note that some of these SCSI ethernet adapters may not work because unlike
+other macs the Plus doesn't supply current to the SCSI port. Note also that
+SCSI ethernet adapters are quite expensive and slow. An alternative to SCSI
+ethernet adapters is Farallon EtherMac adapter which connects via LocalTalk
+port with speeds 5x over the standard 230.4Kbps LocalTalk rate. Although
+EtherMac draws power from the ADB port, there is a power adapter for
+non-ADB computers like the Plus. Another option is to connect to ethernet
+via LocalTalk with a software (Apple LocalTalk Bridge and Farallon
+PowerPath & LocalPath) or hardware bridge (Farallon, Dayna and Asanté).
+
+<http://www.farallon.com/> <http://www.dayna.com/> <http://www.asante.com/>
+<http://www.sonicsystems.com/> <http://www.apple.com/>
+
+On 68000 macs telnet-, ftp-, mail-, news- and tcp-apps like NCSA Telnet,
+Fetch, Anarchie 1.6.0, Eudora, NewsWatcher and MacTCP Watcher 1.1.2 work
+fine. Eudora Light 3.1 has many additional features like filters and it
+also no longer splits large messages; it is somewhat slower than v1.5.5.
+With MacPlus you can't use control-keys in NCSA Telnet (in ZTerm you can
+use option or command instead of control).
+
+MacSOUP 2.4 is an off-line newsreader that runs on a 4MB mac with System
+7.0.1* but it really needs at least a 8MB mac to be usable. Note also that
+some ISPs' news servers may have too many newsgroups to fit into
+NewsWatcher's memory (even after its memory allocation is increased via
+File/Get Info dialog), so that it may refuse to run on low-memory macs. If
+this happens, you may telnet into your ISP's shell account and use UNIX tin
+newsreader.
+
+<ftp://ftp.funet.fi//pub/mac/info-mac/comm/inet/ncsa-telnet-27b4.hqx>
+<ftp://ftp.funet.fi//pub/mac/info-mac/comm/inet/fetch-301.hqx>
+<ftp://garbo.uwasa.fi//mac/internet/ftp/anarchie-160.sit>
+<ftp://ftp.qualcomm.com//eudora/eudoralight/mac/english/3.1/
+eudoralight31.hqx>
+<ftp://ftp.funet.fi//pub/mac/info-mac/comm/inet/mail/edr/
+eudora-light-155.hqx>
+<ftp://ftp.funet.fi//pub/mac/info-mac/comm/inet/newswatcher-216.hqx>
+<ftp://garbo.uwasa.fi//mac/internet/others/mactcp-watcher-112.sit>
+
+On 68000 macs NCSA Mosaic 1.0.3, MacWeb 1.00A3.2, v2.0, MacLynx and MacWWW
+1.03 (Samba) work.
+
+MacWeb 1.00A3.2 works better than v1.1.1 E which crashes when saving prefs.
+MacWeb 2.0 has more features and understands more HTML tags than v1.00A3.2
+but it is also slower and buggier. NCSA Mosaic 1.0.3 can display in-line
+GIFs but with MacWeb you must use an external helper (click and hold on an
+image icon, choose "Retrieve to Disk" from the pop-up menu and view with
+GIFConverter or GIFwatcher DA). ...note that often GIFConverter, when
+trying to open JPEGs with "millions" of colors, gives an "out of memory"
+error on low-memory machines. A workround is to use JPEG Convert 1.0 to
+turn the JPEG into a GIF. GIFs are limited to 256 colours and need less
+memory to display. You can turn DAs like GIFwatcher DA into an app with DA
+Piggyback; this enables drag 'n drop and automatic launching when used as a
+(MacWeb 2.0) helper on System 7. Note that you can't change GIFwatcher's
+default settings (including the window size) once the DA has been converted
+into an app - you have to set it up the way you want first, then run it
+through DA PiggyBack. With RAM Charger it is possible to squeeze _both_
+MacWeb 1.00A3.2 and GIFConverter to run simultaneously on a 4MB mac.
+
+Q: How do I cancel an action in MacWeb 1.00A3.2?
+A: Type command-period (many other programs use this as a standard, too).
+
+If the default screen in MacLynx is too big it is possible to open lynx.cfg
+file by a text editor and set the lines on a screen from the default 35 to
+24, for example (edit the line: TERM_LINES:35 to: TERM_LINES:24). The home
+page (or sometimes called the menu page) from Internet Config can be
+invoked with the 'm' key. The homepage can be set by editing the line:
+STARTFILE:file://localhost/~/index.html; change it to any valid URL. There
+are many more options in lynx.cfg file.
+
+<ftp://ftp.ncsa.uiuc.edu//Mac/Mosaic/NCSAMosaic103.hqx>
+
+<ftp://ftp.pacifier.com/pub/mac/tcpip/macweb-10a32-fat.hqx>
+
+ResEdit instructions for proxy support in MacWeb 1.00A3.2:
+<http://www.cs.utas.edu.au/Documentation/Mac/MacWeb1.00A3.2Proxy.html>
+<ftp://ftp.info.apple.com//Apple.Support.Area/Apple.Software.Updates/US/
+Macintosh/Utilities/ResEdit_2.1.3.sea.hqx>
+* Setting proxy: 1. Using ResEdit, open MacWeb 1.00A3.2. 2. Open 'STR#'
+"Proxy Info" ID=803. 3. For each protocol having proxy support, create a
+string of the form <&ltprotcol&gt;;<url>>. For example:
+"http;http://proxy.utas.edu.au:8080/" and
+"ftp;http://proxy.utas.edu.au:8080/".
+* Setting no proxy: 1. Using ResEdit, open MacWeb 1.00A3.2. 2. Open 'STR#'
+"NoProxy Info" ID=804. 3. Create a string for each server for which proxy
+support is not wanted. "*" may be used as a wildcard for every server in a
+domain. For example: "www.ford.com" and "*.cs.utas.edu.au".
+
+<http://www.rtis.com/nat/user/toolbox/oldmacs/MacWeb2.sit.hqx>
+
+<http://www.lirmm.fr/~gutkneco/maclynx/>
+
+<ftp://ftp.funet.fi//pub/mac/info-mac/comm/inet/web/mac-www-103.hqx>
+
+<ftp://ftp.kamit.com//gifconverter/gifconverter-237.hqx>
+<http://info.london.on.ca/Services/PDA/Software/mac/Graphics/
+GIFwatcher220.sit>
+<ftp://ftp.funet.fi//pub/mac/info-mac/gst/grf/jpeg-convert-10.hqx>
+<ftp://ftp.funet.fi//pub/mac/info-mac/cfg/da-piggyback-12.hqx>
+<ftp://ftp.pgh.net/pub/jumpdev/Old/RAMCharger301Demo.hqx>
+<ftp://ftp.pgh.net/pub/jumpdev/Old/RAMChargerReference.sit.hqx>
+
+List of small www-browser download sites:
+<http://home.earthlink.net/~gamba2/browsers.html>
+
+With only 1MB RAM, floppy drive(s) and System 6 you can connect via a
+terminal emulator like ZTerm and use unix apps like pine, tin, ftp, ncftp,
+sz, rz, and lynx for mail, news, file transfer and www. With ZTerm you can
+use option or command instead of control when using MacPlus. To save disk
+space on those 800K floppies install the minimum System 6.0.x that ZTerm
+requires. You can trash all files except System and Finder, delete
+unnecessary fonts and DAs from the System file with Font/DA Mover and
+delete PPC code from ZTerm with Strip Fat to save even more disk space.
+
+<ftp://ftp.funet.fi//pub/mac/info-mac/comm/term/zterm-10b3.hqx>
+
+If you want to use System 6 and connect via PPP, following software
+versions work even with 1MB RAM: System 6.0.5-6.0.8 (MacPPP 2.0.1 insists
+that System Folder's name must be "System Folder" so if you are using a
+localized System change the folder's name accordingly), MacTCP 2.0.6,
+MacPPP 2.0.1 (later versions like v2.1.2SD crash), NCSA Telnet 2.6 or
+v2.7b4, Fetch 3.0.3, Eudora 1.3.1 (install also Map control panel from the
+System disks and set your time zone), NewsWatcher 2.0d13m01, Internews 1.1,
+MacWWW 1.03 (Samba), MacTCP Watcher 1.1.2 (older versions of these apps may
+use less memory).
+MacWWW 1.03 (Samba) works on 68000 macs (at least on System 6.0.5 - it
+crashes on System 7.0.1*). It opens fine, loads the startup page fine
+(doesn't know how to read files from disk, text-only, no ISO 8859-1
+translation, opens a new window for each link). Do not close any windows as
+this crashes the mac; also quitting MacWWW seems to cause a crash. To save
+space on a floppy-only system, install a minimum System for your mac and
+delete all System Folder items except System, Finder, PPP, ConfigPPP,
+MacTCP, PPP Preferences, MacTCP DNR and MacTCP Prep; delete also
+unnecessary fonts and DAs from the System file with Font/DA Mover (keep
+Control Panel DA, though) - this leaves 322K of free space on a DD floppy
+with System 6.0.5 US (MacPlus minimum install). Unfatten also "fat"
+tcp-apps. Turn RAM Cache off to leave maximum amount of RAM to the apps.
+
+<ftp://ftp.info.apple.com//Apple.Support.Area/Apple.Software.Updates/US/
+Macintosh/System/Older_System/System_6.0.x/>
+<ftp://garbo.uwasa.fi//mac/internet/telnet/ncsatelnet-26te.sit>
+<ftp://ftp.qualcomm.com//eudora/eudoralight/mac/english/1.3system6/
+eudora131.hqx>
+<ftp://ftp.brown.edu/pub/mac/NewsWatcher/NewsWatcher_2.0d13m01.sea.hqx>
+<ftp://ftp.funet.fi//pub/mac/info-mac/comm/inet/web/mac-www-103.hqx>
+
+misc info
+---------
+
+* Use Command-X-O to boot the Classic from its ROM.
+
+* If you need to save disk space unfatten "fat" apps with Strip Fat, for
+example:
+
+<ftp://ftp.funet.fi//pub/mac/info-mac/cfg/strip-fat.hqx>
+
+* RAM Charger <http://www.syncronys.com/> works also on 68000 macs on
+System 7. It makes apps run in less memory than they normally demand, only
+giving them more if they need it. Highly recommended! There is a one-week
+fully functional demo at:
+
+<ftp://ftp.pgh.net/pub/jumpdev/Old/RAMCharger301Demo.hqx>
+<ftp://ftp.pgh.net/pub/jumpdev/Old/RAMChargerReference.sit.hqx>
+
+* Nisus Compact 3.474c word processor is available for free download. Also
+Nisus Writer 4.1.6 is freely downloadable: on a 4MB PB100 running 7.0.1* it
+can be launched OK (it takes all 3000K free memory) but it seems to
+repeatedly crash when switching to Finder or if documents are opened, so it
+doesn't really seem too compatible with this configuration although it has
+a good reputation on newer macs. So use Nisus Compact 3.474c which runs OK
+on 68000 macs.
+
+<http://www.nisus.com/>
+
+* If you wish to try FullWrite 2.0.6 word processor before you buy it, send
+e-mail to <sales@akimbo.com> and they will send you a temporary serial
+number. You can also download FullWrite Demo:
+
+<ftp://ftp.akimbo.com/globetrotter/fullwrite_demo_install.bin>
+<http://www.akimbo.com/fullwrite/etc/frames.html>
+
+* Old versions of MacWrite, MacPaint, MacDraw, MacTerminal etc are
+available from the The Mac 512 User Group after registration:
+
+<http://www.athenet.net/~gyounk/>
+
+* 68000-compatible Acrobat Reader 1.0 for .pdf files:
+
+<http://www.ou.nl/open/psl/pb100/#resources>
+
+* Remote control program Timbuktu Pro 1.0.3 works on 68000 macs and it
+seems to also work on newer macs such as PowerMacintosh 8600/200 with
+System 8.1.
+
+Although the performance is acceptable even via the slow LocalTalk cabling
+(AppleTalk), it is advisable to set a newer mac's monitor to display the
+minimum amount shades of gray and turn off any desktop pictures to speed
+things up.
+
+It is rather awesome to run PPC applications via a 68000 mac although the 1
+bit screen doesn't dither color/grayscale images very well.
+
+There was/is a 1 week trial version. Notice that you must do a Custom
+Install with System 8.1 because Easy Install mode doesn't work. Later
+versions like 2.0.5 don't work on 68000 macs.
+
+* To invoke ImageWriter II's bi-directional printing in the "Faster" print
+mode hold the Option-Shift-Caps Lock keys while hitting the "OK" button in
+the Print dialog. This bi-directional printing, which does cause some loss
+in print quality, will remain in effect until the printer is reset, or you
+hold down the Command key while hitting the "OK" button for the next
+printing task.
+
+* Q: How to open compact macs like the Plus?
+A: (If you don't know what you're doing, don't do this!) The usual
+mail-order companies may still have "Mac Cracker" kits, eventhough they
+don't put them in the catalogue anymore. It's a very long 3/16" allen (hex)
+wrench, otherwise known as a Torx T-15. Lay the mac down on its "face",
+with the screen on a soft pad or pillow. After removing ALL the (5) TORX
+screws, take off the plastic reset switch (if you have one) from the
+left-hand side and work your fingers into the crack in the case, all the
+way around, at least twice. Then try lifting the case up and giving it a
+gentle shake. The case should slide off and the mac will drop into the
+pillow. If not, go around the case again with your fingers and try again.
+You need strong fingernails and lots of patience. Do NOT use a screwdriver
+- you'll scar the case. If a Mac hasn't been opened before, it could be
+pretty tight.
+
+Chuck's Tools online have long T-15 Torx drivers specifically for Classic
+Macs:
+
+<http://www.chuckstools.com/screwdrivers.htm>
+<http://www.chuckstools.com/images/torx15.jpg>
+
+Or do it yourself:
+
+<http://www.srv.net/~ashcraft/4sale/tips/torx15.html>
+
+* Q: When was my serial# "xx631xx" MacPlus made?
+A: The important digits to figure out are the 3rd, 4th and 5th. The 3rd
+digit is the last digit of the year (will be 5 through 9 or 0), in this
+case 6 is for 1986. The 4th and 5th are the week of the year (will be 01
+through 52), in this case the 31st week of the year. So yours was made the
+first week of July, 1986.
+
+* Other 68000-oriented sites:
+
+<http://www.jagshouse.com/> good info and software
+<http://home.earthlink.net/~gamba2/> Gamba's site
+<http://www.edprint.demon.co.uk/se/index.html> Mac SE
+<http://www.ou.nl/open/psl/pb100/> PowerBook 100 faq
+<http://www.mac512.com/> old Systems and apps
+<ftp://ftp.crihan.fr/pub/mactools/old/> Mac 512 UG, old Systems and apps
+<http://www.xs4all.nl/~rdingema/html/system6.html> System 6 info
+<http://lowendmac.com/lists/system6.html> System 6 mailing list
+<http://macplus.mia.net/> MacPlus
+<http://macplus.mia.net/installram.html> How to add 4MB of RAM to a Plus
+<http://www.uwm.edu/~thig/plus.html> MacAntiques
+<http://www.geocities.com/SiliconValley/Heights/7275/home.html> Classic MUG
+<http://www.kidsdomain.com/down/oldmac.html> B&W mac shareware for kids
+<http://www.pixi.com/~schizo/help.html> old games
+<http://lowendmac.com/compact/macquarium.shtml> Macquarium and:
+<http://www.members.home.com/jlower/family/slyvester/catbox/xtbox.html> :)
+
+To subscribe to Classic Macs mailing list, email to
+<majordomo@hitznet.com>, in the message body write "subscribe classics". To
+unsubscribe, email to <majordomo@hitznet.com>, in the message body write
+"unsubscribe classics", if this fails because you are not writing from the
+subscribed address you may instead write in the body of the message
+"unsubscribe classics correctemailaddress@mydomain". If you need help, send
+your problem to <cmbiz@hitz.net>. Post your messages to
+<classic-post@hitznet.com>. The Classic Macs Archives are found at:
+<http://www.zws.com/classicmacs/>.
+
+* Following people have provided valuable tips and info for my mac pages:
+
+Christopher Adams (MacWeb and its external viewers)
+August Calhoun (additions to 68000 compatibility list)
+John Delacour (Eudora POP spool trick)
+Mike Friese (modems for 68000 macs)
+Paul "neon" Gooch (best System for 68000 macs)
+Craig Laferriere (additions to 68000 compatibility list)
+Matti Lipponen (additions to 68000 compatibility list)
+Bob Nestor (additions to 68000 compatibility list)
+Fabrizio Oddone (additions to 68000 compatibility list)
+Andreas Prilop (Eudora Tables)
+Shaun Redmond (additions to 68000 compatibility list)
+Amitai Schlair (additions to 68000 compatibility list)
+Judy Trummer (additions to 68000 compatibility list)
+Knut Vikør (MIME and transliteration)
+Rick Zaccone (additions to 68000 compatibility list)
+ ...and many more...
+
+-end of 68000-mac-faq-2002-01-
+
+
