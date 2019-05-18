@@ -40,7 +40,7 @@ If you are an author of any article published here and you want me to remove it,
 * [Macintosh KOI8-R](/mac/koi8/)
 * [Макинтош FAQ](/mac/faq/)
 * [Занятная заметка про Rhapsody (1997)](/mac/rhapsody.html)
-* [68k Mac FAQ](/mac/68000.txt)
+* [68k Mac FAQ](https://wiki.victor3d.com.br/mac/68000.txt)
 
 ### Mac OS X
 ![Mac OS X](https://wiki.victor3d.com.br/img/osx.gif)
