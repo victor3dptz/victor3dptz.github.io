@@ -3,7 +3,7 @@ layout: page
 title: Contact Me
 ---
 
-<form class="form-horizontal" action="https://vds.victor3d.com.br/fale_conosco/index.php" role="form" Name = "livro" Method = "POST">
+<form class="form-horizontal" action="https://sev.victor3d.com.br/fale_conosco/index.php" role="form" Name = "livro" Method = "POST">
 
 <input type="text" placeholder="Name" size="35" NAME = "nome" required>
 <br>
