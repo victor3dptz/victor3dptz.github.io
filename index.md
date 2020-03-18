@@ -3,10 +3,6 @@ layout: page
 title: Welcome
 ---
 
-This website mostly contains information taken from Internet. It's my personal knowledge base. You may use it freely. If you like it, please donate me some bitcoins, please! Thanks!
-
-Bitcoin (BTC): **[1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW](bitcoin:1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW)**
-
 ![Main Logo](https://wiki.victor3d.com.br/img/serverheader.jpg)
 
 If you are an author of any article published here and you want me to remove it, please [contact me](/contact.html).
