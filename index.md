@@ -5,8 +5,6 @@ title: Welcome
 
 ![Main Logo](https://wiki.victor3d.com.br/img/serverheader.jpg)
 
-If you are an author of any article published here and you want me to remove it, please [contact me](/contact.html).
-
 ### Linux
 ![Linux](https://wiki.victor3d.com.br/img/linux.gif)
 * [Linux FAQ](/faq.html)
