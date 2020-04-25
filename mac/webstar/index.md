@@ -12,3 +12,5 @@ title: WebSTAR™ 2.0 Technical Reference
 * [Chapter 5: Using WebSTAR Plug-Ins](/mac/webstar/chapter5.html)
 * [Chapter 6: Plug-Ins and CGIs](/mac/webstar/chapter6.html)
 * [Chapter 7: Frequently Asked Questions](/mac/webstar/chapter7.html)
+
+![WebStar Root](/mac/webstar/webstar_root.gif)
