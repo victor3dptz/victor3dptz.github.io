@@ -39,6 +39,7 @@ Bitcoin (BTC): **[1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW](bitcoin:1PxNxDCBH5MbM6S4Hf
 * [Макинтош FAQ](/mac/faq/)
 * [Занятная заметка про Rhapsody (1997)](/mac/rhapsody.html)
 * [68k Mac FAQ](https://wiki.victor3d.com.br/mac/68000.txt)
+* [WebSTAR Technical Reference](/mac/webstar/)
 
 ### Mac OS X
 ![Mac OS X](https://wiki.victor3d.com.br/img/osx.gif)
