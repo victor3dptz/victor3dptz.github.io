@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Chapter 1: Welcome to WebSTAR™
+title: Chapter 1. Welcome to WebSTAR™
 ---
 
 Welcome to WebSTAR, the ultimate World Wide web server! WebSTAR by the StarNine® division of Quarterdeck is the most widely used desktop web server software on the Internet today.
