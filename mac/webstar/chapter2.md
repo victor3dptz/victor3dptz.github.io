@@ -11,7 +11,7 @@ WebSTAR requires System 7, MacTCP or Open Transport, and AppleScript. MacTCP and
 
 WebSTAR 2.0 also requires Apple's Thread Manager to run. The Thread Manager Extension is built into System 7.5. For earlier versions of System 7, the WebSTAR Installer automatically places the Thread Manager in the Extensions folder.
 
-*WebSTAR 2.0 has improved compatibility with Open Transport. Always use the latest version of Open Transport (OT 1.1.1 is currently available; reliable operation with versions of OT earlier than 1.1.1 cannot be guaranteed). Apple's FTP site (ftp.support.apple.com) always has the latest version.*
+>WebSTAR 2.0 has improved compatibility with Open Transport. Always use the latest version of Open Transport (OT 1.1.1 is currently available; reliable operation with versions of OT earlier than 1.1.1 cannot be guaranteed). Apple's FTP site (ftp.support.apple.com) always has the latest version.
 
 To access your WebSTAR server once it is running, you need a WWW client browser such as Microsoft Internet Explorer, Netscape Navigator or Mosaic. Server performance can decrease if you run a client on the same computer as the server.
 
@@ -74,7 +74,7 @@ WebSTAR Admin displays the Realms window
 1. Create a new Realm with a Realm name of Administration" and a Match string of "pi_admin"
 1. Click Add and then click Update
 
-*Failure to complete steps 7 through 11 can result in a breach of server security.*
+>Failure to complete steps 7 through 11 can result in a breach of server security.
 
 You're now officially part of the World Wide Web!
 
@@ -95,7 +95,7 @@ where "webstar.computer.name" is the host name or IP address of the computer run
 
 Initially, you'll see the default home page, which describes how to access other sites and the WebSTAR documentation.
 
-*If you have trouble accessing the server, you can still read the HTML-format documentation in your WWW client software. Launch the client software on the computer running WebSTAR and use the Open File command to open the file locally without going through the server.*
+>If you have trouble accessing the server, you can still read the HTML-format documentation in your WWW client software. Launch the client software on the computer running WebSTAR and use the Open File command to open the file locally without going through the server.
 
 ### Setting Up a Folder Hierarchy
 
@@ -236,7 +236,7 @@ When this option is checked, WebSTAR produces much more status information about
 
 Many of the messages produced by checking this option pertain to low-level HTTP or TCP/IP internal state information. If you are not familiar with HTTP or TCP/IP, these messages may seem quite obscure. However, some of the verbose messages can be useful for watching the details of client requests and for troubleshooting. Verbose Messages are used most often by WebSTAR developers. Errors reported with Verbose Messages do not need to be reported to StarNine Technical Support.
 
-*Turning on Verbose Messages causes the server to run more slowly. For normal operations, you should turn Verbose Messages off.*
+>Turning on Verbose Messages causes the server to run more slowly. For normal operations, you should turn Verbose Messages off.
 
 * Suspend Logging
 
@@ -254,7 +254,7 @@ When you check this option, WebSTAR finishes servicing all currently queued clie
 
 Forces WebSTAR to flush the file info cache.
 
-*You must flush the file info cache whenever you perform an operation on the data you are serving that changes the data stored on disk.*
+>You must flush the file info cache whenever you perform an operation on the data you are serving that changes the data stored on disk.
 
 Flushing the file info cache also sends a message to plug-ins (including the data cache) to flush their caches as well.
 
