@@ -1,0 +1,203 @@
+I"80<p>Today dHiRes gave me customized QNXdemo floppies! Yes, it is possible now. As proof of concept I add 2 floppy images below. “boot” floppy boots to customized QNX, while “fsys” contains extras. To mount extras floppy click “fsys - fsysfl - mount” in QNX menu.</p>
+
+<ul>
+  <li><a href="/qnx/demo/boot_qnxdemo_by_dHiRes.ima">boot_qnxdemo_by_dHiRes.ima</a></li>
+  <li><a href="/qnx/demo/fsys_by_dHiRes.ima">fsys_by_dHiRes.ima</a></li>
+</ul>
+
+<p>QNX DEMO is the best Operational System between tiny “1-floppy” OS’es. At the same time it the most poorly documented one. Long time ago QSSL discontinued support and removed it from official web page. This page is designed in form to answer SW&amp;HW related extra features, never discussed before.</p>
+
+<p>Therefore, for the experiments with QNX demo is necessary:</p>
+
+<ol>
+  <li>QNX demo disk Ver.405, preferably network version. You can download them from here: <a href="/qnx/demo/qnx_demo_405_network.iso">network 405 version</a>, <a href="/qnx/demo/qnx_demo_405_modem.iso">modem 405 version</a>. For faster booting I created boot CD versions of this floppy. I will post her all my collection of boot floppies soon.</li>
+  <li>Working network connection. Still, this is the most critical point. QNX DEMO network version supports only 3C509, NE1000 and NE2000 NIC’s.</li>
+  <li>Local network with running HTTP, FTP, TELNET servers. This is optional, but highly recommended. The servers can be simplest in the world - use them just for keeping several files.</li>
+</ol>
+
+<h3 id="step-1---preparing">Step 1 - preparing</h3>
+
+<p>From the first view QNX DEMO looks rock solid - user has very little rights in this OS. You are basically trapped in GUI. Good news came with QNX demo Ver405 there is undocumented “back door”. Using file browsers go to: /usr/httpd/.photon/pwm/pwm.menu</p>
+
+<p>Click and open pwm.menu file. This file controls the menu options. You are allowed edit and save it.</p>
+
+<p>Lets change the line</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Towers of Hanoi G voyager -x0 -y0 -h412 -w628 -u http://127.1/hanoi/game.html
+</code></pre></div></div>
+<p>Into something more useful:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Voyager compact G voyager -x0 -y0 -h412 -w628 -c
+</code></pre></div></div>
+<p>Option “-c” launches voyager in “compact” mode, thus saving a bit of scarce system memory.</p>
+
+<p>Save the file. If you open the menu now, you see that nothing is changed. You need to refresh the pwm menu.</p>
+
+<h3 id="step-2---refreshing-pwm-menu">Step 2 - refreshing pwm menu</h3>
+
+<p>With the QNX DEMO Ver.405 QSSL introduced possibility to upgrade the system via installing extra applets. Only 3 special packages were released and you can download them here:</p>
+
+<ul>
+  <li><a href="/qnx/demo/telnet.qnxde">telnet.qnxde</a></li>
+  <li><a href="/qnx/demo/game1.qnxde">game1.qnxde</a></li>
+  <li><a href="/qnx/demo/utils1.qnxde">utils1.qnxde</a></li>
+</ul>
+
+<p>This upgrade option is our long wanted “back door”.</p>
+
+<p><em>Every time you install or uninstall the package PWM menu is refreshed!</em></p>
+
+<p>The algorithm is very simple:</p>
+
+<ul>
+  <li>Change pwm.menu file in /usr/httpd/.photon/pwm/pwm.menu</li>
+  <li>Install or deinstall extension</li>
+  <li>Execute command via choosing the line in refreshed PWM menu</li>
+</ul>
+
+<p>Test compact version of Voyager, without these fancy buttons. NOTE: before opening in “compact” mode you need keep open at least one Voyager window in “normal” mode. Other vice error message “server not running appears”.</p>
+
+<p><img src="/qnx/demo/demo.gif" alt="Demo" /></p>
+
+<h3 id="step-3---getting-the-shell">Step 3 - getting the shell</h3>
+
+<p>Well, I tried to create .qnxde applet myself. Unfortunately there is no information available about the format of these files and their structure. I was getting desperate, but my salvation came in person of my colleague. He gives the following idea about getting the shell.</p>
+
+<p>So there is no more need to create our own .qnxde applets. Take any QNX4 photon application and add .qnxde extension to the file name. We noticed, that QNX DEMO installer works like this:</p>
+
+<ul>
+  <li>It copies any file with .qnxde extension from external web server to local /tmp_ram directory.</li>
+  <li>The installer pops up the window with questions “Continue” or “Cancel”. Whichever you press, the Qnxdemo installer detects, that this file is invalid and erases /tmp_ram directory. Of course, that is not the case with original QNX extension applets.</li>
+</ul>
+
+<p>So the following algorithm gives you the shell:</p>
+
+<ul>
+  <li>Add in the /usr/httpd/.photon/pwm/pwm.menu file the following line:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ksh_tmp pterm -z -R /dev/pty/ /tmp_ram/ksh.qnxde
+</code></pre></div>    </div>
+    <p>Important note: PWM menu lines are written like in this example:</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ksh_tmp&lt;TAB&gt;&lt;SPACE_or_any_symbol&gt;&lt;TAB&gt;pterm -z -R /dev/pty/ /tmp_ram/ksh.qnxde
+</code></pre></div>    </div>
+  </li>
+  <li>Download and install <a href="/qnx/demo/telnet.qnxde">telnet.qnxde</a> extension.</li>
+  <li>Download <a href="/qnx/demo/ksh.qnxde">ksh.qnxde</a> from external web server but when installer window pops up DO NOT press anything. Leave it running.</li>
+  <li>Open QNX PWM menu and execute new line ksh_tmp</li>
+  <li>Oh well, you have shell. quite simple, isn’t it?</li>
+</ul>
+
+<h3 id="step-4---ftp-is-also-simple">Step 4 - ftp is also simple</h3>
+
+<p>Let us start again. Shell was nice, but ftp is more useful at the moment. Again:</p>
+
+<ul>
+  <li>Add in the /usr/httpd/.photon/pwm/pwm.menu file the following line:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ftp_tmp pterm -z -R /dev/pty/ /tmp_ram/ftp.qnxde
+</code></pre></div>    </div>
+  </li>
+  <li>Download and install <a href="/qnx/demo/telnet.qnxde">telnet.qnxde</a> extension. If it is already installed, you do not have repeated it. We need telnet.qnxde utility only for using pterm terminal that goes with it</li>
+  <li>Modify file /etc/services and add extra line:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ftp 21/tcp
+</code></pre></div>    </div>
+  </li>
+  <li>Refresh PWM menu by downloading and installing <a href="/qnx/demo/utils1.qnxde">utils1.qnxde</a> official extension</li>
+  <li>Download <a href="/qnx/demo/ftp.qnxde">ftp.qnxde</a> from external web server but when installer window pops up DO NOT press anything. Leave it running.</li>
+  <li>Open QNX PWM menu and execute new line ftp_tmp</li>
+  <li>Test ftp connection and have fun :)</li>
+</ul>
+
+<h3 id="step-5---mounting-floppy">Step 5 - mounting floppy</h3>
+
+<p>QNX DEMO is capable of running almost ANY QNX4 application. The simplest way - accessing floppy.</p>
+
+<ul>
+  <li>Add in the /usr/httpd/.photon/pwm/pwm.menu file the following lines:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-
+fsys pterm -z -R /dev/pty/ /tmp_ram/fsys.qnxde
+fsysfl pterm -z -R /dev/pty/ /tmp_ram/fsys.floppy.qnxde
+mount pterm -z -R /dev/pty/ /tmp_ram/mount.qnxde /dev/fd0 /fd
+-
+pfm /fd/pfm
+-
+</code></pre></div>    </div>
+  </li>
+  <li>Download <a href="/qnx/demo/fsys.qnxde">fsys.qnxde</a> from external web server; when installer window pops up execute “fsys” line from PWM menu. Leave terminal window open. Close installer by pressing “CANCEL”</li>
+  <li>Download <a href="/qnx/demo/fsys.floppy.qnxde">fsys.floppy.qnxde</a> from external web server; when installer window pops up execute “fsysfl” line from PWM menu. Leave terminal window open. Close installer by pressing “CANCEL”</li>
+  <li>Insert QNX4 formatted floppy disk. Again, download <a href="/qnx/demo/mount.qnxde">mount.qnxde</a> from external web server; when installer window pops up execute “mount” line from PWM menu. Leave terminal window open. Close installer by pressing, “CANCEL”. Now, via File browser you can see contents of the floppy in folder /fd</li>
+</ul>
+
+<p>The floppy is yours. Again, it should be QNX4 formatted. You can place on it and execute almost ANY QNX4 terminal and Photon applications.</p>
+
+<h3 id="step-6---useful-toys">Step 6 - useful toys</h3>
+
+<p>Take control over your file system in comfort. Add line:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pfm_tmp /tmp_ram/pfm.qnxde
+</code></pre></div></div>
+<p>…and download file manager: <a href="/qnx/demo/pfm.qnxde">pfm.qnxde</a></p>
+
+<p>Time is an option? Add line:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pfm_tmp /tmp_ram/pwmclock.qnxde
+</code></pre></div></div>
+<p>…and use 386 as wall clock: <a href="/qnx/demo/pwmclock.qnxde">pwmclock.qnxde</a></p>
+
+<p>Calculator?  Add line:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>calculator /tmp_ram/phcalc.qnxde
+</code></pre></div></div>
+<p>Download the <a href="/qnx/demo/phcalc.qnxde">phcalc.qnxde</a></p>
+
+<p>A few games. Classic Solitaire, mines and more:</p>
+
+<p>Add lines:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>solitare /tmp_ram/solitawe.qnxde
+
+mines /tmp_ram/mine.qnxde
+</code></pre></div></div>
+<p>Download: <a href="/qnx/demo/solitawe.qnxde">solitawe.qnxde</a> and <a href="/qnx/demo/mine.qnxde">mine.qnxde</a></p>
+
+<p>at the end you screen looks like this:</p>
+
+<p><img src="/qnx/demo/screen.gif" alt="Screen" /></p>
+
+<h3 id="tips-tricks">Tips tricks</h3>
+
+<p>At the end of experiments I ended up with the following PWM menu of frequent use:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=CUSTOM QNX Workspace Menu
+Join the Internet J netcfg
+Voyager Web Browser V voyager -x0 -y0 -h412 -w628
+Towers of Hanoi G voyager -x0 -y0 -h412 -w628 -u http://127.1/hanoi/game.html
+File Browser F fbrowse
+Notepad N note
+Install voyager -u http://your_http_server_ip/
+Install telnet voyager -u http:// your_http_server_ip /telnet.qnxde
+Remove Extensions destaller
+-
+fsys /tmp_ram/fsys.qnxde
+fsysfl pterm -z -R /dev/pty/ /tmp_ram/fsys.floppy.qnxde
+mount pterm -z -R /dev/pty/ /tmp_ram/mount.qnxde /dev/fd0 /fd
+ftp_tmp pterm -z -R /dev/pty/ /tmp_ram/ftp.qnxde
+ksh_tmp pterm -z -R /dev/pty/ /tmp_ram/ksh.qnxde
+-
+ftp pterm -z -R /dev/pty/ /fd/ftp
+ksh pterm -z -R /dev/pty/ /fd/ksh
+pfm /fd/pfm
+umount /fd/umount /dev/fd0
+Shutdown S reboot 
+</code></pre></div></div>
+<p>Unfortunately, it is not possible copy text from voyager window directly. There is workaround:</p>
+
+<p>Place this list as text file on your telnet server, connect with QNX Demo, open it in terminal window select copy it to with shortcut: Ctrl-Alt-X Paste in note editor Ctrl-V</p>
+
+<p>Yuo can press <Cancel> in the installer after program is on the screen and download next .qnxde applet</Cancel></p>
+
+<p><strong>HW issue</strong>: Some types of keyboards refuse to work under Photon. Although they respond perfectly normal during startup phase, they “freeze” when GUI is started.</p>
+
+<p>The solution: F1-F1 go via diagnostic screen. When GUI appears press <Enter> many times. Generally 20-40 hits are enough to "wake up" the keyboard and start working under QNX Demo.</Enter></p>
+
+<h3 id="enabling-qnxde-applets-direct-download-from---apache-server">Enabling .qnxde applets direct download from   Apache server</h3>
+
+<p>Sometimes  there is a problem with the Voyager browser opening the .qnxde applets as a text file. The problem is that your Apache server uses a default MIME type of “text/plain” when the file is of an unknown type. Try adding a file called “.htaccess” into your directory with the following line:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>----------------------------------------------------------------------
+AddType application/octet-stream .qnxde
+----------------------------------------------------------------------
+</code></pre></div></div>
+<p>This .htaccess file will tell the server to send the MIME type “application/octet-stream” for .qnxde files.</p>
+
+:ET

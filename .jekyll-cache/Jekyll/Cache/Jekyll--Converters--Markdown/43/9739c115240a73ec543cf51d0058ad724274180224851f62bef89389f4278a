@@ -1,0 +1,62 @@
+I"�<p>Размещение виртуальной памяти указано в /etc/rc</p>
+
+<p>Поэтому редактируем его через</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pico /etc/rc
+</code></pre></div></div>
+
+<p>Там ищем</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "Starting virtual memory"
+swapdir=/private/var/vm
+</code></pre></div></div>
+
+<p>и меняем swapdir на то, что нам надо. Например</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "Starting virtual memory"
+swapdir=/Volumes/swap/vm
+</code></pre></div></div>
+
+<p>Диск со свапом можно сделать маленький, например размером с удвоенное количество установленной оперативки.</p>
+
+<h3 id="второй-способ">Второй способ.</h3>
+
+<p>Создаем соответствующий диск, называем его “vm” и монтируем сразу на место для обычного свопа.</p>
+
+<p>Для этого сперва узнаем его BSD-название. Можно через</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">df</span> <span class="nt">-k</span> 
+</code></pre></div></div>
+
+<p>Будет, например, disk0s3</p>
+
+<p>Теперь узнаем UUID этого диска:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>diskutil info disk0s3
+</code></pre></div></div>
+
+<p>Будет, например, 4236231D-1117-333F-8899-3235F9B8000E</p>
+
+<p>Зная UUID, редактируем fstab, чтобы наш своповый диск смонтировался куда надо:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pico <span class="nt">-w</span> /etc/fstab
+</code></pre></div></div>
+
+<p>и там прописываем</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>UUID=4236231D-1117-333F-8899-3235F9B8000E /private/var/vm hfs rw 1 2
+</code></pre></div></div>
+
+<p>Теория говорит, что вместо опции rw на своп надо ставить sw, тогда строка будет</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>UUID=4236231D-1117-333F-8899-3235F9B8000E /private/var/vm hfs sw 1 2
+</code></pre></div></div>
+
+<p>После рестарта наш своп на новом диске, который нам не мешает</p>
+
+<p>В принципе, редактируя fstab, мы можем подмонтировать любой диск при стартапе куда угодно, например диск с домашними папками юзеров сразу в /Users</p>
+
+<p>За наводку с UUID спасибо IGYLA.</p>
+
+<p>Иными словами, man fstab</p>
+:ET

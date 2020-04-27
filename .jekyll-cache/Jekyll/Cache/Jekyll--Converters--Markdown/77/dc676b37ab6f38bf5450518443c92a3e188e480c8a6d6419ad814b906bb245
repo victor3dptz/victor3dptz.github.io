@@ -1,0 +1,37 @@
+I"�<p>The result will be like above:
+<img src="/linux/conky/conky.png" alt="Conky" /></p>
+
+<p>Create a directory, put a script <strong>bitcoin.py</strong> there and make it executable:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/python
+</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">bitcoin</span> <span class="o">=</span> <span class="s">"https://api.coinmarketcap.com/v1/ticker/bitcoin/?convert=RUB"</span>
+<span class="n">btc_res</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">bitcoin</span><span class="p">)</span>
+<span class="n">btc_data</span> <span class="o">=</span> <span class="n">btc_res</span><span class="p">.</span><span class="n">json</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'/home/victor3d/.config/conky/bitcoin/bitcoin.txt'</span><span class="p">,</span><span class="s">'w'</span><span class="p">)</span>
+<span class="nb">file</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">'$'</span><span class="o">+</span><span class="n">btc_data</span><span class="p">[</span><span class="s">'price_usd'</span><span class="p">]</span><span class="o">+</span><span class="s">'</span><span class="si">\</span><span class="se">n</span><span class="s">'</span><span class="p">)</span>
+<span class="nb">file</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">btc_data</span><span class="p">[</span><span class="s">'percent_change_24h'</span><span class="p">]</span><span class="o">+</span><span class="s">'%'</span><span class="o">+</span><span class="s">'</span><span class="si">\</span><span class="se">n</span><span class="s">'</span><span class="p">)</span>
+<span class="nb">file</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">btc_data</span><span class="p">[</span><span class="s">'price_rub'</span><span class="p">]</span><span class="o">+</span><span class="s">'</span><span class="si">\</span><span class="se">n</span><span class="s">'</span><span class="p">)</span>
+<span class="nb">file</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">btc_data</span><span class="p">[</span><span class="s">'rank'</span><span class="p">]</span><span class="o">+</span><span class="s">'</span><span class="si">\</span><span class="se">n</span><span class="s">'</span><span class="p">)</span>
+<span class="nb">file</span><span class="p">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div></div>
+<p>The script requires python-requests module, to install it on Debian type:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>python-requests
+</code></pre></div></div>
+
+<p>In my examples, replace the path /home/victor3d/.config/conky/bitcoin/ to your path.</p>
+
+<p>Install the <a href="/linux/conky/fontawesome-webfont.ttf">FontAwesome Font</a>.</p>
+
+<p>To your .conkyrc add the following:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>${hr}
+${alignc}${font FontAwesome}${font} I T C O I N  ${if_match ${execi 10 awk -F . 'NR==2 {print $1}' /home/victor3d/.config/conky/bitcoin/bitcoin.txt} &gt; 0}${color #00ff00}${font FontAwesome}${font}${execi 10 awk -F . 'NR==2 {print $1}' /home/victor3d/.config/conky/bitcoin/bitcoin.txt}%${color}${else}${color #FF0000}${font FontAwesome}${font}${execi 10 awk -F . 'NR==2 {print $1}' /home/victor3d/.config/conky/bitcoin/bitcoin.txt}%${color}${endif}
+${font FontAwesome}${font} ${execi 10 awk -F . 'NR==1 {print substr($1,2)}' /home/victor3d/.config/conky/bitcoin/bitcoin.txt} ${alignr} ${font FontAwesome}${font} ${execi 10 awk -F . 'NR==3 {print $1}' /home/victor3d/.config/conky/bitcoin/bitcoin.txt}
+</code></pre></div></div>
+
+<p>Then, add to crontab bitcoin.py to update the prices hourly.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0 * * * * /home/victor3d/.config/conky/bitcoin/bitcoin.py
+</code></pre></div></div>
+:ET

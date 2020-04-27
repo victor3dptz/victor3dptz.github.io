@@ -1,0 +1,1267 @@
+I""	<p>This chapter shows you how to use the WebSTAR Admin application and Admin web interface to configure the WebSTAR server. It covers these important configuration topics:</p>
+
+<ul>
+  <li>Adding new Suffix Mappings to the default set of mappings</li>
+  <li>Defining new Actions and setting up Suffix Mappings to use them</li>
+  <li>Setting up security Realms and passwords</li>
+  <li>Using Allow and Deny statements to restrict access to the server</li>
+  <li>Configuring connection and performance parameters</li>
+  <li>Specifying special files like the index file and no access files</li>
+  <li>Defining a preprocessor and postprocessor</li>
+  <li>Specifying log formats</li>
+</ul>
+
+<p>The WebSTAR Admin application provides an easy interface for configuring WebSTAR using a Macintosh computer. You can use the WebSTAR Admin application to monitor one or more WebSTAR servers from a single computer on an AppleTalk network. For background on general administration issues, see “Administering WebSTAR” on page 77.</p>
+
+<h3 id="turning-on-program-linking">Turning On Program Linking</h3>
+
+<p>Program LinkingProgram linking is a built-in Macintosh System 7 feature that lets users and applications link to programs across a network. If you are running the WebSTAR server and the WebSTAR Admin application on separate computers, the computer running the WebSTAR server must have program linking turned on, or WebSTAR Admin will be unable to see the WebSTAR server on the network.</p>
+
+<p>Program linking has three levels of control:</p>
+
+<ul>
+  <li>System level</li>
+  <li>Application level</li>
+  <li>User level</li>
+</ul>
+
+<p>All three levels of control must be set for program linking to be on. If any one of these levels is not set, the WebSTAR Admin application will be unable to see the WebSTAR server across the network.</p>
+
+<blockquote>
+  <p>If program linking is not enabled, you must run WebSTAR Admin on the server computer.</p>
+</blockquote>
+
+<h4 id="enabling-program-linking-at-the-system-level">Enabling Program Linking at the System Level</h4>
+
+<p>To enable program linking at the system level, open the Sharing Setup control panel and click the Start button in the Program Linking area of the dialog box.</p>
+
+<p><img src="/mac/webstar/sharing_setup.gif" alt="Sharing setup" /></p>
+
+<p>Clicking the Start button in the Program Linking area turns on program linking.</p>
+
+<h4 id="enabling-program-linking-at-the-application-level">Enabling Program Linking at the Application Level</h4>
+
+<p>To use WebSTAR Admin, program linking must also be allowed in the WebSTAR application, as it is by default.</p>
+
+<p>To check that WebSTAR allows remote program linking, select the WebSTAR icon in the Finder and choose Sharing from the File menu. The “Allow remote program linking” option should be checked. If for any reason it is not checked, check it now.</p>
+
+<p><img src="/mac/webstar/program_linking.gif" alt="Program Linking" /></p>
+
+<h4 id="enabling-program-linking-at-the-user-level">Enabling Program Linking at the User Level</h4>
+
+<p>Allow user to link to programsWhen you select a server in the WebSTAR Admin application, you are prompted to supply a user name and password to access the remote server. This is an important security feature.</p>
+
+<p>To use WebSTAR Admin, the user profile for that name and password must also have program linking turned on.</p>
+
+<p>To turn on program linking in the user’s profile, open the Users &amp; Groups control panel and then double-click on a user icon.</p>
+
+<p><img src="/mac/webstar/user_program_linking.gif" alt="User Program Linking" /></p>
+
+<p>Check “Allow user to link to programs on this Macintosh” in the Program Linking area of the dialog box to enable program linking for this user.</p>
+
+<h3 id="launching-the-webstar-admin-application">Launching the WebSTAR Admin Application</h3>
+
+<p>After turning on program linking, launch WebSTAR by double-clicking it. Then, double-click the WebSTAR Admin application on any computer on the AppleTalk network.</p>
+
+<p>A Chooser-like dialog box opens, where you select a WebSTAR server. (You may need to select a zone and computer name first.) Select a WebSTAR server and click OK to open the initial WebSTAR Admin Monitor window.</p>
+
+<p><img src="/mac/webstar/admin_ready_to_go.gif" alt="Admin Application" /></p>
+
+<p>The title bar of the Monitor window shows the host name of the computer or IP address where the selected server is running, as well as the port on which it is running (the port number is appended in the title bar after the colon).</p>
+
+<p>In the upper-left area of the window are vertical bar graphs that indicate the current usage (number of connections) on the server. These bar graphs scroll from right to left in histogram fashion at 15 second intervals.</p>
+
+<p>Each histogram contains two marks, a gray high-water line mark indicating the maximum number of users, and a black bar. The high water mark is a graphical representation of the “High” connections number (see the “High” statistic described in the next section).</p>
+
+<h4 id="statistics-in-the-monitor-window">Statistics in the Monitor Window</h4>
+
+<p>The Connection statistics displayed in the upper-right of the WebSTAR Admin Monitor window show the following information:</p>
+
+<ul>
+  <li>Connections: The total number of active connections for this server.</li>
+  <li>Listens: The number of listening processes for incoming connections.</li>
+  <li>High: The “high-water mark” of simultaneous users. Use this value to verify that you have set the maximum number of users correctly.</li>
+  <li>Max: The maximum number of connections allowed (concurrent incoming connections). See “Max Connections” on page 59.</li>
+  <li>Busy: How many clients have been refused service because WebSTAR was too busy. If this value is not zero, you may need to increase the Max Users setting. See “Max Connections” on page 59</li>
+  <li>Denied: The number of clients that were denied access based on global allow/deny security. Individual Realm security violations are not logged in this statistic.</li>
+  <li>Timeout: The number of client connections that were terminated because the client did not respond to the server in the allowed time. See “Timeout” on page 60.</li>
+  <li>Up Since: The date and time when the server was last launched.</li>
+  <li>The amount of data the server has transferred (in bytes) since it was last launched.</li>
+  <li>Version: The version number of the WebSTAR server software.</li>
+</ul>
+
+<h3 id="webstar-admin-file-menu">WebSTAR Admin File Menu</h3>
+
+<p><img src="/mac/webstar/File_menu_admin.gif" alt="File Menu Admin" /></p>
+
+<ul>
+  <li>New Monitor: This command opens a Chooser-like window in which you can select a server. When you select a WebSTAR server and click OK, the WebSTAR Admin application opens a Monitor window for that server.</li>
+  <li>Close: Closes the frontmost active Monitor window.</li>
+  <li>Quit: Exit the WebSTAR Admin application.</li>
+</ul>
+
+<h3 id="webstar-admin-edit-menu">WebSTAR Admin Edit Menu</h3>
+
+<p><img src="/mac/webstar/Edit_menu_admin.gif" alt="Admin Edit Menu" /></p>
+
+<p>You can manipulate the text items in an open window by using standard Macintosh commands in the Edit menu. Some text must be selected in the window to activate the Edit menu.</p>
+
+<h3 id="webstar-admin-options-menu">WebSTAR Admin Options Menu</h3>
+
+<p><img src="/mac/webstar/Options_menu_admin.gif" alt="Options Admin Menu" /></p>
+
+<p>The Options menu always applies to the frontmost active Monitor window. This is important to remember when there are multiple Monitor windows on the screen. All selections made in this menu are saved in the server’s WebSTAR Settings file and restored the next time the server is launched.</p>
+
+<p>Most of the commands in this menu duplicate the commands in the WebSTAR server’s Options menu (see “Options Menu” on page 30). The WebSTAR Admin Options menu contains these additional commands:</p>
+
+<ul>
+  <li>Ignore Status Updates</li>
+  <li>Ignore Log Updates</li>
+</ul>
+
+<p>These are commands sent by the WebSTAR Admin application to the WebSTAR server to configure status reporting communications with that server. When checked, the WebSTAR Admin application stops requesting status or log information from the WebSTAR server whose Monitor window is active.</p>
+
+<ul>
+  <li>Quit WebSTAR</li>
+</ul>
+
+<p>Shut down the selected server.</p>
+
+<h3 id="webstar-admin-configure-menu">WebSTAR Admin Configure Menu</h3>
+
+<p><img src="/mac/webstar/configure_menu_admin.gif" alt="Admin Configure Menu" /></p>
+
+<p>Items in the Configure menu set configuration parameters in the WebSTAR server. The Configure menu always applies to the frontmost active Monitor window. All selections made in this menu are saved in the WebSTAR Settings file and restored the next time WebSTAR is run. The commands in this menu are described in detail in the next sections.</p>
+
+<h3 id="suffix-mapping">Suffix Mapping</h3>
+
+<p>Suffix mapping determines how the WebSTAR server returns data to a WWW client. It lets you specify an Action and MIME type for processing the URL and returning data, based on the filename suffix on the Macintosh file Type and Creator fields of a retrieved document.</p>
+
+<p>To set up mappings based on suffixes, you have to include a filename suffix in the names of your documents. If you prefer not to rename documents, you can set up mappings based on the Macintosh file Type and Creator fields instead. If WebSTAR doesn’t find a filename suffix, it examines those fields and looks for a relevant mapping.</p>
+
+<p>Suffix mapping can be used for more than handling standard file or binary transfers or CGI execution. For example, suppose certain files contain Kanji characters. You can name all of those files with the same suffix and then specify the appropriate MIME type for handling 16-bit characters.</p>
+
+<p>Choose Suffix Mapping in the Configure menu to open this dialog box:</p>
+
+<p><img src="/mac/webstar/admin_suffix_mapping.gif" alt="Suffix Mapping" /></p>
+
+<p>The Suffix Mapping dialog box lets you add, delete, or modify Suffix Mappings. Use the up-arrow and down-arrow to move the selection up or down. To view additional mappings, use the scroll bar at the right side of the window.</p>
+
+<blockquote>
+  <p>The order of the Suffix Mapping mappings list is significant; if two mappings match a URL, WebSTAR uses the first one. Use the up and down arrows in the dialog box to change the processing order. The order of mappings with a check mark in the lock column cannot be changed.</p>
+</blockquote>
+
+<p>Clicking the Edit button when a list item is selected causes the fields of the selected item to appear in the appropriate text fields and menus. (Double-clicking an item has the same effect.) Clicking the Replace button when a list item is selected replaces the selected item with the information specified in the text fields and menus.</p>
+
+<p>When you click Update, the changes you have made are stored in the Settings file. If you don’t want to save your changes, click Cancel.</p>
+
+<blockquote>
+  <p>Suffix mapping items with a check mark in the lock column are preconfigured and automatically defined by plug-ins. These items cannot be edited.</p>
+</blockquote>
+
+<h4 id="how-suffix-mapping-works">How Suffix Mapping Works</h4>
+
+<p>The server fulfills a URL request and takes the first, best match. Suffix matches takes priority over all other fields. A match that includes Type and/or Creator in addition to suffix is stronger than a match that just includes the suffix. A match specifying only Type or Creator will be made if the URL doesn’t match another entry by suffix. If a match cannot be found, the default Action and MIME type are used.</p>
+
+<blockquote>
+  <p>An Asterisk, meaning in suffix mapsasterisk in a field is not a wildcard character. It is a placeholder that does not correspond to any suffixes, Macintosh file Type and Creatorfile Typefile CreatorMacintosh file Types, or Creators. In effect, the asterisk in a field removes that field from consideration as a possible match criterion. If you prefer, you could use any different character or string of characters that you know will not match any existing suffix, file Type, or file Creator.</p>
+</blockquote>
+
+<p>The default Action and MIME type is:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kind of file</th>
+      <th>Action</th>
+      <th>Suffix</th>
+      <th>Type</th>
+      <th>Creator</th>
+      <th>MIME Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Any file with no Suffix Mapping</td>
+      <td>BINARY</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>text/html</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This default means that the server will use a text transfer and assume that it is returning HTML text. However, you can set a different default MIME type if you prefer (see “Default MIME Type” on page 65).</p>
+
+<h4 id="guidelines-for-adding-mappings">Guidelines for Adding Mappings</h4>
+
+<p>In practice, unless particular files need special processing, administrators usually specify “general” Suffix Mappings that use an asterisk (*) in one or more fields. For example, if you have documents created by both Excel 4.0 and Excel 5.0 that have different file Types but the same filename suffix (.XL) you can use a generalized Suffix Mapping like this:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kind of file</th>
+      <th>Action</th>
+      <th>Suffix</th>
+      <th>Type</th>
+      <th>Creator</th>
+      <th>MIME Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Excel 4 or 5</td>
+      <td>BINARY</td>
+      <td>.XL</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/excel</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>rather than adding two entries like this:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kind of file</th>
+      <th>Action</th>
+      <th>Suffix</th>
+      <th>Type</th>
+      <th>Creator</th>
+      <th>MIME Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Excel 4</td>
+      <td>BINARY</td>
+      <td>.XL</td>
+      <td>XLS4</td>
+      <td>*</td>
+      <td>application/excel</td>
+    </tr>
+    <tr>
+      <td>Excel 5</td>
+      <td>BINARY</td>
+      <td>.XL</td>
+      <td>XLS5</td>
+      <td>*</td>
+      <td>application/excel</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The first method is preferred because it is easier, requires fewer updates, and improves server performance. In addition, if Excel 6.0 documents become available, those documents would match the first, general, Suffix Mapping but would not match either of the more specific ones.</p>
+
+<h4 id="predefined-suffix-mappings">Predefined Suffix Mappings</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kind of file</th>
+      <th>Action</th>
+      <th>Suffix</th>
+      <th>Type</th>
+      <th>Creator</th>
+      <th>MIME Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Text (ASCII textASCII)</td>
+      <td>TEXT</td>
+      <td>.TEXT</td>
+      <td>TEXT</td>
+      <td>*</td>
+      <td>text/plain</td>
+    </tr>
+    <tr>
+      <td>Text (ASCII textASCII)</td>
+      <td>TEXT</td>
+      <td>.TXT</td>
+      <td>TEXT</td>
+      <td>*</td>
+      <td>text/plain</td>
+    </tr>
+    <tr>
+      <td>Text (ASCII textASCII)</td>
+      <td>BINARY</td>
+      <td>.HTML</td>
+      <td>TEXT</td>
+      <td>*</td>
+      <td>text/html</td>
+    </tr>
+    <tr>
+      <td>Graphics</td>
+      <td>BINARY</td>
+      <td>.GIF</td>
+      <td>GIFf</td>
+      <td>*</td>
+      <td>image/gif</td>
+    </tr>
+    <tr>
+      <td>Graphics</td>
+      <td>BINARY</td>
+      <td>.JPG</td>
+      <td>JPEG</td>
+      <td>*</td>
+      <td>image/jpeg</td>
+    </tr>
+    <tr>
+      <td>Graphics</td>
+      <td>BINARY</td>
+      <td>.JPEG</td>
+      <td>JPEG</td>
+      <td>*</td>
+      <td>image/jpeg</td>
+    </tr>
+    <tr>
+      <td>Graphics</td>
+      <td>BINARY</td>
+      <td>.PICT</td>
+      <td>PICT</td>
+      <td>*</td>
+      <td>image/pict</td>
+    </tr>
+    <tr>
+      <td>Graphics</td>
+      <td>BINARY</td>
+      <td>.XBM</td>
+      <td>*</td>
+      <td>*</td>
+      <td>image/x-xbm</td>
+    </tr>
+    <tr>
+      <td>CGI Applications</td>
+      <td>ACGI</td>
+      <td>.ACGI</td>
+      <td>APPL</td>
+      <td>*</td>
+      <td>text/html</td>
+    </tr>
+    <tr>
+      <td>CGI Applications</td>
+      <td>CGI</td>
+      <td>.CGI</td>
+      <td>APPL</td>
+      <td>*</td>
+      <td>text/html</td>
+    </tr>
+    <tr>
+      <td>BinHex</td>
+      <td>BINARY</td>
+      <td>.HQX</td>
+      <td>TEXT</td>
+      <td>*</td>
+      <td>application/mac-binhex40</td>
+    </tr>
+    <tr>
+      <td>Stuffit</td>
+      <td>BINARY</td>
+      <td>.SIT</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/x-stuffit</td>
+    </tr>
+    <tr>
+      <td>Stuffit</td>
+      <td>BINARY</td>
+      <td>.SIT</td>
+      <td>SITD</td>
+      <td>*</td>
+      <td>application/x-stuffit</td>
+    </tr>
+    <tr>
+      <td>MacBinary</td>
+      <td>BINARY</td>
+      <td>.BIN</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/x-macbinary</td>
+    </tr>
+    <tr>
+      <td>PostScript</td>
+      <td>BINARY</td>
+      <td>.PS</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/postscript</td>
+    </tr>
+    <tr>
+      <td>TAR files</td>
+      <td>BINARY</td>
+      <td>.TAR</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/x-tar</td>
+    </tr>
+    <tr>
+      <td>ZIP compressed files</td>
+      <td>BINARY</td>
+      <td>.ZIP</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/zip</td>
+    </tr>
+    <tr>
+      <td>GZIP compressed files</td>
+      <td>BINARY</td>
+      <td>.GZ</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/x-gzip</td>
+    </tr>
+    <tr>
+      <td>PC executable</td>
+      <td>BINARY</td>
+      <td>.EXE</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/octet-stream</td>
+    </tr>
+    <tr>
+      <td>Microsoft Word</td>
+      <td>BINARY</td>
+      <td>.WORD</td>
+      <td>WDBN</td>
+      <td>MSWD</td>
+      <td>application/msword</td>
+    </tr>
+    <tr>
+      <td>Microsoft Excel</td>
+      <td>BINARY</td>
+      <td>.XL</td>
+      <td>XLS3</td>
+      <td>*</td>
+      <td>application/excel</td>
+    </tr>
+    <tr>
+      <td>Adobe Acrobat (PDF)</td>
+      <td>BINARY</td>
+      <td>.PDF</td>
+      <td>PDF</td>
+      <td>*</td>
+      <td>application/pdf</td>
+    </tr>
+    <tr>
+      <td>Macromedia Shockwave</td>
+      <td>BINARY</td>
+      <td>.DIR</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/x-director</td>
+    </tr>
+    <tr>
+      <td>Macromedia Shockwave</td>
+      <td>BINARY</td>
+      <td>.DXR</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/x-director</td>
+    </tr>
+    <tr>
+      <td>Macromedia Shockwave</td>
+      <td>BINARY</td>
+      <td>.DCR</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/x-director</td>
+    </tr>
+    <tr>
+      <td>Macromedia Shockwave</td>
+      <td>BINARY</td>
+      <td>.SWA</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/x-director</td>
+    </tr>
+    <tr>
+      <td>RealAudio</td>
+      <td>BINARY</td>
+      <td>.RA</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/x-pn-realaudio</td>
+    </tr>
+    <tr>
+      <td>MIDI</td>
+      <td>BINARY</td>
+      <td>.MIDI</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/x-midi</td>
+    </tr>
+    <tr>
+      <td>AIFF</td>
+      <td>BINARY</td>
+      <td>.AIFF</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/x-aiff</td>
+    </tr>
+    <tr>
+      <td>WAV</td>
+      <td>BINARY</td>
+      <td>.WAV</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/x-wav</td>
+    </tr>
+    <tr>
+      <td>Quicktime Video</td>
+      <td>BINARY</td>
+      <td>.MOV</td>
+      <td>MOOV</td>
+      <td>*</td>
+      <td>video/quicktime</td>
+    </tr>
+    <tr>
+      <td>Quicktime Video</td>
+      <td>BINARY</td>
+      <td>.QT</td>
+      <td>MOOV</td>
+      <td>*</td>
+      <td>video/quicktime</td>
+    </tr>
+    <tr>
+      <td>Quicktime Video</td>
+      <td>BINARY</td>
+      <td>.QTVR</td>
+      <td>MOOV</td>
+      <td>*</td>
+      <td>video/quicktime</td>
+    </tr>
+    <tr>
+      <td>Quicktime Video</td>
+      <td>BINARY</td>
+      <td>.QTC</td>
+      <td>*</td>
+      <td>*</td>
+      <td>video/x-qtc</td>
+    </tr>
+    <tr>
+      <td>MPEG Video</td>
+      <td>BINARY</td>
+      <td>.MPEG</td>
+      <td>*</td>
+      <td>*</td>
+      <td>video/mpeg</td>
+    </tr>
+    <tr>
+      <td>AVI Video</td>
+      <td>BINARY</td>
+      <td>.AVI</td>
+      <td>*</td>
+      <td>*</td>
+      <td>video/x-msvideo</td>
+    </tr>
+    <tr>
+      <td>JAVA Applets</td>
+      <td>BINARY</td>
+      <td>.CLASS</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/octet-stream</td>
+    </tr>
+    <tr>
+      <td>JAVA Scripts</td>
+      <td>BINARY</td>
+      <td>.JS</td>
+      <td>*</td>
+      <td>*</td>
+      <td>application/x-javascript</td>
+    </tr>
+    <tr>
+      <td>VRML</td>
+      <td>BINARY</td>
+      <td>.WRL</td>
+      <td>*</td>
+      <td>*</td>
+      <td>x-world/x-vrml</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="adding-suffix-mappings-to-the-server">Adding Suffix Mappings to the Server</h4>
+
+<p>To add a Suffix Mapping, follow these steps:</p>
+
+<ol>
+  <li>In the Suffix Mapping dialog box, choose an Action to be performed from the Action pop-up list. See “Action” on page 47.</li>
+  <li>Specify the file suffix, file Type, and Creator. See “File Suffix, Type, and Creator” on page 48.</li>
+  <li>Enter the MIME Type. This information tells the requesting WWW client software what to do with the returned data. See “MIME Type” on page 49.</li>
+  <li>Click Add to add the mapping.</li>
+  <li>When you are finished adding mappings, click Update.
+    <blockquote>
+      <p>If the Type and Creator values contain special characters, encode them using the %xx encoding scheme used in URLs, where xx is the hexadecimal code for the ASCII character. For example, a space character (decimal 32, hexadecimal 20) would be encoded as %20). So, “AB C” would be entered as “AB%20C”.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h4 id="fields-in-a-suffix-map">Fields in a Suffix Map</h4>
+
+<h5 id="action">Action</h5>
+
+<p>The Action pop-up list in the Suffix Mapping dialog box has these entries:</p>
+
+<ul>
+  <li>TEXT: Return the file using the TEXT transfer method. The TEXT transfer method converts CR/LF for older browsers.</li>
+  <li>BINARY: Return the file using the BINARY transfer method, without modifying its contents. Only the data fork of the file is transmitted.</li>
+  <li>CGI: Load and execute the CGI application specified in the URL. WebSTAR passes arguments to the application by using the Search Doc Apple event. The application is expected to generate a legal HTTP/1.0 header and any response information and return it to WebSTAR as the result of processing the Apple event. This result will then be transmitted to the client without modification.</li>
+  <li>ACGI: Load and execute the ACGI application specified in the URL. WebSTAR passes arguments to the application by using the Search Doc Apple event and immediately resumes processing other requests. The application is expected to generate a legal HTTP/1.0 header and any response information and return it to WebSTAR as the result of processing the Apple event. When WebSTAR receives the event reply, it processes the result, which is then transmitted to the client without modification. See “CGI Parameters” on page 113.</li>
+  <li>RAW: When the server recognizes a raw file, it opens the files and returns its contents directly to a client, without interpreting the data or generating headers for the file.</li>
+  <li>User-defined: Load and execute the plug-in, CGI or ACGI application associated with this Action, passing the URL as an argument to it. See “User-Defined Actions” on page 49.</li>
+</ul>
+
+<h5 id="file-suffix-type-and-creator">File Suffix, Type, and Creator</h5>
+
+<p>The WebSTAR server uses a document’s Suffix, Type, and Creator fields together to determine which Action to apply. The Suffix field takes precedence over Type and Creator. For example, suppose the server receives this URL, which specifies a file named “logo.map” in the server’s directory:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://www.site.com/logo.map
+</code></pre></div></div>
+
+<p>The server retrieves the file and then looks up .MAP in its Suffix Mapping list, where it finds this entry:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kind of file</th>
+      <th>Action</th>
+      <th>Suffix</th>
+      <th>Type</th>
+      <th>Creator</th>
+      <th>MIME Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Image Map file</td>
+      <td>IMAGE_MAP</td>
+      <td>.MAP</td>
+      <td>TEXT</td>
+      <td>*</td>
+      <td>text/html</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The server then passes its global variables to the Image Map plug-in, runs it, and returns the result back to the browser. Or, if the server receives the following URL, which specifies a formatted Microsoft Word document:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://your.site.com/mydoc
+</code></pre></div></div>
+
+<p>it retrieves the file, recognizes that there is no filename suffix, and sees that its Type is WDBN and Creator is MSWD. It then looks for a matching Suffix Mapping entry:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kind of file</th>
+      <th>Action</th>
+      <th>Suffix</th>
+      <th>Type</th>
+      <th>Creator</th>
+      <th>MIME Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Microsoft® Word</td>
+      <td>BINARY</td>
+      <td>.WORD</td>
+      <td>WDBN</td>
+      <td>MSWD</td>
+      <td>application/msword</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The server then transfers the file back to the client using the binary transfer method and the MIME type application/msword.</p>
+
+<h5 id="mime-type">MIME Type</h5>
+
+<p>MIME Type is information transmitted to the browser in the HTTP/1.0 header to indicate what type of file is being returned. This information allows clients to treat the returned data intelligently instead of using some kind of default, such as assuming that all returned data is HTML text. For example, if a client receives data with the application/excel MIME type, it can launch a Helper application to view the formatted data. See “Client and Server Aspects of File Transfers” on page 79 for related information.</p>
+
+<blockquote>
+  <p>When returning content to a client’s browser, CGIs and plug-ins are responsible for generating their own HTTP/1.0 headers, which should include MIME type information. For information about the proper format for HTTP headers, see the HTTP/1.0 standard referenced in “Additional Information Resources” on page 16.</p>
+</blockquote>
+
+<h3 id="user-defined-actions">User-Defined Actions</h3>
+
+<p>User-defined Actions are instructions to run an application. Unlike the CGI, and ACGI Actions, which require that the URL specify the name of the script or application directly, user-defined Actions can be invoked based on the URL suffix alone.</p>
+
+<p>Many people use user-defined Actions to support clickable maps or any other type of operation where a single CGI or plug-in can operate on multiple data files. For example, when an Action executes a map CGI or plug-in, all map information is passed to the one CGI or plug-in.</p>
+
+<p>These Actions also allow you to hide implementation details from users. That is, the URL seen by users in a document isn’t necessarily the URL that gets executed by the server.</p>
+
+<p>Another use for user-defined Actions would be to create new file types and define an Action to process them appropriately. For example, suppose you have SQL files that contain SQL query statements. You can define an Action that would pass a query to an SQL database like Butler to be found in a database when an incoming URL request references a .SQL file.</p>
+
+<p>User-defined Actions also allow you to swap out or change CGIs or plug-ins without having to change URLs in your documents. You simply edit the Action to point to a new script.Choose Actions in the Configure menu to open this dialog box:</p>
+
+<p><img src="/mac/webstar/admin_actions_2.gif" alt="Admin Actions" /></p>
+
+<p>The Actions dialog box lets you add, delete, or modify user-defined Actions.</p>
+
+<blockquote>
+  <p>Actions with a check mark in the lock column and cannot be edited.</p>
+</blockquote>
+
+<p>Clicking the Edit button when a list item is selected causes the fields of the selected item to appear in the appropriate text fields. (Double-clicking an item has the same effect.) Clicking the Replace button when a list item is selected replaces the selected item with the information specified in the text fields.</p>
+
+<p>When you click Update, the changes you have made are stored in the Settings file. If you don’t want to save your changes, click Cancel.</p>
+
+<h4 id="defining-an-action">Defining an Action</h4>
+
+<p>Defining an Action requires these two parameters:</p>
+
+<ul>
+  <li>Application: Specify the relative pathname to the script or application to be executed. Relative pathnames begin with a colon (:) and are relative to the folder containing the WebSTAR application.</li>
+  <li>Action Name: Specify a name, which will appear in the Suffix Mappings Action menu. The name is case-insensitive.</li>
+</ul>
+
+<blockquote>
+  <p>No spaces or Macintosh special characters are allowed in the application path or Action name. If those characters appear in a parameter, you need to encode them using the %xx encoding scheme used in URLs, where xx is the hexadecimal code for the ASCII character. For example, a space character (decimal 32, hexadecimal 20) would be encoded as %20). So, “AB C” would be entered as “AB%20C”.</p>
+</blockquote>
+
+<h4 id="associating-an-action-with-a-suffix-mapping">Associating an Action with a Suffix Mapping</h4>
+
+<p>User-defined action: how to use with Suffix Mapping. After you have defined an Action, you can use it in Suffix Mappings. When you add or change an Action, WebSTAR forces a reinterpretation of all Suffix Mappings. If it finds that a previously defined Action which was used by a mapping is now absent, that mapping is ignored (though it remains in the Settings file).</p>
+
+<p>For example, the Actions dialog box shown in Figure 12: contains two user-defined Actions named CLOAK and TEST. Both of these Actions execute an ACGI and return the results as HTML text. After defining these Actions, you can integrate them into the Suffix Mapping list as follows:</p>
+
+<ul>
+  <li>Choose Suffix Mapping in the Configure menu.</li>
+  <li>Select CLOAK from the Action pop-up list, and then fill in the text fields so the entry specifies the following parameters:</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kind of file</th>
+      <th>Action</th>
+      <th>Suffix</th>
+      <th>Type</th>
+      <th>Creator</th>
+      <th>MIME Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HTML file</td>
+      <td>CLOAK</td>
+      <td>.HTML</td>
+      <td>TEXT</td>
+      <td>*</td>
+      <td>text/html</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Click Add to add the new mapping at the top of the list.</li>
+</ul>
+
+<p>The intention is to pass all HTML requests to the NetCloak ACGI.</p>
+
+<ul>
+  <li>Select TEST from the Action pop-up list, and then fill in the text fields so the entry specifies the following parameters:</li>
+</ul>
+
+<p>The intention is to pass all requests that end in .TEST to the Test ACGI.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kind of file</th>
+      <th>Action</th>
+      <th>Suffix</th>
+      <th>Type</th>
+      <th>Creator</th>
+      <th>MIME Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Files with TEST suffix</td>
+      <td>TEST</td>
+      <td>.TEST</td>
+      <td>TEXT</td>
+      <td>*</td>
+      <td>text/html</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Click Add, and then click Update.</li>
+</ul>
+
+<h3 id="realms">Realms</h3>
+
+<p>WebSTAR lets you divide your files and folders into multiple security Realms. You can then require user name/password authentication to access all files within a Realm.</p>
+
+<p>A Realm encompasses all files and folders for which a URL contains a specified string of characters. Attempts to access files or folders in a particular Realm can be limited to valid user names and passwords for that Realm.</p>
+
+<p>Choose Realms in the Configure menu to open this dialog box:</p>
+
+<p><img src="/mac/webstar/admin_realms.gif" alt="Admin Realms" /></p>
+
+<p>The Realms dialog box lets you add, delete, or modify security Realms.</p>
+
+<p>Clicking the Edit button when a list item is selected causes the fields of the selected item to appear in the appropriate text fields. (Double-clicking an item has the same effect.) Clicking the Replace button when a list item is selected replaces the selected item with the information specified in the text fields.</p>
+
+<p>When you click Update, the changes you have made are stored in the Settings file. If you don’t want to save your changes, click Cancel.</p>
+
+<h4 id="defining-a-realm">Defining a Realm</h4>
+
+<p>A Realm requires these two parameters:</p>
+
+<ul>
+  <li>Realm Name: Specify a name. The name is case-insensitive. The Realm Name is usually shown to users in the user/password dialog presented by a web browser such as Microsoft Internet Explorer or Netscape Navigator.</li>
+  <li>Match String: Specify a text string that will be searched for in incoming URLs. It must appear in the names assigned to the actual folders and files that will be included in this Realm.Be careful that each match string you enter is unique. If there is a possibility for a URL to match more than one Realm, WebSTAR will stop searching once it matches the first Realm (based on the order in which they appear in the Realms window). If there is duplication in the match strings, the second Realm will never be matched.</li>
+</ul>
+
+<blockquote>
+  <p>No spaces or Macintosh special characters are allowed in the application path or Action name. If those characters appear in a parameter, you need to encode them using the %xx encoding scheme used in URLs, where xx is the hexadecimal code for the ASCII character. For example, a space character (decimal 32, hexadecimal 20) would be encoded as %20). So, “AB C” would be entered as “AB%20C”.</p>
+</blockquote>
+
+<h4 id="example-realms">Example Realms</h4>
+
+<p>For example, suppose you want to configure your server with some files available to everyone, some files available to coworkers, and some files available to customers. You can do so by defining two Realms such as:</p>
+
+<ul>
+  <li>Realm Name coworkers (match string work). Folders and files in this Realm may have URLs such as:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://your.host/working_draft.html 
+http://your.host/work-info/staff_photo.gif
+http://your.host/personnel/workers_comp.html
+</code></pre></div></div>
+
+<ul>
+  <li>Realm Name customers (match string custom). Folders and files in this Realm may have URLs such as:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://your.host/customer_data/price_list.html 
+http://your.host/custom_designs.html
+</code></pre></div></div>
+
+<p>The match string can be part of a filename or folder name. WebSTAR looks for the match string anywhere in the URL, so you can control access to multiple files by placing them in a folder whose name contains a Realm’s match string.</p>
+
+<p>Once it has found that a file requires authentication, WebSTAR sends the appropriate response to the WWW client, along with the Realm name and a request for a user name and password for the Realm. The client shows this string to the user when it prompts for a user name and password. WebSTAR uses a combination of the user name and the Realm to look up the correct password in the WebSTAR.pass file. If the password supplied by the user matches the password found in the WebSTAR.pass file, the requested file is returned.</p>
+
+<p>Most client programs retain authentication information, so the user only needs to enter it on the first access.</p>
+
+<h4 id="managing-a-large-number-of-users">Managing a Large Number of Users</h4>
+
+<p>The recommended way to manage large user databases is to use the Import/Export functions in the WebSTAR application’s Passwords dialog box (see “Passwords” on page 29). For example, a large site could keep as many as 10,000 or more users in a FileMaker database and the administrator makes all changes in that database. The database can then be automatically exported as a tab-delimited, CR-terminated text file in the proper format, then be imported into WebSTAR through the application’s Passwords dialog box or automatically imported by WebSTAR using AppleEvents.</p>
+
+<h3 id="allow-and-deny">Allow and Deny</h3>
+
+<p>WebSTAR can allow or deny client access to the entire server, as well as to individual Realms, based on a specified list of domain names or IP addresses. If WebSTAR determines that the client is not allowed access, it returns the file designated as the No Access file (see “No Access” on page 63).</p>
+
+<p>Choose Allow/Deny in the Configure menu to open this dialog box:</p>
+
+<p><img src="/mac/webstar/admin_allow_deny.gif" alt="Admin Allow Deny" /></p>
+
+<p>The Allow and Deny dialog box lets you add, delete, or modify security directives (Allow or Deny statements) on a global or individual Realm basis. You can specify any number of statements. To view additional statements, use the scroll bar at the right side of the window.</p>
+
+<p>Clicking the Edit button when a list item is selected causes the fields of the selected item to appear in the text field and radio button. (Double-clicking an item has the same effect.) Clicking the Replace button when a list item is selected replaces the selected item with the information specified in the text field and radio button.</p>
+
+<p>When you click Update, the changes you have made are stored in the Settings file. If you don’t want to save your changes, click Cancel.</p>
+
+<h4 id="webstar-default-allowdeny-behavior">WebSTAR Default Allow/Deny Behavior</h4>
+
+<p>To determine whether a client is allowed to access the server, WebSTAR evaluates the requests using the following sequence:</p>
+
+<p>WebSTAR first checks the global allow/deny information.</p>
+
+<p>If denied, returns the no access response.</p>
+
+<p>If allowed, WebSTAR checks if a Realm exists for the requested URL.</p>
+
+<p>If a Realm exists, checks if the request contains a valid username and password.</p>
+
+<p>If not, checks if the Realm has allow/deny info associated with it.</p>
+
+<p>If so, checks the Realm’s allow/deny info.</p>
+
+<p>If allow/deny info doesn’t exist, or if denied, WebSTAR requires a username/password from the requester.</p>
+
+<p>Finally, if the request is allowed, checks all security plug-ins until one says to deny the request.</p>
+
+<p>If all security plug-ins approve, WebSTAR serves the file.</p>
+
+<blockquote>
+  <p>By default, all clients are allowed to access a server. However, if you specify even one Allow or Deny statement, that default is reversed so that no clients are allowed to access the server without explicit permission.</p>
+</blockquote>
+
+<h4 id="using-allow-statements">Using Allow Statements</h4>
+
+<p>To enable access to specific hosts only, follow these steps:</p>
+
+<ul>
+  <li>Choose “global” or a specific Realm from the pop-up menu.</li>
+  <li>In the Match String field, specify a full IP address or hostname.</li>
+</ul>
+
+<p>An example IP address is 198.211.33.1.</p>
+
+<p>The trailing period in the IP address prevents a match with another address such as 198.211.33.10.</p>
+
+<p>An example hostname is sparky.starnine.com.</p>
+
+<ul>
+  <li>Click the Allow button.</li>
+  <li>Click Add.</li>
+  <li>Specify a partial IP address or domain name in the Match String field.</li>
+</ul>
+
+<p>An example partial IP address is 198.211.33. (to specify a domain), or 1 (to allow all IP addresses that begin with “1”)</p>
+
+<p>An example domain name is starnine.com</p>
+
+<ul>
+  <li>Click the Allow button.</li>
+  <li>Click Add.</li>
+  <li>Continue adding Allow statements for hosts and domains you want to have access to the server.</li>
+  <li>Click Update.</li>
+</ul>
+
+<h4 id="using-deny-statements">Using Deny Statements</h4>
+<p>If you need to allow most sites to connect to your site but restrict a handful of hosts or domains, you can bypass the default “deny all” behavior of WebSTAR by specifying an Allow * (the * is a wildcard character which means any domain name or IP address) followed by a Deny statement, as shown here:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Allow *|
+Deny 129.166.3
+</code></pre></div></div>
+
+<p>The Allow * statement means “allow all” and operates by matching the first digit in all possible IP addresses, effectively reversing the default Deny behavior. The following Deny statement then refuses access to hosts at that specific network address.</p>
+
+<p>You can also use Deny and Allow statements to allow access to specific hosts within a domain that has been denied. For example, these statements:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Allow 129.166. 
+Deny 129.166.3 
+Allow 129.166.30.1.
+</code></pre></div></div>
+
+<p>have the following effect:</p>
+
+<ul>
+  <li>WebSTAR first initiates its Deny all default behavior.</li>
+  <li>The first Allow statement specifies that clients with addresses that begin with 129.166 are allowed to connect to the server.</li>
+  <li>The next Deny statement specifies that all clients with IP addresses that begin with 129.166.3 are denied access the server. See the important note that follows for more detail.</li>
+  <li>The next Allow statement explicitly enables the host with the address 129.166.30.1. to access the server. This statement matches only one specific address.</li>
+</ul>
+
+<blockquote>
+  <p>WebSTAR always appends a trailing period when comparing a client’s IP address to the security entries. To match exactly one host, the IP address argument must end with a period. For example, the Deny statement shown in the example immediately above matches not only all hosts in the 129.166.3 subnet, but also all hosts in the 129.166.30 subnet, the 129.166.31 subnet, and so forth. If you wanted to only restrict hosts in the 129.166.3 subnet, you should add a trailing period to the IP address (129.166.3.).</p>
+</blockquote>
+
+<h3 id="miscellaneous-settings">Miscellaneous Settings</h3>
+
+<p>To set parameters that affect WebSTAR’s performance and general functioning, choose Misc. Settings in the Configure menu. This dialog box appears:</p>
+
+<p><img src="/mac/webstar/admin_misc_settings.gif" alt="Admin Misc Settings" /></p>
+
+<h4 id="connection-settings">Connection settings</h4>
+
+<p>The first four parameters in the left column of the Miscellaneous Settings dialog box determine how many connections can be processed concurrently, on which port the WebSTAR server listens for connections, when connections will time out, and how often the statistics are updated in the WebSTAR Admin window.</p>
+
+<h5 id="max-connections">Max Connections</h5>
+
+<p>This parameter specifies the maximum number of concurrent client connections to the WebSTAR server. The default is 12. The valid range for the Max Connections value is 4 to 50 with MacTCP; 4 to 150 with Open Transport. Using MacTCP, the last 3 connections are reserved for reporting that the server is too busy when all of the other connections are in use. When all of the designated connections are in use, incoming clients are informed that the server is too busy to handle their request.</p>
+
+<p>MacTCP can handle a maximum of 64 simultaneous connections, and WebSTAR leaves 14 connections for other TCP/IP services such as FTP, E-mail, and Telnet. Thus, when WebSTAR is configured to handle 50 connections under MacTCP, 14 connections are still available for these other TCP/IP services.</p>
+
+<p>The server can easily get swamped with connections if you have a slow network connection. Requests can come in faster than the server can transmit data to the clients. WebSTAR deals with this overload by refusing connections with a reply message that many clients understand to mean “try again in a few seconds,” so some users won’t even notice a problem.</p>
+
+<p>The basic rule of thumb is to watch the WebSTAR status window (the bar graphs) and adjust the Max Connections up or down, based on your server’s load and performance under that load. Don’t be afraid to restrict the number of connections if your server cannot handle the load (because either the computer or your network connection is slow). It may actually help speed transfer rates.</p>
+
+<blockquote>
+  <p>If KeepAliveKeepAlive is enabled, you should increase Max Connections to 3 times that of normal.</p>
+</blockquote>
+
+<h5 id="port">Port</h5>
+
+<p>This parameter specifies the port number WebSTAR listens to for all incoming connections. The default port is 80.</p>
+
+<p>You can change this number to allow multiple WebSTAR servers to run on one computer on different ports. See “Running Multiple WebSTAR Servers” on page 82.</p>
+
+<h5 id="timeout">Timeout</h5>
+
+<p>The Timeout parameter determines the maximum amount of time (in seconds) WebSTAR will wait before dropping an inactive connection. Timeouts can occur when a CGI application takes too long to execute or when a client doesn’t respond to WebSTAR, implying that the connection has been dropped. The minimum value is 15 seconds, the maximum value is 120 seconds, and the default is 60 seconds.</p>
+
+<h5 id="status-report-delay">Status Report Delay</h5>
+
+<p>The Status Report Delay parameter sets the amount of time in seconds between status report events that appear in the upper portion of the Status Window in WebSTAR, and in the WebSTAR Admin application and Admin web interface. The minimum value is 1 second, the maximum value is 60 seconds, and the default is 15 seconds.</p>
+
+<h5 id="file-info-cache-size">File Info Cache Size</h5>
+
+<p>File Info Cache Size parameter sets the number of bytes to allocate for caching file information. A value of 0 turns the File Info Cache off. The minimum setting for this field is 24k, but setting it any smaller than the default setting results in virtually no performance gain because the cache is continually being turned over as new files are loaded into the few available slots. The maximum setting is the current amount of free memory displayed in the server’s status window when file info caching is disabled. Increasing the application’s memory partition increases this upper bound correspondingly.</p>
+
+<h5 id="buffer-size">Buffer Size</h5>
+
+<p>This parameter specifies how many bytes WebSTAR can send in a single TCP/IP write to the client. The minimum buffer size is 256, and the maximum is 10,240. The default is 3500 bytes.</p>
+
+<p>With a relatively large buffer size, files take a longer time to transfer over slow connections. You can adjust the buffer size to accommodate slower connections. The smaller the buffer size, the faster WebSTAR can send a buffer of data to a slow client without slowing down all the other connections. Unfortunately, there is a point of diminishing return, where the smaller buffer begins to cause WebSTAR to spend more time thrashing through connection servicing than sending data. Usually a value between 512 and 2048 works well for slow clients. If you have a lot of high speed clients, WebSTAR performs better with larger buffer size settings like 4096 or 8192. Experiment to determine the optimum size.</p>
+
+<blockquote>
+  <p>PC-based WWW clients that use the Trumpet socket driver may experience problems with WebSTAR if the buffer size is greater than 8K. Lowering the size or reconfiguring Trumpet to allow larger incoming buffers will solve the problem.</p>
+</blockquote>
+
+<h5 id="keepalive-connections">KeepAlive Connections</h5>
+
+<p>The KeepAlive Connections parameter sets the number of connections per client to keep alive. The range is from 1ñ10 connections. A setting of 0 turns it off. The default value is 0. If enabled, make sure you increase the number of Mac Connections allowed.</p>
+
+<h5 id="keepalive-duration">KeepAlive Duration</h5>
+
+<p>The KeepAlive Duration parameter sets the number of seconds to keep alive idle client connections. The range is from 1 to 60 seconds. A setting of 0 turns it off. The default value is 0. If enabled, the recommended value is 15 seconds.</p>
+
+<h5 id="use-dns">Use DNS</h5>
+
+<p>The Use DNS check box tells WebSTAR whether or not to perform a DNS lookup when a WWW client connects to the server. By default, it is turned off.When this option is checked, the WebSTAR server performs a DNS lookup, caches the hostname, and uses the hostname in reporting and logging. The advantage of performing DNS lookups is that clients’ hostnames appear in the log file instead of the much more cryptic IP addresses. The disadvantage is that if a problem occurs during the lookup, the lookup has to time out before the server can proceed. This can decrease server performance if many incoming connections have unresolvable addresses or if the DNS server at your site is slow.</p>
+
+<h5 id="restrict-cgis-to-cgi-bin">Restrict CGIs to CGI-BIN</h5>
+
+<p>This setting toggles UNIX-style CGI-BIN support. Checking this option restrits the execution of CGI and ACGI applications to hs ontand in a folder called “CGI-BIN” at the top level of the WebSTAR document tree (i.e., in the sam leahe server application.)</p>
+
+<h5 id="special-files">Special Files</h5>
+
+<p>With the exception of the log file, all special files can be simple HTML documents, CGI, or ACGI applications.</p>
+
+<h5 id="index">Index</h5>
+
+<p>An index file is the default document returned if a URL specifies the document “/” or no document at all. If you don’t specify an Index filename, the default index file is named default.html. The file can be an HTML file, or a file name including suffix that causes a CGI application or plug-in to execute. Use the Index text field in the Miscellaneous Settings dialog box to designate the name for an index file for the server. The file does not need to be named “index” or “default,” it can be any simple filename. The file may be an HTML file, or the name of a script or application to execute.</p>
+
+<blockquote>
+  <p>The name you enter must be a simple filename. You may not specify a path or partial path as you can for other special files.</p>
+</blockquote>
+
+<p>When a file with the designated name appears in the WebSTAR folder, WebSTAR will return it if a URL specifies the server alone without a specific filename. Any folder in the WebSTAR hierarchy can have an index file, as long as the file has the name you specify in the Index field. However, if you want to use a different filename for an index file in a subfolder, you can make an alias of the file and rename the alias to the Index filename.</p>
+
+<h5 id="error">Error</h5>
+
+<p>Use the Error text field in the Miscellaneous Settings dialog box to type the name of the file to be returned by the server if an error occurs. This is usually an information message telling the user that a requested file cannot be found. The default filename in the field is :error.html.The default error file resides in the same directory as the WebSTAR application. Relative pathnames begin with a colon (:), which indicates the current directory. So, when you type the name in the Error text field, precede it with a colon.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:error.html
+</code></pre></div></div>
+
+<h5 id="no-access">No Access</h5>
+
+<p>Use the No Access text field in the Miscellaneous Settings dialog box to type the name of the file to be returned if a client is refused access based on Allow/Deny statements in the Settings file. See “Allow and Deny” on page 54 for more details. The default filename is noaccess.html.The default No Access file resides in the same directory as the WebSTAR application. Relative pathnames begin with a colon (:), which indicates the current directory. So, when you type the name in the No Access text field, precede it with a colon (e.g., :noaccess.html).</p>
+
+<h5 id="log-file">Log File</h5>
+
+<p>Use the Log File text field in the Miscellaneous Settings dialog box to type the name of the log file for the server. The default filename is WebSTAR Log. A log of all client accesses is maintained in this file. See “Log Format” on page 65 for related information.</p>
+
+<p>The Log file should reside in the same directory as the WebSTAR application. Relative pathnames begin with a colon (:), which indicates the current directory. So, when you type the name in the Log File text field, precede it with a colon (e.g., :WebSTAR Log).</p>
+
+<h4 id="preprocessing-and-postprocessing-of-urls">Preprocessing and Postprocessing of URLs</h4>
+
+<p>Designating a plug-in, CGI or ACGI application to preprocess URLs allows you to perform an Action before the server processes the URL. For example, you could implement your own security check, bypassing the security in WebSTAR in favor of a different username/password scheme. Or, you could examine every incoming request, look at the preferred language being requested by the browser, and route English requests to one machine and French to another. Another use could be to implement an alternate storage scheme for WWW data other than the Mac OS file system; for example, every URL request could be mapped into a database query.</p>
+
+<p>Designating a plug-in, CGI or ACGI application to postprocess URLs allows you to perform an Action after the URL has been processed. For example, you could use a postprocessor application to implement a different form of transaction logging that keeps a summary instead of an exact log of each transaction. Or, a postprocessor could be used to support a billing scheme in the event that you want to charge for individual page accesses.</p>
+
+<h5 id="preprocess">PreProcess</h5>
+<p>Use the Preprocess text field in the Miscellaneous Settings dialog box to type the name of an external application to be executed before any URL is processed by the server.</p>
+
+<p>Only one preprocessor application can be called by WebSTAR, although daisy-chaining is allowed. WebSTAR launches that application and sends every URL and associated WWW request for information from the WWW client to the preprocessor application before processing the client’s request for data.</p>
+
+<p>If the preprocessor returns any data at all to WebSTAR, WebSTAR assumes that the preprocessor has completely handled any processing necessary to deal with the requested URL. So, it skips any further URL processing and returns the data it received from the preprocessor to the client.</p>
+
+<h5 id="postprocess">PostProcess</h5>
+
+<p>Use the Postprocess text field in the Miscellaneous Settings dialog box to type the name of a CGI, ACGI or plug-in to be executed after the URL is fulfilled.</p>
+
+<p>As in preprocessing, only one postprocessor application can be called by WebSTAR. After WebSTAR has retrieved the file requested by a URL, it sends the file to the postprocessor application.</p>
+
+<p>The postprocessor application is run after the TCP/IP connection to the client has been closed and it should not return any data to WebSTAR.</p>
+
+<h4 id="default-mime-type">Default MIME Type</h4>
+
+<p>Configuring the default server responseWebSTAR can serve any kind of data. It is not limited to HTML documents, although it is configured “out of the box” to use text/html as the default MIME type. That means that if a URL does not match any of the defined Suffix Mappings, the server uses this default:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kind of file</th>
+      <th>Action</th>
+      <th>Suffix</th>
+      <th>Type</th>
+      <th>Creator</th>
+      <th>MIME Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Any file with no Suffix Mapping</td>
+      <td>BINARY</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>text/html</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>You can change the default MIME type by typing another valid MIME type in this field. For example, if you change the Default MIME field to text/pdf, you now have a server configured to server PDF files by default.</p>
+
+<h4 id="server-name">Server Name</h4>
+
+<p>The Server Name field specifies the name of the server returned in redirect messages (and other server responses). With this field filled in you don’t have to rely on the DNS name only.</p>
+
+<h3 id="log-format">Log Format</h3>
+
+<p>The Log Format command in the Configure menu lets you specify what kind of information to include in log file entries. You can choose between the WebSTAR Log Format, the Common Log Format or Extended Log Format.</p>
+
+<p>The Log file is in the same folder as the WebSTAR folder and uses the name you specify in the Miscellaneous Settings dialog box. See “Log File” on page 63 for details.</p>
+
+<p>Typically, WebSTAR logs messages about each transaction it performs. Each message may include the details shown in the Log Format dialog box.</p>
+
+<p><img src="/mac/webstar/admin_log_format_wlf.gif" alt="Log Format" /></p>
+
+<p>Entries in the log file are separated by tabs, and individual entries are terminated with a carriage return. This format is the standard text-only import format used by most spreadsheet applications, such as Excel, and by Macintosh database applications like FileMaker.</p>
+
+<blockquote>
+  <p>To suspend logging, choose Suspend Logging in the Options menu.</p>
+</blockquote>
+
+<p>You use the log format token list to set the format of messages written to the screen and the log file. First choose one of the log formats from the pop-up menu. Then, select a token in the Log Format list and click Copy to add that token to the log file (the Common Log Format uses standard tokens and are not user-selectable). The ordering of items reported can be adjusted by using the up and down arrow buttons.</p>
+
+<blockquote>
+  <p>If you change from one format to another, make sure you quit WebSTAR, and clear the current log file. This is particularly important if you are using a log analysis application.</p>
+</blockquote>
+
+<h4 id="webstar-log-format">WebSTAR Log Format</h4>
+
+<p>The tokens for the WebSTAR Log Format and their interpretations are as follows:</p>
+
+<ul>
+  <li>DATE: The current date</li>
+  <li>TIME: The current time</li>
+  <li>RESULT: The results of the request, which may be OK, ERR!, or PRIV.</li>
+  <li>HOSTNAME: The name of the WWW client’s computer</li>
+  <li>URL: The requested URL path</li>
+  <li>BYTES_SENT: The number of bytes transmitted</li>
+  <li>AGENT: The identity of the WWW client software such as Mosaic or Netscape</li>
+  <li>BYTES: The number of bytes transmitted (reports in Extended Log Format style)</li>
+  <li>CONNECTION_ID: A number that is unique for each connection for this invocation of the server.</li>
+  <li>CS-HOST: The name of the WWW clientís computer (if DNS look-ups are enabled; reports blank, “-“ if DNS look-ups are disabled)</li>
+  <li>CS-IP: The name of the WWW clientís computer (if DNS look-ups are disabled; reports blank, “-“, if DNS look-ups are enabled)</li>
+  <li>CS-METHOD: The HTTP method, usually GET or POST (reports in Extended Log Format style)</li>
+  <li>CS-STATUS: Numeric status code returned to the client in the HTTP response header (e.g.,200, 304, etc.)</li>
+  <li>CS-URI: The requested URL path (reports in Extended Log Format style)</li>
+  <li>FROM: The contents of the From field in the request, usually an E-mail address if present</li>
+  <li>METHOD: The HTTP method, usually GET or POST</li>
+  <li>PATH_ARGS: The path arguments to the URL (text after a dollar sign)</li>
+  <li>REFERER: The name of the document referencing this URL</li>
+  <li>SEARCH_ARGS: The search arguments to the URL (text after a question mark)</li>
+  <li>TRANSFER_TIME: The number of ticks required to complete the transmission</li>
+  <li>TIME_TAKEN: The time taken to complete the transmission, reported in HH:MM:SS format</li>
+  <li>USER: The name of remote user if authentication was required</li>
+</ul>
+
+<blockquote>
+  <p>Not all WWW clients provide all of the information represented by all of these tokens.</p>
+</blockquote>
+
+<h4 id="common-log-format-clf">Common Log Format (CLF)</h4>
+
+<p>The Common Log Format uses standard tokens that are not user-selectable. CLF is a standard used by most web servers that provides basic logging of the information necessary to do statistical analysis of server usage. Many analysis tools support this format.</p>
+
+<h4 id="extended-log-format-exlf">Extended Log Format (ExLF)</h4>
+
+<p>ExLF is an extension of the CLF format and is configurable like the WebSTAR Log Format. The tokens for the Extended Log Format and their interpretations are as follows:</p>
+
+<ul>
+  <li>BYTES: The number of bytes transmitted</li>
+  <li>CS-HOST: The name of the WWW clientís computer (if DNS look-ups are enabled; reports blank, “-“ if DNS look-ups are disabled)</li>
+  <li>CS-IP: The name of the WWW clientís computer (if DNS look-ups are disabled; reports blank, “-“, if DNS look-ups are enabled)</li>
+  <li>CS-METHOD: The HTTP method, usually GET or POST</li>
+  <li>CS-STATUS: Numeric status code returned to the client in the HTTP response header (e.g.,200, 304, etc.)</li>
+  <li>CS-URI: The requested URL path</li>
+  <li>DATE: The current date</li>
+  <li>TIME: The current time</li>
+  <li>TIME_TAKEN: The time taken to complete the transmission</li>
+</ul>
+
+<h4 id="webstarmessages-file">WebSTAR.Messages File</h4>
+
+<p>WebSTAR now logs all serious start-up problems it encounters to a new file, “WebSTAR.Messages.” Any line in this file that begins with the string “ERR:” contains a message describing a problem that caused WebSTAR to terminate. This file is especially useful with background-only versions of WebSTAR, where post mortem information on why the server isnít launching is required and may be useful when contacting Technical Support.</p>
+
+<h3 id="add-password">Add Password</h3>
+
+<p>In the WebSTAR Admin application, you can restrict incoming connections based on the IP address or domain name of the remote client, or you can assign user name/password authentication to specific files and folders. To restrict incoming connections based on the IP address or domain name of the remote client, see “Allow and Deny” on page 54. For security reasons, adding a password is the only function allowed here using WebSTAR Admin. Deleting or changing security information in any other way must be performed at the serverís console and not remotely.</p>
+
+<p>To assign user name/password authentication, you need to set up your folder hierarchy with security Realms in mind (see “Realms” on page 52). Then, you can assign the user name/password authentication required to access data within a Realm. The user name/password authentication in WebSTAR is the same as the basic authentication scheme built into most WWW clients (with the exception of older versions of some browsers like MacWeb and Mosaic). For WWW clients that have built-in authentication, users only have to enter the appropriate user name and password once. The client remembers the user name and password and sends it automatically for future requests.</p>
+
+<blockquote>
+  <p>Authentication is optional. You can choose not to activate any password-based security on your server.</p>
+</blockquote>
+
+<p>To add user names and passwords, choose Passwords in the Configure menu. The Add Passwords dialog box appears:</p>
+
+<p><img src="/mac/webstar/admin_passwords_1.gif" alt="Admin Passwords" /></p>
+
+<p>To assign a user name and password to a Realm, follow these steps:</p>
+
+<ol>
+  <li>Define at least one security Realm. See “Realms” on page 52.</li>
+  <li>Choose Passwords in the Configure menu to open the Add Passwords dialog box.</li>
+  <li>Select the Realm in the Realm pop-up.</li>
+  <li>Type a user name and a password in the appropriate fields.</li>
+  <li>The password is limited to 64 characters. When you choose a password, make sure that it does not contain Macintosh-specific characters that cannot be typed from a PC-compatible Web client.</li>
+  <li>Click Add. The new user name will appear in the scrolling list, along with the Realm to which it is assigned. A user name may be entered in multiple Realms, but each user name/Realm combination must be unique in this window.</li>
+</ol>
+
+<p>User names are available immediately as soon as you add them; there is no need to stop or start the server. In addition, WebSTAR can continue to serve files while you are adding user name and password information.</p>
+
+<h3 id="plug-in-info">Plug-In Info</h3>
+
+<p>The Plug-In Info window in the Configure menu provides basic information about which plug-ins are loaded on this particular server.</p>
+
+<p><img src="/mac/webstar/Plug-in_Info.gif" alt="Plugin info" /></p>
+
+<h3 id="using-the-webstar-admin-web-interface">Using the WebSTAR Admin Web Interface</h3>
+
+<p>Similar to the WebSTAR Admin application in almost every feature and function, the WebSTAR Admin web interface has one feature that truly sets it apart from the application: you can use it anywhere, anytime and not necessarily on a Macintosh computer. It is, after all, a web browser interface for monitoring, configuring and otherwise managing your WebSTAR server from anywhere on the Internet.</p>
+
+<h4 id="to-use-the-webstar-admin-web-interface">To use the WebSTAR Admin Web Interface:</h4>
+
+<ol>
+  <li>Launch the web browser of your choice, Microsoft Internet Explorer, Netscape Navigator or Mosaic.</li>
+  <li>Connect to the URL: http://your.server.com/pi_admin.admin</li>
+</ol>
+
+<p>Your browser displays a screen similar to the one shown in Figure 19.</p>
+
+<p><img src="/mac/webstar/Web_Admin_UI_Main.gif" alt="Web Admin Main" /></p>
+
+<p>Use the buttons on the left and at the bottom of the screen to navigate to the task you wish to accomplish.</p>
+
+<p><img src="/mac/webstar/Web_Admin_Monitor.gif" alt="Web Admin Monitor" /></p>
+
+<h4 id="monitor">Monitor</h4>
+
+<p>When you click the Monitor button, your web browser displays a screen similar to that shown in Figure 20. This Monitor screen updates every 15 seconds and shows status information similar to that in the status portion of the WebSTAR Admin application window.</p>
+
+<p><img src="/mac/webstar/Web_Admin_Settings.gif" alt="Web Admin Settings" /></p>
+
+<h4 id="settings">Settings</h4>
+
+<p>When you click the Settings button, your web browser displays a screen similar to that shown in Figure 21. From Settings you can access links to screens which let you add, edit, replace or delete many of the same items found on the Configure menu in the WebSTAR Admin application (see “WebSTAR Admin Configure Menu” on page 41).</p>
+
+<p><img src="/mac/webstar/Web_Admin_Controls.gif" alt="Web Admin Controls" /></p>
+
+<h4 id="controls">Controls</h4>
+
+<p>When you click the Controls button, your web browser displays a screen similar to that shown in Figure 22. With Controls, you can control server operation much like you would using the Options menu in the WebSTAR Admin application (see “WebSTAR Admin Options Menu” on page 40).</p>
+
+<p><img src="/mac/webstar/Web_Admin_Plug-ins.gif" alt="Web Admin Plugins" /></p>
+
+<h4 id="plug-ins">Plug-Ins</h4>
+
+<p>When you click the Plug-Ins button, your web browser displays a screen similar to that shown in Figure 23. The Plug-Ins screen displays a list of all installed plug-ins and provides links to their configuration pages.</p>
+:ET

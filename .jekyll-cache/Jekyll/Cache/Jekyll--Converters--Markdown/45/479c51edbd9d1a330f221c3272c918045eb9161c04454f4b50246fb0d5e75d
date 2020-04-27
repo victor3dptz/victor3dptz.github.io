@@ -1,0 +1,75 @@
+I"�<p>This website mostly contains information taken from Internet. It’s my personal knowledge base. You may use it freely. If you like it, please donate me some bitcoins, please! Thanks!</p>
+
+<p>Bitcoin (BTC): <strong><a href="bitcoin:1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW">1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW</a></strong></p>
+
+<p><img src="https://wiki.victor3d.com.br/img/serverheader.jpg" alt="Main Logo" /></p>
+
+<iframe src="https://money.yandex.ru/quickpay/shop-widget?writer=seller&amp;targets=%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D1%83%20%D0%BD%D0%B0%20%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D1%8C%D0%BA%D0%B8&amp;targets-hint=&amp;default-sum=100&amp;button-text=13&amp;payment-type-choice=on&amp;mobile-payment-type-choice=on&amp;hint=&amp;successURL=https%3A%2F%2Fwiki.victor3d.com.br%2Fcats.html&amp;quickpay=shop&amp;account=41001246453470" width="100%" height="222" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+
+<h3 id="linux">Linux</h3>
+<p><img src="https://wiki.victor3d.com.br/img/linux.gif" alt="Linux" /></p>
+<ul>
+  <li><a href="/faq.html">Linux FAQ</a></li>
+</ul>
+
+<h3 id="classic-macintosh">Classic Macintosh</h3>
+<p><img src="https://wiki.victor3d.com.br/img/mac.gif" alt="Classic Macintosh" /></p>
+<ul>
+  <li><a href="/mac/68kmachints.html">Программы для Макинтоша</a></li>
+  <li><a href="/mac/hdscpatcher.html">HD SC Setup 7.3.5 patcher</a></li>
+  <li><a href="/mac/lciiispeedup.html">LCIII (P450) Speedup</a></li>
+  <li><a href="/mac/nzmd/">Н.Ж.М.Д.</a></li>
+  <li><a href="/mac/emulators/">Apple Macintosh Emulators</a></li>
+  <li><a href="/mac/emulators/executorvsvmac.html">Executor versus vMac</a></li>
+  <li><a href="/mac/hardware.html">Совместимость комплектующих Mac/PC</a></li>
+  <li><a href="/mac/buyusedmac.html">Покупка Макинтоша б/у</a></li>
+  <li><a href="/mac/21uses68k.html">21 More Uses for a 68K Mac</a></li>
+  <li><a href="/mac/bootpc/">Bootstrap your vintage Ethernet equipped Mac from your Windows PC</a></li>
+  <li><a href="/mac/speedometer/">Speedometer Benchmark</a></li>
+  <li><a href="/mac/aux/">A/UX System Software</a></li>
+  <li><a href="/mac/russian/">Русификация Mac OS 9</a></li>
+  <li><a href="/mac/applefuture.html">Планы и перспективы Apple - мнение дилера</a></li>
+  <li><a href="/mac/apple_bugs.html">Apple Bugs</a></li>
+  <li><a href="/mac/apple_codenames.html">Apple Codenames</a></li>
+  <li><a href="/mac/powermac6100/">PowerMac 6100 Upgrade Guide</a></li>
+  <li><a href="/mac/se30-network/">The Definitive Guide to Connecting your SE/30</a></li>
+  <li><a href="/mac/cc/internet.html">Getting a Color Classic on the Internet</a></li>
+  <li><a href="/mac/cc/upgrade.html">Upgrading a Color Classic</a></li>
+  <li><a href="/mac/koi8/">Macintosh KOI8-R</a></li>
+  <li><a href="/mac/faq/">Макинтош FAQ</a></li>
+  <li><a href="/mac/rhapsody.html">Занятная заметка про Rhapsody (1997)</a></li>
+  <li><a href="https://wiki.victor3d.com.br/mac/68000.txt">68k Mac FAQ</a></li>
+  <li><a href="/mac/webstar/">WebSTAR Technical Reference</a></li>
+</ul>
+
+<h3 id="mac-os-x">Mac OS X</h3>
+<p><img src="https://wiki.victor3d.com.br/img/osx.gif" alt="Mac OS X" /></p>
+<ul>
+  <li><a href="/osx/abrmacosxfaq/">ABR’s Mac OS X FAQ: Advanced</a></li>
+  <li><a href="/osx/sata/">PowerMac G4 SATA Support</a></li>
+</ul>
+
+<h3 id="mac-os-x-server">Mac OS X Server</h3>
+<p><img src="https://wiki.victor3d.com.br/img/osxserver.gif" alt="Mac OS X Server" /></p>
+<ul>
+  <li><a href="/osxserver/spotlight.html">Enabling Spotlight Web Search</a></li>
+  <li><a href="/osxserver/headless.html">Headless Mac mini OSX Server installation</a></li>
+  <li><a href="/osxserver/quotas.html">Mac OS X Server and Quotas</a></li>
+</ul>
+
+<h3 id="qnx">QNX</h3>
+<p><img src="https://wiki.victor3d.com.br/img/qnx.gif" alt="QNX" /></p>
+<ul>
+  <li><a href="/qnx/qnx4_install.html">Инсталляция системы QNX4</a></li>
+  <li><a href="/qnx/qnx4_bootcd.html">Создание bootable CD для QNX 4.25</a></li>
+  <li><a href="/qnx/demo/">Extending possibilities of QNX Demo Disk</a></li>
+</ul>
+
+<h3 id="beos">BeOS</h3>
+<p><img src="https://wiki.victor3d.com.br/img/beos.gif" alt="BeOS" /></p>
+<ul>
+  <li><a href="/beos/beos_and_bfs.html">BeOS and BFS</a></li>
+  <li><a href="/beos/choice.html">BeOS or NeXT. Did Apple Make the Wrong Choice?</a></li>
+  <li><a href="/beos/choice2.html">BeOS or NeXT. The Right Choice</a></li>
+</ul>
+:ET

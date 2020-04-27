@@ -1,0 +1,19 @@
+I"�<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mount <span class="nt">-uw</span> /
+launchctl load /System/Library/LaunchDaemons/com.apple.DirectoryServices.plist
+dscl <span class="nb">.</span> <span class="nt">-delete</span> /Users/tester home
+dscl <span class="nb">.</span> <span class="nt">-create</span> /Users/tester home /Volumes/Home/Users/tester
+reboot
+</code></pre></div></div>
+
+<p>И домашняя папка пользователя “tester” переехала на диск Home</p>
+
+<p>Вместо последних трех строк можно написать:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dscl <span class="nb">.</span> <span class="nt">-change</span> /Users/tester home /Users/tester /Volumes/Home/Users/tester <span class="o">&amp;&amp;</span> reboot
+</code></pre></div></div>
+
+<p>Кстати, чтобы юзера tester сделать админом, надо написать:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dscl <span class="nb">.</span> <span class="nt">-append</span> /Groups/admin GroupMembership tester
+</code></pre></div></div>
+:ET

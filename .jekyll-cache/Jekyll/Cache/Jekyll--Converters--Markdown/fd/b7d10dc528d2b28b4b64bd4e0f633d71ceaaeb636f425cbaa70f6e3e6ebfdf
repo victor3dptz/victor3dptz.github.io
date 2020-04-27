@@ -1,0 +1,367 @@
+I",<p><img src="/mac/powermac6100/img/01original.gif" alt="Logo" /> This page describes the as-shipped configurations of the Power Mac 6100 series, as well as some of the alternative configurations.</p>
+
+<h3 id="introduction">Introduction</h3>
+
+<p>The PowerMac 61xx series includes all four digit model numbers that begin with “61.” This group comprises variants of the Power Macintosh 6100, the Performa 61xx series, and the WorkGroup Server 6150 series. They all are essentially the same machine, sharing a common case, motherboard and ROM. There are minor variations in the native CPU/bus speed (60 vs 66 MHz), but all other features are user-installable. In other words, except for the CPU/bus speed, every member of this family can be upgraded or configured the same way.</p>
+
+<p>This series is also closely related to the Power Macintosh 7100 and 8100. The whole family are collectively known as the Nubus PowerMacs. The first generation of Power Computing clones–the Power 80, Power 100, Power 110 and Power 120–are based on the same archictecture, as are the original Radius clones–the Radius 81/100 and 81/110</p>
+
+<p>Many users are confused by the term “Performa,” and believe that a Performa is not a “real” PowerMac. This certainly is not the case–the “Performa” moniker was a marketing designation only. All Macintoshes with 4 digit model numbers are powered by PowerPC chips and, thus, are Power Macintoshes.</p>
+
+<p>In addition to the features listed below, all members of the Power Mac 6100 series also shipped with built-in Ethernet, built-in SCSI, two Geoport serial ports, stereo audio in and out, one ADB port, and unswitched monitor AC power. All Performas and some of the PowerMacs shipped with ADB mouse and keyboard, but some of the early PowerMacs did not. All Performa models also shipped with a Global Village modem.</p>
+
+<p>The “My Configuration” row describes the current configuration of my machine, and the “Max Configuration” row describes the maximum supported feature set for the given criterion.</p>
+
+<p>The information below is taken from the online Apple Spec Database, and is believed to be accurate. Occasionally, Apple has shipped the indicated models in slightly different configurations, usually to the benefit of the user. For example, my Performa 6115 CD was spec’d with a 350 MB hard drive, but I was pleasantly surprised to boot the machine and find a 500 MB hard drive installed.</p>
+
+<h3 id="cpu-hd-and-ram">CPU, HD and RAM</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Date Disc.</th>
+      <th>CPU / Speed</th>
+      <th>Bus Speed</th>
+      <th>L1 Cache</th>
+      <th>L2 Cache</th>
+      <th>RAM</th>
+      <th>HD</th>
+      <th>CD-ROM</th>
+      <th>OS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PM 6100/60</td>
+      <td>1/3/95</td>
+      <td>601/60</td>
+      <td>30 MHz</td>
+      <td>32 K</td>
+      <td>0 K</td>
+      <td>8 MB</td>
+      <td>250 MB</td>
+      <td>Opt’l</td>
+      <td>Mac OS 7.1.2</td>
+    </tr>
+    <tr>
+      <td>PM 6100/60 AV</td>
+      <td>9/12/94</td>
+      <td>601/60</td>
+      <td>30 MHz</td>
+      <td>32 K</td>
+      <td>256 K</td>
+      <td>8 MB</td>
+      <td>350 MB</td>
+      <td>Opt’l</td>
+      <td>Mac OS 7.1.2</td>
+    </tr>
+    <tr>
+      <td>PM 6100/66</td>
+      <td>10/14/95</td>
+      <td>601/66</td>
+      <td>33 MHz</td>
+      <td>32 K</td>
+      <td>256 K</td>
+      <td>8 MB</td>
+      <td>350 MB</td>
+      <td>Opt’l</td>
+      <td>Mac OS 7.5</td>
+    </tr>
+    <tr>
+      <td>PM 6100/66 AV</td>
+      <td>4/3/95</td>
+      <td>601/66</td>
+      <td>33 MHz</td>
+      <td>32 K</td>
+      <td>256 K</td>
+      <td>8 MB</td>
+      <td>350 MB</td>
+      <td>Opt’l</td>
+      <td>Mac OS 7.5</td>
+    </tr>
+    <tr>
+      <td>PM 6100/66 DOS</td>
+      <td>5/18/96</td>
+      <td>601/66</td>
+      <td>33 MHz</td>
+      <td>32 K</td>
+      <td>0 K or 256 K</td>
+      <td>8 MB</td>
+      <td>250 or 500 MB</td>
+      <td>Opt’l</td>
+      <td>Mac OS 7.5, MS-DOS 6.22</td>
+    </tr>
+    <tr>
+      <td>Performa 6110 CD</td>
+      <td>??</td>
+      <td>601/60</td>
+      <td>30 MHz</td>
+      <td>32 K</td>
+      <td>0 K</td>
+      <td>8 MB</td>
+      <td>250 MB</td>
+      <td>2x</td>
+      <td>Mac OS 7.5</td>
+    </tr>
+    <tr>
+      <td>Performa 6112 CD</td>
+      <td>??</td>
+      <td>601/60</td>
+      <td>30 MHz</td>
+      <td>32 K</td>
+      <td>0 K</td>
+      <td>8 MB</td>
+      <td>250 MB</td>
+      <td>2x</td>
+      <td>Mac OS 7.5</td>
+    </tr>
+    <tr>
+      <td>Performa 6115 CD</td>
+      <td>??</td>
+      <td>601/60</td>
+      <td>30 MHz</td>
+      <td>32 K</td>
+      <td>0 K</td>
+      <td>8 MB</td>
+      <td>350 MB</td>
+      <td>2x</td>
+      <td>Mac OS 7.5</td>
+    </tr>
+    <tr>
+      <td>Performa 6116 CD</td>
+      <td>??</td>
+      <td>601/60</td>
+      <td>30 MHz</td>
+      <td>32 K</td>
+      <td>0 K</td>
+      <td>8 MB</td>
+      <td>700 MB</td>
+      <td>2x</td>
+      <td>Mac OS 7.5.1</td>
+    </tr>
+    <tr>
+      <td>Performa 6117 CD</td>
+      <td>??</td>
+      <td>601/60</td>
+      <td>30 MHz</td>
+      <td>32 K</td>
+      <td>0 K</td>
+      <td>8 MB</td>
+      <td>350 MB</td>
+      <td>2x</td>
+      <td>Mac OS 7.5</td>
+    </tr>
+    <tr>
+      <td>Performa 6118 CD</td>
+      <td>??</td>
+      <td>601/60</td>
+      <td>30 MHz</td>
+      <td>32 K</td>
+      <td>0 K</td>
+      <td>8 MB</td>
+      <td>500 MB</td>
+      <td>2x</td>
+      <td>Mac OS 7.5</td>
+    </tr>
+    <tr>
+      <td>WG Server 6150</td>
+      <td>4/17/95</td>
+      <td>601/60</td>
+      <td>30 MHz</td>
+      <td>32 K</td>
+      <td>0 K</td>
+      <td>8 MB</td>
+      <td>500 MB</td>
+      <td>2x</td>
+      <td>Mac OS 7.1.2</td>
+    </tr>
+    <tr>
+      <td>WG Server 6150/66</td>
+      <td>??</td>
+      <td>601/60</td>
+      <td>33 MHz</td>
+      <td>32 K</td>
+      <td>0 K</td>
+      <td>8 MB</td>
+      <td>700 MB</td>
+      <td>2x</td>
+      <td>Mac OS 7.5</td>
+    </tr>
+    <tr>
+      <td>My Configuration</td>
+      <td>NA</td>
+      <td>G3/210</td>
+      <td>30 MHz</td>
+      <td>64 K</td>
+      <td>512 K</td>
+      <td>136 MB</td>
+      <td>4.5 GB</td>
+      <td>2x int., 4x4x16 CD-RW ext.</td>
+      <td>Mac OS 8.6, MkLinux DR3</td>
+    </tr>
+    <tr>
+      <td>Max. Configuration</td>
+      <td>NA</td>
+      <td>G4/300</td>
+      <td>42 MHz</td>
+      <td>64 K</td>
+      <td>1 MB</td>
+      <td>264 MB</td>
+      <td>??</td>
+      <td>24x</td>
+      <td>Mac OS 9.x, MkLinux DR3, Virtual PC</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Bus speeds above 33 MHz achieved by over-clocking. Overclocking is potentially damaging to your system.</li>
+  <li>Maximum HD size is determined only by the maximum size currently shipped by HD manufacturers in the standard 1” form factor. IBM currently is shipping 73GB drives, and drive sizes will continue to increase over time. Most modern drives require a SCSI adapter to work inside a 6100, which makes it somewhat more difficult to use a video card in tandem, but it can be done. The largest drive I know of that has a 50 pin connector (i.e. it does not need an adapter) is the 18 GB Seagate Barracuda 9LP.</li>
+  <li>Mac OS 9 will run on a 6100, and the next release (9.1 or 9.5) will probably as well. Sonnet’s G3/G4 driver is OS 9 compatible, and an OS 9 compatible version of Newer’s G3 driver is currently in beta</li>
+  <li>While VirtualPC is not an operating system, it permits you to run many PC (i.e. x86) operating systems in emulation on the Macintosh. MS-DOS, Windows 3.x, Win9x, WinNT, Linux, OPENStep and OS/2 have been run successfully on top of VirtualPC.</li>
+</ul>
+
+<h3 id="supported-video-input-and-output">Supported video input and output</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Motherboard Video</th>
+      <th>Secondary (PDS) Video</th>
+      <th>Adapter cables</th>
+      <th>Bundled Monitor</th>
+      <th>2nd Monitor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PM 6100/60</td>
+      <td>640 K DRAM</td>
+      <td>None</td>
+      <td>HDI45-DB15</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>PM 6100/60 AV</td>
+      <td>640 K DRAM</td>
+      <td>2 MB AV</td>
+      <td>S Video-Composite I/O</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>PM 6100/66</td>
+      <td>640 K DRAM</td>
+      <td>None</td>
+      <td>HDI45-DB15</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>PM 6100/66 AV</td>
+      <td>640 K DRAM</td>
+      <td>2 MB AV</td>
+      <td>S Video-Composite I/O</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>PM 6100/60 DOS</td>
+      <td>640 K DRAM</td>
+      <td>512K VGA</td>
+      <td>HDI45-DB15</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Performa 6110 CD</td>
+      <td>640 K DRAM</td>
+      <td>None</td>
+      <td>HDI45-DB15</td>
+      <td>Apple Multiple Scan 15”</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Performa 6112 CD</td>
+      <td>640 K DRAM</td>
+      <td>None</td>
+      <td>HDI45-DB15</td>
+      <td>Apple Multiple Scan 15”</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Performa 6115 CD</td>
+      <td>640 K DRAM</td>
+      <td>None</td>
+      <td>HDI45-DB15</td>
+      <td>Apple Multiple Scan 15”</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Performa 6116 CD</td>
+      <td>640 K DRAM</td>
+      <td>None</td>
+      <td>HDI45-DB15</td>
+      <td>Apple Multiple Scan 15”</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Performa 6117 CD</td>
+      <td>640 K DRAM</td>
+      <td>None</td>
+      <td>HDI45-DB15</td>
+      <td>Apple Multiple Scan 15”</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Performa 6118 CD</td>
+      <td>640 K DRAM</td>
+      <td>None</td>
+      <td>HDI45-DB15</td>
+      <td>Apple Multiple Scan 15”</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>WG Server 6150/60</td>
+      <td>640 K DRAM</td>
+      <td>None</td>
+      <td>HDI45-DB15</td>
+      <td>Apple Multiple Scan 15”</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>WG Server 6150/66</td>
+      <td>640 K DRAM</td>
+      <td>None</td>
+      <td>HDI45-DB15</td>
+      <td>Apple Multiple Scan 15”</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>My Configuration</td>
+      <td>640 K DRAM</td>
+      <td>2 MB AV</td>
+      <td>S Video-Composite I/O + HDI45-DB15</td>
+      <td>Apple Multiple Scan 15”</td>
+      <td>Sony 17”</td>
+    </tr>
+    <tr>
+      <td>Max. Configuration</td>
+      <td>640 K DRAM</td>
+      <td>2 MB AV or 4 MB HPV</td>
+      <td>S Video-Composite I/O + HDI45-DB15</td>
+      <td>17 “</td>
+      <td>21”</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>One PDS card can be installed in the 6100 series. The HPV cards provide slightly higher graphics performance, but the AV card provides S-video input and output.</li>
+  <li>The primary (DRAM) video output will drive resolutions up to 832x624. A 4MB HPV card installed in the PDS will drive resolutions up to 1152x870</li>
+  <li>The secondary video is for the DOS side only, e.g. if you’re using a DOS card you can have the DOS display either on a shared display or on a separate display. But you can’t use the second display on the Mac side.</li>
+</ul>
+:ET

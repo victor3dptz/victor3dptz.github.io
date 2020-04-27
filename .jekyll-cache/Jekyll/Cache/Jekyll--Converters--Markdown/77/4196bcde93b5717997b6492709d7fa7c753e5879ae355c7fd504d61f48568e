@@ -1,0 +1,116 @@
+I""*<p>This page is intended for Macintosh users to help them to use KOI8-R documents on the Internet.</p>
+
+<p>“Mac Russian format” on this page means Russian coding in native Russian MacOS format.
+This table shows all characters of the Russian MacOS between 0x20 and 0xFF:</p>
+
+<p>How do you work with KOI8-R on the Macintosh? There are two possible ways:</p>
+
+<ol>
+  <li>Use an application to translate KOI8-R documents to MacOS format.</li>
+  <li>Use KOI8-R fonts and a special keyboard layout.</li>
+</ol>
+
+<p><img src="/mac/koi8/1.gif" alt="1" /></p>
+
+<p>I recommend the first solution for the following reasons:</p>
+
+<ul>
+  <li>All KOI8-R fonts that you can get on the Net look ugly on screen while a lot of high quality Cyrillic fonts are available for the Mac from font manufacturers like Adobe, ParaGraph or others in PostScript and TrueType formats. If you already have MacRussian fonts you can use them in Internet applications like in any other application.</li>
+  <li>For input in KOI8-R format a suitable keyboard layout is needed. However, yet another keyboard icon in the keyboard menu is not really comfortable for work.</li>
+  <li>All Russian (native or localized) programs use MacRussian coding. No Russian dictionary or spelling checker on the Macintosh will work with KOI8-R.</li>
+  <li>MacRussian format is the standard for Russian text in the MacOS world. Thus, using MacRussian documents with multiple applications is far easier than exchanging KOI8-R documents.</li>
+</ul>
+
+<p>If you are still looking for Russian fonts and keyboard layouts for the Macintosh, check out “Cyrillic Text” or “Cyrillic and Different Software” about installing information. Some TrueType fonts and Russian System 7 instalation is in Russian Mac System 7.0.1 directory on official Apple ftp sites.</p>
+
+<p>One problem with translating from KOI8-R to MacRussian and back is caused by different character codes used for non-letter symbols. The KOI8-R character set has some semigraphics symbols which are not present in the MacRussian character set (The Mac had real graphics from its birth on :). These symbols are not translated.</p>
+
+<p>This document descript using translations KOI8-R documents to MacRussian format and back for apps:</p>
+
+<ul>
+  <li>Eudora</li>
+  <li>NewsWatcher</li>
+  <li>Netscape</li>
+  <li>NCSA Telnet</li>
+</ul>
+
+<p><img src="/mac/koi8/eudora.gif" alt="eudora" /></p>
+
+<p>Eudora is a very popular Macintosh EMail client application. It is available in two releases: Eudora Pro (commercial product) and Eudora Light (free). Both versions work native on both 68K and PowerPC Macintosh computers. You can download latest release of Eudora Lite from Eudora web server.</p>
+
+<p>Both versions of Eudora support “EudoraTables,” a special addition file to support different character sets. For KOI8-R support you can to download this file from Kiarchive or from info-mac and its mirrors from dir info-mac/comm/_Internet/mail/edr, Filename:eudora-cyrillic-111.hqx.</p>
+
+<p>Install EudoraTables by simply copying it to the “Eudora Folder” in your System folder. The next time you launch Eudora, any Russian font you have installed can be used to translate letters from and to KOI8-R!</p>
+
+<p><strong>Translating incoming messages</strong></p>
+
+<p>After you received message in KOI8-R format, select it in your “In” window or open the message window. Then select change:Transliteration:”MacCyrillic -&gt; ISO-IR-111/KOI8” in theMessage menu as shown.</p>
+
+<p><img src="/mac/koi8/2.gif" alt="2" /></p>
+
+<p>The text will then be translated from KOI8-R format to MacRussian and can be used in any Macintosh program, including localized Russian applications. If you want set this translation by default, press Shift key when select this menu. Default settings showed in menu by outline font.</p>
+
+<p><strong>Translating outgoing messages</strong></p>
+
+<p>To translate a message from Mac Russian to KOI8-R format you need to select”MacCyrillic &lt;- ISO-IR-111/KOI8” from the Message menu. Do this before sending a message you have written in MacRussian format.</p>
+
+<p><img src="/mac/koi8/3.gif" alt="3" /></p>
+
+<p>If the outgoing message is created by replying to a recieved KOI8-R message, this translation is performed automatically. If you want set this translation by default, press Shift key when select this menu. Default settings showed in menu by outline font.</p>
+
+<p><img src="/mac/koi8/newswatcher.gif" alt="newswatcher" /></p>
+
+<p>NewsWatcher is a popular free NetNews client for the MacOS that is very easy to use. Russian native newsgroups (like Relcom groups) use KOI8-R coding in the articles. Other version of NewWatcher, named like YetAnother NewsWatcher support Eudora-like translation tables. For adding new translation table, you need add apropriate file (Cyrillic KOI-8 for KOI-8R translation) with translation table to YA-NewsWatcher Tables folder in your System:Preferences folder. After first program start you need set KOI-8 table in Preferences:Transliterations dialog. <strong>Atention! In YA-NewsWatcher used ISO-IR-111 translation table, what is compatible with KOI-8R coding.</strong></p>
+
+<p>To work with KOI8-R translation you need to specify any Mac Russian font in the YA-NewsWatcher preferences:</p>
+
+<p><img src="/mac/koi8/newswatcher2.gif" alt="newswatcher" /></p>
+
+<p>If you want to print from NewsWatcher, set the Print Font in the following preferences area, too. If your system does not have Cyrillic script installed then font names may be not displayed correctly. Don’t worry about it, selected fonts shown under this menu show REAL results.</p>
+
+<p>Also you need set this translate option in Subject, Article and Message in Newsgroup Settings dialog for correct translating outgoing messages and arcticle names:</p>
+
+<p><img src="/mac/koi8/newswatcher3.gif" alt="newswatcher" /></p>
+
+<p>While NewsWatcher now is a part of Internet Explorer, then ‘lonely application’ its not more supported. Ya-NewsWatcher 2.4.0 is a last release of this program, development has beed discontinued. NewsWatcher what included in Internet Explorer 3.0 package do NOT support translation tables.</p>
+
+<p>If you don’t need multiple-language support, another NewsWatcher clone, named <a href="http://www.santafe.edu/~smfr/mtnw/">MT-NewsWatcher</a> (Multi- threated NewsWatcher) by Simon Fraser, may be best choise. MT-NewsWatcher had some useful features, like Multi-threating, Filtering, Speech Recognition and other. Muti-threating allow the MT-NewsWatcher to perform lengthy operations in separate threads, enabling user make other operations in same time. MT-NewsWatcher threads 6 operations (checking for new articles, fetching articles, fetching group headers, searching, opening article references, extracting binaries) with limit of 20 threads and 8 network connections in same time. For MT-NewsWatcher you need System 7.1 or above with Threated manager installed (included in System 7.5 and later). You can download MT-NewsWatcher 2.3.5 from Kiarchive or from MT-NewsWatcher home. Current version (2.3.5) had ISO 8859-1 translation only. For KOI-8 translaton, you need install small patch. After patch instalation you need set appropriate russian fonts only. Next versions of MT-NewsWatcher will support translation tables, then don’t install patch on MT-NewsWatcher versions later 2.3.5.</p>
+
+<p><img src="/mac/koi8/netscape.gif" alt="netscape" /></p>
+
+<p>Netscape 2.0 does not support any Russian coding. Since Netscape is not free and can be downloaded from Netscape Communications’ authorized sites only, it’s illegal to upload patched version to some archive sites with strict uploading policy (e.g. to Relcom Company’s own Kiarchive). However, such patches may be available to download from Info-Mac and it’s mirror sites. Read documentation within this file before installation.</p>
+
+<p>Netscape 3.X and 4.X had 4 russian code tables (ISO8859-5, Cyrillic Mac, Win 1251,KOI-8-R), but only Win 1251 -&gt; Mac translation work good(Mac -&gt; Mac work too :-). KOI-8R and ISO8859-5 translations don’t work correctly. Then you need install patch for Netscape. These patches is available from info-mac or his mirrors from dir info-mac/comm/_Internet/web/ntscp, file name - netscape-30-baltic-cyrillic.hqx (for Netscape 3.X) and netscape-40-baltic-cyrillic.hqx (For Netscape 4.X). (use this link for download patch from ftp.funet.fi info-mac mirror).</p>
+
+<p>For view KOI8-R web pages you need set any russian fonts (Macintosh font, not KOI-8!) in Netscape preferences:</p>
+
+<p><img src="/mac/koi8/netscape2.gif" alt="netscape" /></p>
+
+<p>And choose needed decoding in menu (KOI-8 in this example). To enter russian text with you need have to install a Russian keyboard layout, too.</p>
+
+<p><img src="/mac/koi8/netscape3.gif" alt="netscape" /></p>
+
+<p>Some russian Web servers (Relcom, for example) used now automatic decoding to client-native character table. Then you don’t need switch to KOI-8 translation on Netscape Navigator versions greater than 2.x.</p>
+
+<p>If you want have more info about adding auto-translation to Apache Web Server, readHTTP server for Russia page. This page is for Web admins, not for usual Mac user.</p>
+
+<p><img src="/mac/koi8/telnet.gif" alt="telnet" /></p>
+
+<p>NCSA Telnet 2.7b4 is a last version of NCSA Telnet for Macintosh. Program is available from info-mac or its mirrors from dir info-mac/comm/_Internet file:ncsa-telnet-27b4.hqx It support various terminal translations. For adding KOI-8R translation support to NCSA Telnet 2.7b4, you need install small patch. This path simply add KOI-8R translation to exist NCSA Telnet 2.7b4 tables.</p>
+
+<p>For setting KOI-8 translation table you need choose this table in connection settings preferences:</p>
+
+<p><img src="/mac/koi8/telnet2.gif" alt="telnet" /></p>
+
+<p>You need set russian font in terminal preferences too:</p>
+
+<p><img src="/mac/koi8/telnet3.gif" alt="telnet" /></p>
+
+<p>Warning! Only mospaced fonts (like Geneva, Courier or any “Typewriter like”) is accessible by NCSA Telnet. Proportional fonts (like Times and lots others) can’t be used in NCSA Telnet.</p>
+
+<p>While NCSA Telnet is no longer supported by NCSA, version 2.7b4 is a last release. You can download <a href="/mac/koi8/2.7b5src.sit.hqx">NCSA Telnet 2.7b5</a> from NCSA server, but its a same version with one different - 2.7b5 is a source code for Telnet 2.7b4.</p>
+
+<p>BetterTelnet is a enhanced version of NCSA Telnet. It fixes many bugs and have some useful additions include KOI8 support. You can download BetterTelnet 1.2.2 from Kiarchive or look on BetterTelnet Web page for more recent version. Setting KOI-8 translation for BetterTelnet is like for NCSATelnet.</p>
+
+<p><img src="/mac/koi8/mac.gif" alt="mac" /></p>
+:ET

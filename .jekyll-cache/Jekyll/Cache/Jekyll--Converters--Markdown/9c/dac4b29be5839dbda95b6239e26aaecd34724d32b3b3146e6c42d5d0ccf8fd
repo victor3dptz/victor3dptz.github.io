@@ -1,0 +1,11 @@
+I",<p>В терминале пишем</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write com.apple.dashboard mcx-disabled <span class="nt">-boolean</span> YES
+</code></pre></div></div>
+
+<p>Чтобы снова включить:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults delete com.apple.dashboard mcx-disabled
+defaults write com.apple.dashboard mcx-disabled <span class="nt">-boolean</span> NO
+</code></pre></div></div>
+:ET

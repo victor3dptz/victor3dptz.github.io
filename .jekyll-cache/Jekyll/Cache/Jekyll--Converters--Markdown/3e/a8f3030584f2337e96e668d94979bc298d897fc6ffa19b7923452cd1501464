@@ -1,0 +1,285 @@
+I"�9<p><img src="/mac/powermac6100/img/15faq.gif" alt="Logo" /></p>
+
+<h3 id="is-there-any-way-to-use-usb-devices-with-a-6100">Is there any way to use USB devices with a 6100?</h3>
+
+<p>No. Although there are USB-serial adapters that permit the connection of a serial device to a USB port, there is no such adapter for the reverse application of a USB device to a serial port. It’s not a matter of data rates; it’s more a matter of intelligence. It is a practical impossibility to make a dumb protocol emulate a smarter protocol. No amount of hardware or software hacking will ever make this possible–it’s like trying to program a calculator to run Quake III. Even if technically possible (and that’s not likely) no one would ever be able to justify the investment to build such a device.</p>
+
+<p>There are no USB cards that can installed in a 6100, either. The 6100 is based on the (obsolete) Nubus architecture, which means no manufacturer is likely to ever invest in developing such a card. I’ve even been told that USB relies somewhat on PCI to work properly, so it might not even be technically feasible.</p>
+
+<p>It’s an unfortunate reality that the 6100 will never have USB capability.</p>
+
+<h3 id="will-the-g3-upgrade-cards-from-newer-and-sonnet-work-with-the-hpv-and-av-cards">Will the G3 upgrade cards from Newer and Sonnet work with the HPV and AV cards?</h3>
+
+<p>Sometimes. The Newer cards will work with both the HPV and AV cards, although they are only officially supported with the latter. The Sonnet cards depend on when they were made. Some models of Sonnet cards will work with the AV card and some won’t, depending on the date of manufacture. Some will also work with the HPV card, although Sonnet almost discourages this.</p>
+
+<h3 id="is-my-macintosh-part-of-the-61xx-family">Is my Macintosh part of the 61xx family?</h3>
+
+<p>If your Power Mac has a four digit model number that begins with 61 then yes. Otherwise, no.</p>
+
+<h3 id="why-dont-you-have-information-about-other-macintosh-models-such-as-the-performa-5xxx-and-62xx-models">Why don’t you have information about other Macintosh models (such as the Performa 5xxx and 62xx models)?</h3>
+
+<p>Because I like to work with empirical data as much as possible. Since I don’t have any other machines, I can’t run tests or post test data that I can verify.</p>
+
+<h3 id="how-do-i-add-vram-to-my-computer">How do I add VRAM to my computer?</h3>
+
+<p>You can’t add VRAM directly to a 6100 unless you add an HPV card. Once you have an HPV card you can upgrade to either 2MB or 4MB depending on the card.</p>
+
+<h3 id="how-do-i-get-1024x768-on-my-apple-multiple-scan-15-monitor">How do I get 1024x768 on my Apple Multiple Scan 15 monitor?</h3>
+
+<p>It’s possible to do with an adapter.</p>
+
+<h3 id="why-cant-i-get-this-resolution-that-i-know-my-monitorvideo-card-will-support">Why can’t I get this resolution that I know my monitor/video card will support?</h3>
+
+<p>In order for a your computer to drive your monitor at a given resolution and bit depth, four things need to happen:</p>
+
+<ul>
+  <li>You need a big enough frame buffer. See below</li>
+  <li>The resolution and refresh rate need to be supported by the monitor</li>
+  <li>The resolution and refresh rate need to be supported and the video card.</li>
+  <li>The Mac must know that all these things are so:
+    <ul>
+      <li>The Mac should be able to tell how big its frame buffer is all by itself.</li>
+      <li>For on-board video or Apple video cards, the card should tell the Mac what resolutions it supports. Other cards may need the correct software driver to tell the Mac what it needs to know.</li>
+      <li>The monitor tells the Mac what resolutions it supports at boot time via sense codes set on the connector pins. If you’re not using a monitor that was made specifically for a Mac, you probably will need an adapter to set the sense codes correctly.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="how-many-colorswhat-resolution-can-i-get-with-xx-mb-of-vram">How many colors/What resolution can I get with xx MB of VRAM?</h3>
+
+<p>Here’s how to do the math: Take the total number of pixels desired (height x width) and multiply it by the required bit depth for the desired color scheme:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Bits/Pixel</th>
+      <th># of Colors/Grays</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>Black and White</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>4</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>16</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>256</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>32,768</td>
+      <td>Full color, or Thousands</td>
+    </tr>
+    <tr>
+      <td>24/32</td>
+      <td>16.7 million</td>
+      <td>True color, 24-bit, or Millions</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>There are a maximum of 256 shades of gray for the Mac. Any setting over 256 automatically becomes color.</p>
+
+<p>256 colors requires 8 bits/pixel. Thousands of colors requires 16 bits/pixel. Millions of colors requires <strong>32 bits/pixel</strong>. (I emphasize this last point because Millions of colors is often referred to as 24-bit color. While millions of colors does indeed use only 24 bits for color, it also uses an additional 8 bits/pixel for the translucency mask.) Take this total number of bits, divide by 8 to get bytes, then divide by 1,048,576 to get MegaBytes. Ah heck. I won’t make you do the math. Here’s a table showing the bit depth/resolutions achievable with various sizes of frame buffers:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Desired Resolution</th>
+      <th>128K</th>
+      <th>256K</th>
+      <th>512K</th>
+      <th>640K</th>
+      <th>768K</th>
+      <th>1MB</th>
+      <th>2MB</th>
+      <th>4MB</th>
+      <th>8MB</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>512x384</td>
+      <td>4 bit</td>
+      <td>8 bit</td>
+      <td>16 bit</td>
+      <td>16 bit</td>
+      <td>24/32 bit</td>
+      <td>24/32 bit</td>
+      <td>24/32 bit</td>
+      <td>24/32 bit</td>
+      <td>24/32 bit</td>
+    </tr>
+    <tr>
+      <td>640x400</td>
+      <td>4 bit</td>
+      <td>8 bit</td>
+      <td>16 bit</td>
+      <td>N/A</td>
+      <td>16 bit</td>
+      <td>24/32 bit</td>
+      <td>24/32 bit</td>
+      <td>24/32 bit</td>
+      <td>24/32 bit</td>
+    </tr>
+    <tr>
+      <td>640x480</td>
+      <td>2 bit</td>
+      <td>4 bit</td>
+      <td>8 bit</td>
+      <td>16 bit</td>
+      <td>16 bit</td>
+      <td>16 bit</td>
+      <td>24/32 bit</td>
+      <td>24/32 bit</td>
+      <td>24/32 bit</td>
+    </tr>
+    <tr>
+      <td>640x870</td>
+      <td>1 bit</td>
+      <td>2 bit</td>
+      <td>4 bit</td>
+      <td>8 bit</td>
+      <td>8 bit</td>
+      <td>8 bit</td>
+      <td>8 bit</td>
+      <td>8 bit</td>
+      <td>8 bit</td>
+    </tr>
+    <tr>
+      <td>800x600</td>
+      <td>2 bit</td>
+      <td>4 bit</td>
+      <td>8 bit</td>
+      <td>8 bit</td>
+      <td>8 bit</td>
+      <td>16 bit</td>
+      <td>24/32 bit</td>
+      <td>24/32 bit</td>
+      <td>24/32 bit</td>
+    </tr>
+    <tr>
+      <td>832x624</td>
+      <td>2 bit</td>
+      <td>4 bit</td>
+      <td>8 bit</td>
+      <td>8 bit</td>
+      <td>8 bit</td>
+      <td>16 bit</td>
+      <td>24/32 bit</td>
+      <td>24/32 bit</td>
+      <td>24/32 bit</td>
+    </tr>
+    <tr>
+      <td>1024x768</td>
+      <td>1 bit</td>
+      <td>2 bit</td>
+      <td>4 bit</td>
+      <td>N/A</td>
+      <td>8 bit</td>
+      <td>8 bit</td>
+      <td>16 bit</td>
+      <td>24/32 bit</td>
+      <td>24/32 bit</td>
+    </tr>
+    <tr>
+      <td>1152x870</td>
+      <td>1 bit</td>
+      <td>2 bit</td>
+      <td>4 bit</td>
+      <td>N/A</td>
+      <td>4 bit</td>
+      <td>8 bit</td>
+      <td>16 bit</td>
+      <td>24/32 bit</td>
+      <td>24/32 bit</td>
+    </tr>
+    <tr>
+      <td>1280x1024</td>
+      <td>N/A</td>
+      <td>1 bit</td>
+      <td>2 bit</td>
+      <td>N/A</td>
+      <td>4 bit</td>
+      <td>4 bit</td>
+      <td>8 bit</td>
+      <td>16 bit</td>
+      <td>24/32 bit</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The numbers shown reflect the maximum bit depth achievable at the desired resolution. On most computers, lower bit depths are also possible, but not always. For example PCI PowerMacs and the HPV card on Nubus PowerMacs do not allow bit depths lower than 8 bits/pixel. This can cause some problems with older games and other programs that require the monitor to be set to exactly 16 colors.</p>
+
+<p>Some combinations are mathematically possible, but not achievable with currently shipping hardware. For example, the 128 K size frame buffer is available only certain PowerBooks. These PowerBooks do not all support external monitors, so the only possible resolution is that of the built-in LCD screen, 640x400. Similarly, the 640x400 resolution only applies to the LCD screen of certain PowerBooks, and the size of the frame buffer on these machines is fixed.</p>
+
+<p>Much of the information in this table was taken from the Apple Spec Database, a freely available database from Apple that describes the specifications of every Apple Macintosh ever shipped by Apple. Note that I can’t supply the specific URL for this file because it changes every time they update it. Look for a file named Apple_Spec_2-98.img.bin or something similar. This is a FileMaker Pro database, but if you don’t own FileMaker Pro, you can also download a free run-time version that will work only with the Apple Spec Database.</p>
+
+<h3 id="how-can-i-make-my-mac-faster">How can I make my Mac faster?</h3>
+
+<p>That’s too general a question to answer specifically. Man of the upgrades on this site will make your 6100 faster, especially a CPU upgrade, more RAM, a cache card, or a graphics card.</p>
+
+<h3 id="which-nubus-cards-work-in-a-61xx">Which Nubus cards work in a 61xx?</h3>
+
+<p>I don’t have a comprehensive list yet. Cards that I’ve been told will work are the Radius PrecisionColor 24X and XK, or the RasterOps Paintboard Turbo XL. Other 7 Nubus cards should work as well. I’ve been told that 12 cards will fit at well, but you have to do some shoehorning. Specifically, you need to move your hard drive into the center drive bay. If you already have a CR-ROM drive in the center bay you have to remove it.</p>
+
+<h3 id="will-the-new-g3-upgrade-card-from-newer-technology-work-with-a-nubus-or-dos-card">Will the new G3 upgrade card from Newer technology work with a Nubus or DOS card?</h3>
+
+<p>No. The G3 card displaces the PDS-Nubus adapter, but does not duplicate its functionality. If you want the increased color depth or use two monitors with the G3 card, you’ll have to get an AV or HPV card instead. The DOS card has a simlar story–the G3 card displaces its adapter. Then again, the DOS cards for the 6100 were pokey anyways. A G3 card and VirtualPC is probably a better solution.</p>
+
+<h3 id="how-exactly-does-the-g3-upgrade-fit-in-with-the-hpv-or-av-card">How exactly does the G3 upgrade fit in with the HPV or AV card?</h3>
+
+<p><img src="/mac/powermac6100/img/NubusCard.gif" alt="1" /></p>
+
+<p>This is a picture of a Nubus card. The HPV and AV cards have similar (but not identical) form factors, so I can use this series to images to illustrate. Both the HPV and the AV card were actually designed for the 7100 and 8100 form factor. As such, they are supposed to plug in vertically, so that the card sits perpendicular to the floor.</p>
+
+<p><img src="/mac/powermac6100/img/NubusAdapter.gif" alt="2" /></p>
+
+<p>To accommodate the 6100’s flatter form factor, Apple designed an “adapter” which allows the card to sit sideways, or parallel to the floor. The adapter consists of two parts–1) a stamped metal piece which is strictly a mechanical thing; there are no electronics per se on this. 2) a little printed circuit board.</p>
+
+<p>This little board is smaller than the AV or HPV card, and it has two connectors. The AV, HPV or Nubus card plugs into the adapter perpendiculary, and the adapter plugs into the PDS slot on the motherboard.</p>
+
+<p>Note that this picture is of a Nubus-PDS adapter, which is slightly different than the PDS-PDS adapter. This one has a different connector, and it has some circuitry on it. This is important, as it is why Nubus cards cannot be used with the G3 upgrade card. The PDS-PDS adapter has no electronics on it; it’s just a pass-through connector which can be replaced by a G3 card.</p>
+
+<p><img src="/mac/powermac6100/img/CardInAdapter.gif" alt="3" /></p>
+
+<p>This is a picture of the Nubus-PDS adapter with the card installed, but it’s quite similar to the PDS-PDS adapter. The geniuses over at Newer designed their G3 upgrade card to have the same form factor as the little printed-circuit board on the adapter!</p>
+
+<p><img src="/mac/powermac6100/img/AdapterInCPU.gif" alt="4" /></p>
+
+<p>So to use the AV or HPV card, simply replace the little printed circuit board on the adapter with the G3 card, plug the AV or HPV card into the G3 card, then plug the whole shebang into the PDS slot.</p>
+
+<h3 id="will-the-micro-conversions-inc-1724pd-pds-graphics-card-macwarehouse-dri1650-work-with-the-6100">Will the Micro Conversions Inc. 1724PD PDS Graphics Card (MacWarehouse #DRI1650) work with the 6100?</h3>
+
+<p>Nope. There are different types of PDS slots. The Micro Conversions flavor works with the Performa 6200 and 6300 series, but not the 6100 series.</p>
+
+<h3 id="will-the-8100-version-of-the-hpv-card-work-in-a-6100-with-4-mb-of-vram">Will the 8100-version of the HPV card work in a 6100 with 4 MB of VRAM?</h3>
+
+<p>Yup. I have confirmation from a reader who has it installed in his machine.</p>
+
+<h3 id="does-adding-vram-to-an-hpv-card-increase-the-speed">Does adding VRAM to an HPV card increase the speed?</h3>
+
+<p>Nope. Adding VRAM allows increased resolutions and/or increased color depth, but does not increase the speed of the card or of your computer.</p>
+
+<h3 id="the-hard-drives-ribbon-cable-gets-in-the-way-of-the-hpv-card-what-do-i-do">The hard drive’s ribbon cable gets in the way of the HPV card. What do I do?</h3>
+
+<p>I certainly won’t say this is the “right” thing to do, but I kinda folded it over diagonally so it makes a 90-degree bend, then squashed the HPV card on top of it. It’s a tight fit, but it’s been working like this for 2 years now.</p>
+
+<h3 id="is-there-any-way-to-increase-the-amount-of-memory-allocated-to-video-with-the-stock-ie-motherboard-video">Is there any way to increase the amount of memory allocated to video with the stock (i.e. motherboard) video?</h3>
+
+<p>Nope. That was the question that inspired the whole effort behind this website. From everything I researched (and there was a lot of that,) it cannot be done. The only options are to install a video card.</p>
+
+:ET

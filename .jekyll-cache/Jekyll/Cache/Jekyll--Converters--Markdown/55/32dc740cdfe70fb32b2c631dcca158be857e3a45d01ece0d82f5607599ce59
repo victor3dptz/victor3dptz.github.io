@@ -1,0 +1,1852 @@
+I"Y�<p>Если ваш Макинтош достаточно старый, вполне вероятно, что на нем невозможно (или нежелательно) использовать последние версии MacOS. “Семерка” вполне может оказаться оптимальным вариантом. Но какую именно версию можно поставить на ваш компьютер? Нужен ли Enabler? А если нужен, какой?</p>
+
+<p>Ответам на эти вопросы и посвящена эта статья, составленная по материалам Apple</p>
+
+<h3 id="версии-macos">Версии MacOS</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>№</th>
+      <th>Обозначения</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-</td>
+      <td>Не поддерживается</td>
+    </tr>
+    <tr>
+      <td>√</td>
+      <td>Работает без System Enabler</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>Требуется Macintosh System Enabler</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>Требуется System 7.5.5 SCSI Server Update и PPC Interrupt Extension</td>
+    </tr>
+    <tr>
+      <td>#</td>
+      <td>Apple Workgroup Server 95 работает только с ОС A/UX</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Macintosh</th>
+      <th>7.6</th>
+      <th>7.5.5</th>
+      <th>7.5.3</th>
+      <th>7.5.2</th>
+      <th>7.5.1</th>
+      <th>7.5</th>
+      <th>7.1.2P</th>
+      <th>7.1.2</th>
+      <th>7.1.1</th>
+      <th>7Pro</th>
+      <th>7.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>128K, 512K, XL/Lisa</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Plus</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>SE</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>SE/30</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>Classic</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>Classic II</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>Color Classic</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>II</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>IIx</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>IIcx</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>IIci</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>IIfx</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>IIsi</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>IIvi,IIvx</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>LC</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>LC II</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>LC III</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>LC 475</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>LC 520</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>LC 550</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>LC 575</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>LC 580</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>LC 630</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Macintosh TV</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Centris 610</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Centris 650</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Centris 660AV</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Quadra 605</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Quadra 610</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Quadra 630</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Quadra 650</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Quadra 660AV</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Quadra 700</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>Quadra 800</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Quadra 840AV</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Quadra 900,950</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>PowerMac 5200/75 LC</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 5300/100 LC</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 5400/200</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 5500/225</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 6100/60</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 6100/66</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 7100/66</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 7100/80</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 7200/75</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 7200/90</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 7300/180</td>
+      <td>-</td>
+      <td>√</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 7300/200</td>
+      <td>-</td>
+      <td>√</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 7500/100</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 8100/80</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 8100/100</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 8100/110</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 8500/120</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 8600/200</td>
+      <td>-</td>
+      <td>√</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 9500/120</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 9500/132</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerMac 9600/200</td>
+      <td>-</td>
+      <td>√</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Workgroup Server 60</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Workgroup Server 80</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Workgroup Server 95#</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Workgroup Server 6150/60</td>
+      <td>√</td>
+      <td>+</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Workgroup Server 6150/66</td>
+      <td>√</td>
+      <td>+</td>
+      <td>√</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Workgroup Server 7250/120</td>
+      <td>√</td>
+      <td>+</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Workgroup Server 7350/180</td>
+      <td>√</td>
+      <td>+</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Workgroup Server 8150/80</td>
+      <td>√</td>
+      <td>+</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Workgroup Server 8150/110</td>
+      <td>√</td>
+      <td>+</td>
+      <td>√</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Workgroup Server 8550/132</td>
+      <td>√</td>
+      <td>+</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Workgroup Server 8550/200</td>
+      <td>√</td>
+      <td>+</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Workgroup Server 9150/80</td>
+      <td>√</td>
+      <td>+</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Workgroup Server 9150/120</td>
+      <td>√</td>
+      <td>+</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Workgroup Server 9650/233</td>
+      <td>7.6.1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Workgroup Server 9650/350</td>
+      <td>7.6.1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Portable</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>PowerBook 100</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>PowerBook 140</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>PowerBook 145</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>PowerBook 145B</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>PowerBook 170</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>PowerBook 160</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>PowerBook 165c</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>PowerBook 180</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>PowerBook 180c</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>PowerBook 190</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerBook Duo 210</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>PowerBook Duo 230</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>PowerBook Duo 2300</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerBook Duo 250</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>PowerBook Duo 270c</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>PowerBook Duo 280</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerBook Duo 280c</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerBook 520, 520c</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerBook 540, 540c</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>√</td>
+      <td>√</td>
+      <td>-</td>
+      <td>-</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PowerBook 5300</td>
+      <td>√</td>
+      <td>√</td>
+      <td>√</td>
+      <td>*</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="system-enablers">System Enablers</h3>
+
+<p>В следующей таблице представлены System Enabler’ы, необходимые для работы некоторых моделей Макинтошей под определенными версиями MacOS. Обратите внимание, что компьютеры, использующие Enabler, не могут работать под System 7.0.1 и более ранними ОС.</p>
+
+<p>Для Macintosh Plus, SE, SE/30, Classic, Classic II, LC, LC II, LC 580, Mac II, IIx, IIcx, IIsi, IIci, IIfx, Portable, PowerBook 100, 140, 145, 145B, 170, Quadra 700, 900 и 950 System Enabler не нужен.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Модель Macintosh</th>
+      <th>Enabler</th>
+      <th>MacOS</th>
+      <th>Версия Enabler</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Color Classic</td>
+      <td>System Enabler 401</td>
+      <td>7.1</td>
+      <td>1.0.5</td>
+    </tr>
+    <tr>
+      <td>IIvi</td>
+      <td>System Enabler 001</td>
+      <td>7.1</td>
+      <td>1.0.1</td>
+    </tr>
+    <tr>
+      <td>IIvx</td>
+      <td>System Enabler 001</td>
+      <td>7.1</td>
+      <td>1.0.1</td>
+    </tr>
+    <tr>
+      <td>LC III</td>
+      <td>System Enabler 003</td>
+      <td>7.1</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>LC 475</td>
+      <td>System Enabler 065</td>
+      <td>7.1</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>LC 520</td>
+      <td>System Enabler 403</td>
+      <td>7.1</td>
+      <td>1.0.2</td>
+    </tr>
+    <tr>
+      <td>LC 550</td>
+      <td>System Enabler 403</td>
+      <td>7.1</td>
+      <td>1.0.2</td>
+    </tr>
+    <tr>
+      <td>LC 575</td>
+      <td>System Enabler 065</td>
+      <td>7.1</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>LC 630</td>
+      <td>System Enabler 405</td>
+      <td>7.1.2P</td>
+      <td>7.1.2P</td>
+    </tr>
+    <tr>
+      <td>Macintosh TV</td>
+      <td>System Enabler 404</td>
+      <td>7.1</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Centris 610</td>
+      <td>System Enabler 040</td>
+      <td>7.1</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Centris 650</td>
+      <td>System Enabler 040</td>
+      <td>7.1</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Centris 660AV</td>
+      <td>System Enabler 088</td>
+      <td>7.1</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>Quadra 605</td>
+      <td>System Enabler 065</td>
+      <td>7.1</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>Quadra 610</td>
+      <td>System Enabler 040</td>
+      <td>7.1</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Quadra 630</td>
+      <td>System Enabler 405</td>
+      <td>7.1.2P</td>
+      <td>7.1.2P</td>
+    </tr>
+    <tr>
+      <td>Quadra 650</td>
+      <td>System Enabler 040</td>
+      <td>7.1</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Quadra 660AV</td>
+      <td>System Enabler 088</td>
+      <td>7.1</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>Quadra 800</td>
+      <td>System Enabler 040</td>
+      <td>7.1</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Quadra 840AV</td>
+      <td>System Enabler 088</td>
+      <td>7.1</td>
+      <td>1.2</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="powermac">PowerMac</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Модель Macintosh</th>
+      <th>Enabler</th>
+      <th>MacOS</th>
+      <th>Версия Enabler</th>
+      <th>Примеч.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PowerMac 5200/75 LC</td>
+      <td>System Enabler 406</td>
+      <td>7.5.1</td>
+      <td>1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerMac 5300/100 LC</td>
+      <td>System Enabler 406</td>
+      <td>7.5.1</td>
+      <td>1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerMac 6100/60</td>
+      <td>PowerPC Enabler</td>
+      <td>7.1.2</td>
+      <td>1.0.2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerMac 6100/66</td>
+      <td>PowerPC Enabler</td>
+      <td>7.5</td>
+      <td>1.1.1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerMac 7100/66</td>
+      <td>PowerPC Enabler</td>
+      <td>7.1.2</td>
+      <td>1.0.2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerMac 7100/80</td>
+      <td>PowerPC Enabler</td>
+      <td>7.5</td>
+      <td>1.1.1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerMac 7200/75</td>
+      <td>System Enabler 701</td>
+      <td>7.5.2</td>
+      <td>1.1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerMac 7200/90</td>
+      <td>System Enabler 701</td>
+      <td>7.5.2</td>
+      <td>1.1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerMac 7300 Series</td>
+      <td>System Enabler 702</td>
+      <td>7.5.5</td>
+      <td> </td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>PowerMac 7500/100</td>
+      <td>System Enabler 701</td>
+      <td>7.5.2</td>
+      <td>1.2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerMac 8100/80</td>
+      <td>PowerPC Enabler</td>
+      <td>7.1.2</td>
+      <td>1.0.2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerMac 8100/100</td>
+      <td>PowerPC Enabler</td>
+      <td>7.5</td>
+      <td>1.1.1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerMac 8100/110</td>
+      <td>PowerPC Enabler</td>
+      <td>7.5</td>
+      <td>1.1.1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerMac 8500/120</td>
+      <td>System Enabler 701</td>
+      <td>7.5.2</td>
+      <td>1.2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerMac 8600/200</td>
+      <td>System Enabler 702</td>
+      <td>7.5.5</td>
+      <td> </td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>PowerMac 9500/120</td>
+      <td>System Enabler 701</td>
+      <td>7.5.2</td>
+      <td>1.1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerMac 9500/132</td>
+      <td>System Enabler 701</td>
+      <td>7.5.2</td>
+      <td>1.1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerMac 9600 Series</td>
+      <td>System Enabler 702</td>
+      <td>7.5.5</td>
+      <td> </td>
+      <td>C</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>C - Эти компьютеры продавались с MacOS 7.5.5, для ее работы необходим входивший в поставку Enabler. Mac OS 7.6 не может быть установлена, требуется Mac OS 7.6.1.</p>
+
+<h5 id="powerbook">PowerBook</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Модель Macintosh</th>
+      <th>Enabler</th>
+      <th>MacOS</th>
+      <th>Версия Enabler</th>
+      <th>Примеч.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PowerBook 150</td>
+      <td>PowerBook 150 Enabler</td>
+      <td>7.1.1</td>
+      <td>1.1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerBook 160</td>
+      <td>System Enabler 131</td>
+      <td>7.1</td>
+      <td>1.0.3</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>PowerBook 165</td>
+      <td>System Enabler 131</td>
+      <td>7.1</td>
+      <td>1.0.3</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>PowerBook 165c</td>
+      <td>System Enabler 131</td>
+      <td>7.1</td>
+      <td>1.0.3</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>PowerBook 180</td>
+      <td>System Enabler 131</td>
+      <td>7.1</td>
+      <td>1.0.3</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>PowerBook 180c</td>
+      <td>System Enabler 131</td>
+      <td>7.1</td>
+      <td>1.0.3</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>PowerBook 190</td>
+      <td>PowerBook 5300/2300/190 Enabler</td>
+      <td>7.5.2</td>
+      <td>1.2.1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerBook Duo 210</td>
+      <td>PowerBook Duo Enabler</td>
+      <td>7.1</td>
+      <td>2.0</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>PowerBook Duo 230</td>
+      <td>PowerBook Duo Enabler</td>
+      <td>7.1</td>
+      <td>2.0</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>PowerBook Duo 2300</td>
+      <td>PowerBook 5300/2300/190 Enabler</td>
+      <td>7.5.2</td>
+      <td>1.2.1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerBook Duo 250</td>
+      <td>PowerBook Duo Enabler</td>
+      <td>7.1</td>
+      <td>2.0</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>PowerBook Duo 270c</td>
+      <td>PowerBook Duo Enabler</td>
+      <td>7.1</td>
+      <td>2.0</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerBook Duo 280</td>
+      <td>PowerBook Duo Enabler</td>
+      <td>7.1.1</td>
+      <td>2.0</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerBook Duo 280c</td>
+      <td>PowerBook Duo Enabler</td>
+      <td>7.1.1</td>
+      <td>2.0</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerBook 500 Series</td>
+      <td>PowerBook 500 Series Enabler 1.0</td>
+      <td>7.1.1</td>
+      <td>1.0.2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PowerBook 5300</td>
+      <td>PowerBook 5300/2300/190 Enabler</td>
+      <td>7.5.2</td>
+      <td>1.2.1</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A - System Enabler 131 заменяет System Enabler 111 и System Enabler 121</p>
+
+<p>B - При использовании Express Modem необходим Duo Battery Patch extension</p>
+
+<h5 id="performa">Performa</h5>
+
+<p>Для Performa 200, 400, 405, 410, 430, 580, 640 и 6110 Enabler не нужен.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Модель Macintosh</th>
+      <th>Enabler</th>
+      <th>MacOS</th>
+      <th>Версия Enabler</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Performa 450</td>
+      <td>System Enabler 308</td>
+      <td>7.1P6</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Performa 460-467</td>
+      <td>System Enabler 308</td>
+      <td>7.1P6</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Performa 475-476</td>
+      <td>System Enabler 364</td>
+      <td>7.1P6</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Performa 550, 560</td>
+      <td>System Enabler 332</td>
+      <td>7.1P6</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Performa 575-578</td>
+      <td>System Enabler 364</td>
+      <td>7.1P6</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Performa 600</td>
+      <td>System Enabler 304</td>
+      <td>7.1P6</td>
+      <td>1.0.1</td>
+    </tr>
+    <tr>
+      <td>Performa 630-638</td>
+      <td>System Enabler 405</td>
+      <td>7.1.2P</td>
+      <td>7.1.2P</td>
+    </tr>
+    <tr>
+      <td>Performa 5300</td>
+      <td>System Enabler 406</td>
+      <td>7.5.1</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Performa 6200</td>
+      <td>System Enabler 406</td>
+      <td>7.5.1</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Performa 6300</td>
+      <td>System Enabler 406</td>
+      <td>7.5.1</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+:ET

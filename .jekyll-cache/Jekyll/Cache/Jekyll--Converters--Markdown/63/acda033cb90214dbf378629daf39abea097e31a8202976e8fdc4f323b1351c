@@ -1,0 +1,510 @@
+I"]3<p>Особенностью видеопорта Макинтоша является наличие специальных контактов разъема, позволяющих распознавать тип подключенного монитора и выставлять соответствующие параметры видеосигналов.</p>
+
+<h3 id="распайка-разъема-монитора-macintosh">Распайка разъема монитора Macintosh</h3>
+
+<p>В таблице указаны все контакты “старого” разъема (DB-15), а также соответствующие им контакты “нового” разъема (так называемого разъема высокой плотности – HDI-45). На этот разъем, кроме выходов видеоадаптера, могут выводится также ADB, входы стереомикрофона, видео и выход для наушников.</p>
+
+<p><img src="/mac/faq/db15.gif" alt="DB-15" />
+<img src="/mac/faq/hdi45.gif" alt="HDI-45" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Контакт Old</th>
+      <th>Контакт New</th>
+      <th>Сигнал</th>
+      <th>Описание</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>26</td>
+      <td>RED.GND</td>
+      <td>Red Video Ground</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>27</td>
+      <td>RED.VID</td>
+      <td>Red Video</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>34</td>
+      <td>CYSNC~</td>
+      <td>Composite Sync</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>8</td>
+      <td>MON.ID1</td>
+      <td>Monitor ID, Bit 1 (also known as SENSE0)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>11</td>
+      <td>GRN.VID</td>
+      <td>Green Video</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>10</td>
+      <td>GRN.GND</td>
+      <td>Green Video Ground</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>9</td>
+      <td>MON.ID2</td>
+      <td>Monitor ID, Bit 2 (also known as SENSE1)</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>.</td>
+      <td>nc</td>
+      <td>(no connection)</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>45</td>
+      <td>BLU.VID</td>
+      <td>Blue Video</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>18</td>
+      <td>MON.ID3</td>
+      <td>Monitor ID, Bit 3 (also known as SENSE2)</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>43</td>
+      <td>C&amp;VSYNC.GND</td>
+      <td>CSYNC &amp; VSYNC Ground</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>33</td>
+      <td>VSYNC~</td>
+      <td>Vertical Sync</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>44</td>
+      <td>BLU.GND</td>
+      <td>Blue Video Ground</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>43</td>
+      <td>HSYNC.GND</td>
+      <td>HSYNC Ground</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>42</td>
+      <td>HSYNC~</td>
+      <td>Horizontal Sync</td>
+    </tr>
+    <tr>
+      <td>Shell</td>
+      <td>Shell</td>
+      <td>CHASSIS.GND</td>
+      <td>Chassis Ground</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>В зависимости от модели Макинтоша, его видеоадаптер может с какими-то мониторами работать, а с какими-то - нет.</p>
+
+<h3 id="коды-распознаваемые-видеопортом-quadra">Коды, распознаваемые видеопортом Quadra</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Дисплей</th>
+      <th>Контакт 10(18)</th>
+      <th>Контакт 7(9)</th>
+      <th>Контакт 4(8)</th>
+      <th>Разрешение, пиксел</th>
+      <th>Dot Clock, МГц</th>
+      <th>Развертка кадровая, Гц</th>
+      <th>Развертка строчная, кГц</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>21’ RGB Monitor</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1152 x 870</td>
+      <td>100</td>
+      <td>75</td>
+      <td>68.7</td>
+    </tr>
+    <tr>
+      <td>Portrait Display (15” B/W)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>640 x 870</td>
+      <td>57.2832</td>
+      <td>75</td>
+      <td>68.9</td>
+    </tr>
+    <tr>
+      <td>12’ RGB Monitor</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>512 x 384</td>
+      <td>15.6672</td>
+      <td>60.15</td>
+      <td>24.48</td>
+    </tr>
+    <tr>
+      <td>WorkStation Display (Two Page Display - 21” B/W)</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1152 x 870</td>
+      <td>100</td>
+      <td>75</td>
+      <td>68.7</td>
+    </tr>
+    <tr>
+      <td>NTSC (interlaced)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>512x384</td>
+      <td>12.2727</td>
+      <td>59.94</td>
+      <td>15.7</td>
+    </tr>
+    <tr>
+      <td>NTSC (interlaced)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>640x480</td>
+      <td>12.2727</td>
+      <td>59.94</td>
+      <td>15.7</td>
+    </tr>
+    <tr>
+      <td>Portrait Color (15” RGB)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>640 x 870</td>
+      <td>57.2832</td>
+      <td>75</td>
+      <td>68.9</td>
+    </tr>
+    <tr>
+      <td>12’ B/W Monitor</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>640 x 480</td>
+      <td>30.24</td>
+      <td>66.67</td>
+      <td>35.0</td>
+    </tr>
+    <tr>
+      <td>12’(14’) RGB Monitor</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>640 x 480</td>
+      <td>30.24</td>
+      <td>66.67</td>
+      <td>35.0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Для получения цветного сигнала NTSC, требуется конвертер RGB-to-NTSC</p>
+
+<p>При обнаружении следующего кода проверяются “Расширенные” коды: 1 1 1</p>
+
+<p><strong>ПРИМЕЧАНИЕ:</strong> сигнал 0 обозначает, что штырек должен быть соединен с C&amp;VSYNC.GND; сигнал 1 - не соединен.</p>
+
+<h3 id="расширенные-коды">Расширенные коды</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Дисплей</th>
+      <th>Пары контактов 4-10 (8-18)</th>
+      <th>10-7 (18-9)</th>
+      <th>7-4 (9-8)</th>
+      <th>Разрешение, пиксел</th>
+      <th>Dot Clock, МГц</th>
+      <th>Развертка кадровая, Гц</th>
+      <th>Развертка строчная, кГц</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>16” Color</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>832 x 624</td>
+      <td>57.2832</td>
+      <td>75</td>
+      <td>49.7</td>
+    </tr>
+    <tr>
+      <td>19” Color</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>?</td>
+      <td>?</td>
+      <td>74.93</td>
+      <td>?</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Для получения цветного сигнала PAL требуется конвертер RGB-to-PAL.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PAL Encoder (interlaced)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>640x480</td>
+      <td>14.75</td>
+      <td>50</td>
+      <td>15.625</td>
+    </tr>
+    <tr>
+      <td>PAL Encoder (interlaced)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>768x576</td>
+      <td>14.75</td>
+      <td>50</td>
+      <td>15.625</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Эта конфигурация не поддерживает цветовое разрешение 24 бит/пиксел.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PAL Monitor (interlaced)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>640x480</td>
+      <td>14.75</td>
+      <td>50</td>
+      <td>15.625</td>
+    </tr>
+    <tr>
+      <td>PAL Monitor (interlaced)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>768x576</td>
+      <td>14.75</td>
+      <td>50</td>
+      <td>15.625</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Для этого кода необходимо включение диода между контактами 10 и 7, анодом к 7, катодом к 10.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>NTSC Encoder (interlaced)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>?</td>
+      <td>?</td>
+      <td>59.94</td>
+      <td>?</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Для этого кода необходимо включение диода между контактами 10 и 4, анодом к 4, катодом к 10.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>VGA</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>640 x 480</td>
+      <td>25.175</td>
+      <td>59.95</td>
+      <td>31.47</td>
+    </tr>
+    <tr>
+      <td>Super VGA</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>800 x 600</td>
+      <td>36</td>
+      <td>56</td>
+      <td>35.16</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Для включения Super VGA, нужно в пульте “Мониторы” нажать “Options”, в диалоге выбрать Super VGA и перезагрузить компьютер.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Монитор отсутствует</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>(видео выключено)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>ПРИМЕЧАНИЕ.</strong> для расширенных кодов: 0 - штырьки в паре соединены вместе (10, 7 или 4); 1 - не соединены. <strong>НЕ соединяйте с GND</strong> какой-либо из этих штырьков.</p>
+
+<h3 id="multiple-scan-мониторы-распознаются-powermacintosh">Multiple Scan мониторы (распознаются PowerMacintosh)</h3>
+
+<p>Контакт 4(8) соединен с C&amp;VSYNC.GND</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Дисплей</th>
+      <th>Контакты 7 (9) и 10 (18)</th>
+      <th>Разрешение</th>
+      <th>Частота кадров, Гц</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Multiple Scan 14”</td>
+      <td>закорочены</td>
+      <td>640x480 832x624</td>
+      <td>66.7 74.6</td>
+    </tr>
+    <tr>
+      <td>Multiple Scan 16”</td>
+      <td>диод, анодом к 7 (9)</td>
+      <td>640x480 832x624 1024x768</td>
+      <td>66.7 74.6 74.9</td>
+    </tr>
+    <tr>
+      <td>Multiple Scan 21”</td>
+      <td>диод, анодом к 10 (18)</td>
+      <td>640x480 832x624 1024x768 1152x870</td>
+      <td>66.7 74.6 74.9 75.1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="как-подключить-vgasvga-монитор">Как подключить VGA/SVGA-монитор</h3>
+
+<p>Это можно сделать практически с любым VGA/SVGA-монитором и LC/Quadra/PowerMac. Нельзя использовать старые (одночастотные) VGA-мониторы с Macintosh IIsi, LC и LC II. Насколько мне известно, из Макинтошей со встроенным видеоконтроллером абсолютно невозможно подключение только к IIci.</p>
+
+<p>Вам потребуется использовать готовый переходник или спаять его по следующей схеме:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>DB-15</th>
+      <th>High Density</th>
+      <th>Назначение</th>
+      <th>Разъем VGA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>27</td>
+      <td>Red Video</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>26</td>
+      <td>Red Ground</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>45</td>
+      <td>Blue Video</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>44</td>
+      <td>Blue Ground</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>11</td>
+      <td>Green Video</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>10</td>
+      <td>Green Ground</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>42</td>
+      <td>Hsync</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>33</td>
+      <td>Vsync</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>43</td>
+      <td>Sync Ground</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>18</td>
+      <td>Закоротить контакты 7 и 10 (9 и 18)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>9</td>
+      <td>чтобы видеоадаптер определял монитор как VGA</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>ПРИМЕЧАНИЕ.</strong> При использовании современных мониторов лучше попробовать использовать в переходнике перемычки как для Multiscan-мониторов</p>
+:ET

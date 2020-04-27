@@ -1,0 +1,5 @@
+I"_<p>В /etc/rc.local прописать строчку</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pppd plugin PPTP.ppp remoteaddress &lt;VPN srvr&gt; logfile /var/log/ppp.log user &lt;VPNlogin&gt; password &lt;VPNpasswd&gt; defaultroute usepeerdns persist maxfail 0
+</code></pre></div></div>
+:ET

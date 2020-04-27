@@ -1,0 +1,14 @@
+I"S<p>Вызовите диалог печати и настройте все необходимые опции</p>
+
+<p>Сохраните пресет, назвав его, скажем, “PS”</p>
+
+<p>Найдите и откройте для редактирования файл “/Users/<имя пользователя="">/Library/Preferences/com.apple.print.custompresets.plist"</имя></p>
+
+<p>Найдите там сделанный вами пресет (“PS”)</p>
+
+<p>Найдите в опциях этого пресета свойство com.apple.print.PrintSettings.PMDestinationType</p>
+
+<p>Измените значение параметра DestinationType с “1” на “2” (1 = to printer, 2 = to PS file)</p>
+
+<p>Сохраните файл “com.apple.print.custompresets.plist” и закройте его.</p>
+:ET

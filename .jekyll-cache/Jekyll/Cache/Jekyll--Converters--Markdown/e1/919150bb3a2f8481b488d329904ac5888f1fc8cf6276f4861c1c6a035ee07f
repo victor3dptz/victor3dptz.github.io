@@ -1,0 +1,7 @@
+I"B<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart <span class="nt">-activate</span> <span class="nt">-configure</span> <span class="nt">-access</span> <span class="nt">-on</span> <span class="nt">-privs</span> <span class="nt">-all</span> <span class="nt">-restart</span> <span class="nt">-agent</span>
+</code></pre></div></div>
+
+<h4 id="выключаем-ard-через-ssh">Выключаем ARD через SSH</h4>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart <span class="nt">-deactivate</span> <span class="nt">-stop</span>
+</code></pre></div></div>
+:ET

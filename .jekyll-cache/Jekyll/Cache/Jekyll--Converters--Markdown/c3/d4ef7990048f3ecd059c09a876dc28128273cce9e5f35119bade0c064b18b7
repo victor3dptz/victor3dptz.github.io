@@ -1,0 +1,625 @@
+I"׊<p>This chapter provides information about how to install and configure WebSTAR plug-ins.</p>
+
+<h3 id="installing-plug-ins">Installing Plug-Ins</h3>
+
+<p>In most cases, the default WebSTAR plug-ins are automatically installed when you run the WebSTAR Installer. If you acquire 3rd party plug-ins or need to install a plug-in from the Finder, follow these instructions:</p>
+
+<h4 id="to-install-a-plug-in-from-the-finder">To install a plug-in from the Finder:</h4>
+
+<ol>
+  <li>Quit WebSTAR</li>
+  <li>Drag the plug-in from its folder into the WebSTAR Plug-ins folder.</li>
+  <li>Allocate additional RAM to WebSTAR, if necessary.</li>
+  <li>Restart WebSTAR.</li>
+</ol>
+
+<p>That’s all there is to it. If you need to remove a plug-in, reverse the process.</p>
+
+<h4 id="to-remove-a-plug-in-from-webstar">To remove a plug-in from WebSTAR:</h4>
+
+<ol>
+  <li>Quit WebSTAR</li>
+  <li>Drag the plug-in from the WebSTAR Plug-ins folder to a folder location somewhere else on your hard drive.</li>
+  <li>Deallocate additional RAM from WebSTAR, if necessary.</li>
+  <li>Restart WebSTAR.</li>
+  <li>Remove any Suffix Mappings not configured by the plug-in</li>
+</ol>
+
+<p>The balance of this chapter describes each WebSTAR plug-in and anything you need to know in order to properly install and configure it.</p>
+
+<h3 id="webstar-auto-binhex-plug-in">WebSTAR Auto BinHex Plug-In</h3>
+
+<p>The WebSTAR Auto BinHex plug-in performs on-the-fly binhexing of files and Macintosh applications by simply appending the “.hqx” suffix to the end of a URL. For instance:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://your.server/file.sit.hqx
+</code></pre></div></div>
+
+<h4 id="installation-issues">Installation Issues</h4>
+
+<p>The WebSTAR Installer installs the WebSTAR Auto BinHex plug-in by default. If a Finder based installation is required, you should:</p>
+
+<ul>
+  <li>Create a “.messages” file for each directory for which you plan to allow BinHexing.It is not necessary to allocate additional RAM to WebSTAR in order to use this plug-in.If you need to remove the WebSTAR Auto BinHex plug-in:</li>
+  <li>Remove any “.messages” files.</li>
+  <li>Using WebSTAR Admin, check your Suffix Mapping entries to make sure that all necessary file types are defined.</li>
+</ul>
+
+<blockquote>
+  <p>WebSTAR Auto BinHex will not allow files with a creator of “WWW(omega)” to be BinHexed and served.</p>
+</blockquote>
+
+<blockquote>
+  <p>Instead of modifying existing Suffix Mappings, add duplicate Suffix Mappings, change the Action to BINHEX, and move the duplicates before the originals in the list. This allows you to easily remove the WebSTAR Auto BinHex plug-in and revert to the original Suffix Mappings.</p>
+</blockquote>
+
+<h4 id="configuration">Configuration</h4>
+
+<ul>
+  <li>Run the server with the WebSTAR Auto BinHex plug-in installed.</li>
+  <li>From a web browser, connect to the URL:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://your.server/pi_admin.hqx
+</code></pre></div></div>
+
+<p>Your browser displays the WebSTAR Auto BinHex configuration screen.</p>
+
+<ul>
+  <li>Adjust any Security or Caching preferences, if necessary.</li>
+  <li>Click the “Save” button.</li>
+</ul>
+
+<h3 id="webstar-byte-server-plug-in">WebSTAR Byte Server Plug-In</h3>
+
+<p>The WebSTAR Byte Server plug-in supports byte range serving for Adobe Acrobat PDF files. Now you can use WebSTAR to serve individual pages from very large PDF files without the entire file having to be downloaded first.</p>
+
+<h4 id="requirements">Requirements</h4>
+
+<p>You need the following to install, test and use the WebSTAR Byte Server plug-in:</p>
+
+<ul>
+  <li>Adobe Acrobat 3.0 or later which can be downloaded from:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://www.adobe.com/
+</code></pre></div></div>
+
+<ul>
+  <li>The Acrobat “Amber” plug-in for Netscape Navigator or Microsoft Internet Explorer (part of the Acrobat 3.0 archive).</li>
+  <li>PDF documents that are saved in the Adobe Acrobat 3.0 format.</li>
+</ul>
+
+<blockquote>
+  <p>PDF files created with earlier versions of Acrobat cannot be byte-served.</p>
+</blockquote>
+
+<h4 id="installation-issues-1">Installation Issues</h4>
+
+<p>The WebSTAR Installer installs the WebSTAR Byte Server plug-in by default. If a Finder based installation is required, keep in mind:</p>
+
+<ul>
+  <li>You should probably remove any existing PDF Suffix Mappings (optional, but safe) and quit WebSTAR. Then follow the installation instructions at the beginning of this chapter.If you need to remove the WebSTAR Byte Server plug-in:</li>
+  <li>Using the WebSTAR Admin, remove all non plug-in defined Suffix Mappings with an Action of BYTE_SERVER.</li>
+  <li>Using WebSTAR Admin, check your Suffix Mappings to make sure that all necessary file types are defined.</li>
+</ul>
+
+<h4 id="to-test-the-plug-in">To test the plug-in:</h4>
+
+<ul>
+  <li>Run WebSTAR and WebSTAR Admin. Remove any existing PDF suffix mappings (optional, but safe), and quit WebSTAR.</li>
+  <li>Place an Acrobat 3.0 or greater PDF document somewhere in your WebSTAR document tree. Such documents must have a .pdf suffix.</li>
+  <li>Run WebSTAR.</li>
+  <li>Install the Acrobat browser plug-in in your Microsoft Internet Explorer or Netscape Navigator plug-in folder. The Acrobat browser plug-in is available from:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://www.adobe.com/
+</code></pre></div></div>
+
+<ul>
+  <li>Make sure Acrobat 3.0 or later is installed somewhere on your hard drive.</li>
+  <li>Run your web browser and connect to your server, requesting the PDF file.</li>
+</ul>
+
+<p>As the PDF file loads, Acrobat plug-in page controls will become active in your web browser’s window.</p>
+
+<ul>
+  <li>Click on the forward page button, which will stop the streaming download and switch to byte range serving.</li>
+</ul>
+
+<p>As you step forward through the document, the browser will request individual ranges of bytes from WebSTAR instead of the entire document.</p>
+
+<h3 id="webstar-data-cache-plug-in">WebSTAR Data Cache Plug-In</h3>
+
+<p>The WebSTAR Data Cache plug-in performs web server file caching. In other words, the contents of the static files in your web site are served from memory (without accessing the disk), whenever possible. The WebSTAR Data Cache is an intelligent cache, using a frequency-based algorithm to automatically adapt to changing server loads. After installation, you can forget that it is there. Whenever you modify files that may be cached, choose WebSTAR’s Flush File Info Cache command from the Options menu. This causes the WebSTAR Data Cache to be cleared along with WebSTAR’s internal file information cache.</p>
+
+<h4 id="installation-issues-2">Installation Issues</h4>
+
+<p>The WebSTAR Installer installs the WebSTAR Data Cache plug-in by default. The Data Cache plug-in is not configured to run by default, it is only installed by default. If a Finder based installation is required, you need to:</p>
+
+<ul>
+  <li>Increase the memory allocation of the server by at least 256K, or the amount you wish to cache.</li>
+  <li>Restart the server after installation.</li>
+  <li>Change the Action for all file types that you wish to cache to “CACHE”.</li>
+</ul>
+
+<blockquote>
+  <p>Do not add WebSTAR Data Cache Suffix Mappings for file types that require processing by other CGIs or Plug-Ins. Typically, only file types that are currently transferred as TEXT and BINARY should be cached.</p>
+</blockquote>
+
+<blockquote>
+  <p>Instead of modifying existing Suffix Mappings, add duplicate Suffix Mappings, change the Action to CACHE, and move the duplicates before the originals in the list. This allows you to easily remove the WebSTAR Data Cache plug-in and revert to the original Suffix Mappings.</p>
+</blockquote>
+
+<p>If you need to remove the WebSTAR Data Cache plug-in:</p>
+
+<ul>
+  <li>Decrease the memory allocation of the server, if necessary.</li>
+  <li>Using WebSTAR Admin, check your Suffix Mapping entries to make sure that all necessary file types are defined.</li>
+</ul>
+
+<h4 id="configuration-1">Configuration</h4>
+
+<p>Run the server with the WebSTAR Data Cache plug-in installed.</p>
+
+<ul>
+  <li>From a web browser, connect to the URL:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://your.server/pi_admin.cache
+</code></pre></div></div>
+
+<p>Your browser displays a screen similar to the one shown in Figure 24.</p>
+<ul>
+  <li>Type the desired file cache size (in bytes) into the text box.</li>
+</ul>
+
+<p><em>WebSTAR Data Cache is pre-configured for a size of 256K.</em></p>
+
+<ul>
+  <li>Click on the Save button.</li>
+  <li>Increase or decrease the memory allocation of the server, if necessary.</li>
+  <li>Restart the server.</li>
+</ul>
+
+<blockquote>
+  <p>Failure to perform step 5 may cause the server to crash.</p>
+</blockquote>
+
+<blockquote>
+  <p>Selecting an optimal cache size is a matter of trial and error. A cache that is too small has no effect on performance. A cache that is too large wastes memory. Ideally, you would define a cache size that is large enough to hold all of your cached documents. When in doubt, make the cache as big as memory allows.</p>
+</blockquote>
+
+<p><img src="/mac/webstar/cache.gif" alt="Data Cache" /></p>
+
+<h3 id="webstar-directory-indexer-plug-in">WebSTAR Directory Indexer Plug-In</h3>
+
+<p>The WebSTAR Directory Indexer plug-in allows folder/directory listings to be displayed in the browser, and provides a user interface for uploading and downloading files to and from the web server.</p>
+
+<h4 id="installation-issues-3">Installation Issues</h4>
+
+<p>The WebSTAR Installer installs the WebSTAR Directory Indexer plug-in by default. The WebSTAR Directory Indexer plug-in is not configured to run by default, it is only installed by default. It is not necessary to allocate additional RAM to WebSTAR in order to use this plug-in. If you need to remove the plug-in:</p>
+
+<ul>
+  <li>Reset your Index file to “default.html”.</li>
+</ul>
+
+<h4 id="configuration-2">Configuration</h4>
+
+<ul>
+  <li>Using the WebSTAR Admin set the “index” page of the server to be “<indexname>.DIR" (e.g., "default.dir" or "Index.dir"). The .DIR suffix is essential to force the server to run WebSTAR Directory Indexer instead of serving a default page.</indexname></li>
+  <li>Create a file called “.message” in each directory you want to be indexed on the web. If the .message file exists in a folder, a directory index can be returned. The contents of this file (HTML or TEXT) are displayed above the directory listing. Please see the ReadMe.</li>
+</ul>
+
+<blockquote>
+  <p>WebSTAR Directory Indexer creates a folder called “WebSTAR_Directory_Cache” in each folder that is designated to be indexed. This folder contains cached GIF icon graphics and is not displayed in the directory index listing.</p>
+</blockquote>
+
+<h4 id="follow-these-steps-to-use-the-configuration-page">Follow these steps to use the configuration page:</h4>
+
+<ol>
+  <li>Run the server with WebSTAR Directory Indexer installed.</li>
+  <li>From a web browser, connect to the URL: http://your.server/pi_admin.dir</li>
+  <li>Configure the settings as desired.</li>
+  <li>Click on the Save button.</li>
+</ol>
+
+<blockquote>
+  <p>Some options configurable through the WebSTAR Directory Indexer administration page are only applicable when the Plug-Ins WebSTAR Auto BinHex and WebSTAR File Upload are installed.</p>
+</blockquote>
+
+<h3 id="webstar-file-upload-plug-in">WebSTAR File Upload Plug-In</h3>
+
+<p>The WebSTAR File Upload plug-in allows WebSTAR to receive files sent via the HTTP Upload feature in Netscape Navigator and other browsers.</p>
+
+<h4 id="installation-issues-4">Installation Issues</h4>
+
+<p>The WebSTAR Installer installs the WebSTAR File Upload plug-in by default. The WebSTAR File Upload plug-in is not configured to run by default, it is only installed by default.</p>
+
+<p>It is not necessary to allocate additional RAM to WebSTAR in order to use this plug-in. If a Finder based installation is required, keep in mind:</p>
+
+<ul>
+  <li>You need to create a .permissions file for each directory for which you would like to allow file uploading.</li>
+</ul>
+
+<blockquote>
+  <p>A permissions file can be any TEXT file named “.permissions” .</p>
+</blockquote>
+
+<p>If you need to remove the plug-in:</p>
+
+<ul>
+  <li>You may want to remove your .permissions files. When the WebSTAR File Upload is used in conjunction with the WebSTAR Directory Indexer Plug-In, an uploading interface is presented at the bottom of each directory listing.</li>
+</ul>
+
+<h3 id="webstar-image-map-plug-in">WebSTAR Image Map Plug-In</h3>
+
+<p>The WebSTAR Image Map plug-in allows you to use “clickable” image maps and map files without the use of an external CGI application on your web server. WebSTAR Image Map currently supports the NCSA methods of circle, poly, rect and default in the map file.</p>
+
+<h4 id="installation-issues-5">Installation Issues</h4>
+
+<p>The WebSTAR Installer installs the WebSTAR Image Map plug-in by default. It is not necessary to allocate additional RAM to WebSTAR in order to use this plug-in. If a Finder based installation is required, keep in mind:</p>
+
+<ul>
+  <li>Using the WebSTAR Admin, check your Suffix Mappings to make sure all “.MAP” files are set to be processed by the WebSTAR Image Map plug-in.</li>
+</ul>
+
+<p>If you need to remove the plug-in:</p>
+
+<ul>
+  <li>Using WebSTAR Admin, check your Suffix Mappings to make sure that all necessary file types are defined.</li>
+</ul>
+
+<h4 id="issues">Issues</h4>
+
+<ul>
+  <li>WebSTAR Image Map does not work with the WebSTAR BG server.</li>
+  <li>It is not recommended that you use WebSTAR Image Map with CERN map files.</li>
+  <li>WebSTAR Image Map does not currently support aliases or referencing of files through an alias.</li>
+</ul>
+
+<h4 id="image-map-syntax">Image Map Syntax</h4>
+
+<p>In your HTML page(s) you will need to indicate that your graphic is a clickable map. You can use the syntax below as an example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;A HREF="examplemap.map"&gt;&lt;IMG SRC="examplemap.gif" ISMAP&gt;&lt;/A&gt;
+</code></pre></div></div>
+
+<p>Replace the examplemap.map text with any of your .map files and replace the examplemap.gif text with any of your images. NCSA has sources on the Internet which discuss how image maps work.</p>
+
+<h3 id="webstar-java-vm-plug-in">WebSTAR Java VM Plug-In</h3>
+
+<p>The WebSTAR Java VM plug-in gives WebSTAR the ability to run server side Java applets, called sapplets, to perform a variety of useful functions such as HTML form processing, database access, multi-user web applications which require shared space and out of band connectivity to Java applets running on the client side.</p>
+
+<h4 id="installation-issues-6">Installation Issues</h4>
+
+<p>Follow the installation instructions at the beginning of this chapter.</p>
+
+<p>If a Finder based installation is required, keep in mind:</p>
+
+<ul>
+  <li>Increase the memory allocation of the server. Please see the “About WebSTAR Java VM” document for additional information regarding memory requirements.</li>
+</ul>
+
+<p>If you need to remove the plug-in:</p>
+
+<ul>
+  <li>Using the WebSTAR Admin, remove all Suffix Mappings with an Action of “JAVA”.</li>
+  <li>Remove any Java applets (or sapplets) that were being used with WebSTAR Java VM.</li>
+  <li>Decrease the memory allocation of the server, if necessary.</li>
+</ul>
+
+<h3 id="webstar-log-roller-plug-in">WebSTAR Log Roller Plug-In</h3>
+
+<p>The WebSTAR Log Roller plug-in causes WebSTAR to archive the WebSTAR.log file at user-configurable intervals. The archives may contain the entire log (if the log is clear at each archiving) or the previously unarchived portion (if the log is allowed to grow indefinitely).</p>
+
+<h4 id="installation-issues-7">Installation Issues</h4>
+
+<p>Follow the installation instructions at the beginning of this chapter. The WebSTAR Log Roller plug-in is not configured to run by default, it is only installed by default.</p>
+
+<p>It is not necessary to allocate additional RAM to WebSTAR in order to use this plug-in.</p>
+
+<h4 id="configuration-3">Configuration</h4>
+
+<ul>
+  <li>Run the server with WebSTAR Log Roller installed.</li>
+  <li>From a web browser, connect to the URL:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://your.server/pi_admin.roll
+</code></pre></div></div>
+
+<ul>
+  <li>Adjust the log rolling schedule options.</li>
+  <li>Click the Save button.</li>
+</ul>
+
+<h3 id="webstar-quicksend-plug-in">WebSTAR QuickSend Plug-In</h3>
+
+<p>WebSTAR QuickSend plug-in sends SMTP mail from the WebSTAR to a designated host using user supplied form information. There is no need for the user to configure a browser, as is necessary when using a mail-to tag.</p>
+
+<h4 id="installation-issues-8">Installation Issues</h4>
+
+<p>The WebSTAR Installer installs the WebSTAR QuickSend plug-in by default. The WebSTAR QuickSend plug-in is not configured to run by default, it is only installed by default.</p>
+
+<p>It is not necessary to allocate additional RAM to WebSTAR in order to use this plug-in.</p>
+
+<p>If a Finder based installation is required, you need to:</p>
+
+<ul>
+  <li>Drop the sample HTML forms “QuickSend.html” and/or “Subscribe.html” into the WebSTAR hierarchy.</li>
+</ul>
+
+<p>You can then access the forms and perform a trial QuickSend. See the Configuration section for information about defining a default mail host for the plug-in to talk to.</p>
+
+<p>If you need to remove the plug-in:</p>
+
+<ul>
+  <li>Remove the HTML files that are being used to send form data to the QuickSend plug-in.</li>
+</ul>
+
+<h4 id="configuration-4">Configuration</h4>
+
+<ul>
+  <li>Run the server with WebSTAR QuickSend installed.</li>
+  <li>From a web browser, connect to the URL:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://your.server/pi_admin.quicksend
+</code></pre></div></div>
+
+<p>Your browser displays a screen similar to the one shown in Figure 25.</p>
+
+<ul>
+  <li>Enter the default mail host for QuickSend to use when sending mail.</li>
+  <li>Configure Logging to be On or Off. With logging On the client will receive an HTML page showing the protocol conversation that occurred between QuickSend and the mail host when the clients message was sent. With logging Off the client will only receive success or failure and error messages.</li>
+  <li>Set the Timeout value. The timeout range is 30 seconds to 3 minutes with 30 second increments. The timeout value specifies the amount of time to wait for any response from the mail host before terminating the connection to the host.</li>
+  <li>Click the Save button.</li>
+</ul>
+
+<p><img src="/mac/webstar/quicksend.gif" alt="Quicksend" /></p>
+
+<h4 id="additional-configurations-and-considerations">Additional Configurations and Considerations</h4>
+
+<p>QuickSend applies the following rules in using a mail host.</p>
+
+<ul>
+  <li>If the HTML file contains a hidden form element with a name of “Host”and a value filled in with a host name, as in:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;INPUT TYPE="HIDDEN" NAME="Host" VALUE="starnine.com"&gt;
+</code></pre></div></div>
+
+<p>the mail host used is the mail host in the value field – whether or not a mail host is specified using the admin configuration page.</p>
+<ul>
+  <li>If a mail host has been configured with the Admin configuration page, and no “Host” form element appears in the HTML, then the Admin configured mail host is used.</li>
+  <li>If no host has been configured and the HTML does not contain a form “Host” element then WebSTAR QuickSend strips the host information from the To: address and attempts to connect to that system. From an administrative point of view this is the least desirable option. You are encouraged to configure site specific mail host information by adjusting the HTML’s or by using WebSTAR QuickSend’s Admin page. The supplied forms are only examples and can be altered or customized to suit your needs. However, WebSTAR QuickSend expects “To” and “From” name tag values within an HTML form construct.</li>
+  <li>If a subject line and/or message body is to be present in a WebSTAR QuickSend message then “Subject” and “Body”as name tag values within an HTML form construct are also needed. Examination of the “quicksend.html”“file will make this apparent.The “subscribe.html” is included as an easy way for users to subscribe or unsubscribe to designated talk lists through the web. Since the example is preconfigured with several of StarNine’s talk-lists, you may want to change the HTML to reflect the lists that you want users to have subscribe and unsubscribe access to. The needed changes are obvious upon examination of the “subscribe.html” file.</li>
+</ul>
+
+<blockquote>
+  <p>Security Issue: As of now the senders IP number is recorded in an X-Comment field RFC header constructed by WebSTAR QuickSend.</p>
+</blockquote>
+
+<h3 id="webstar-ssi-plug-in">WebSTAR SSI Plug-In</h3>
+
+<p>The WebSTAR SSI plug-in implements and extends the “Server Side Includes” functionality as defined by the NCSA. Using WebSTAR SSI you can create dynamic web pages that include information such as the client’s address, the time of day, and the number of times a page has been accessed. You can also include the contents of a separate file, or even output the results of a CGI or plug-in in a single page.</p>
+
+<p>WebSTAR SSI supports the standard SSI commands:</p>
+
+<ul>
+  <li>include: insert the contents of one HTML file into the HTML data stream.</li>
+  <li>exec: execute a (WebSTAR) CGI application, and insert the result into the HTML data stream.</li>
+  <li>echo: insert the value of various server-related variables into the HTML data stream.</li>
+  <li>fsize: insert the size of a file into the HTML data stream.</li>
+  <li>flastmod: insert the modification data of a file into the HTML data stream.</li>
+  <li>config: configure display formats.In addition, the following extended commands are supported:</li>
+  <li>counter: increment a named counter, and insert it into the HTML data stream.</li>
+  <li>hide: conditionally turn OFF output of HTML until a subsequent SHOW command is encountered.</li>
+  <li>show: conditionally turn ON the output of HTML until a subsequent HIDE command is encountered.</li>
+  <li>echo: extended to display counter values and WebSTAR W*API variables.</li>
+  <li>exec: extended to call registered W*API service routines.</li>
+</ul>
+
+<blockquote>
+  <p>Sample files showing each of the WebSTAR SSI commands can be found in the Sample Files folder located inside the WebSTAR folder on the distribution media.</p>
+</blockquote>
+
+<h4 id="installation-issues-9">Installation Issues</h4>
+
+<p>The WebSTAR Installer installs the WebSTAR SSI plug-in by default. The WebSTAR SSI plug-in is not configured to run by default, it is only installed by default. It is not necessary to allocate additional RAM to WebSTAR in order to use this plug-in.</p>
+
+<p>If a Finder based installation is required, keep the following in mind:</p>
+
+<ul>
+  <li>Add a Suffix Mapping for the Action SSI to define which files you want WebSTAR SSI to process. A common SSI suffix is “.shtml”.</li>
+</ul>
+
+<p>If you need to remove the plug-in:</p>
+
+<ul>
+  <li>Using WebSTAR Admin, remove all Suffix Mappings from WebSTAR which have an Action of SSI.</li>
+</ul>
+
+<h4 id="configuration-5">Configuration</h4>
+
+<p>No initial configuration is necessary. However, counters created via the <!--#counter name="xxx"--> command may be modified as follows:</p>
+
+<ul>
+  <li>Start the server with WebSTAR SSI installed.</li>
+  <li>From a web browser, connect to the URL:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://your.server/pi_admin.ssi
+</code></pre></div></div>
+
+<ul>
+  <li>Your browser displays a screen similar to the one shown in Figure 26.</li>
+  <li>Modify or delete counter values as necessary.</li>
+  <li>Click on the Save button.</li>
+  <li>Restart the server.</li>
+</ul>
+
+<p><img src="/mac/webstar/ssi.gif" alt="SSI" /></p>
+
+<h4 id="webstar-ssi-command-syntax">WebSTAR SSI Command Syntax</h4>
+
+<p>The WebSTAR SSI plug-in processes HTML files. All SSI commands are constructed as HTML comments of the following form:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--#COMMAND TAG1="VALUE1" TAG2="VALUE2"--&gt;
+</code></pre></div></div>
+
+<p>Both tag=”value” pairs are optional. The WebSTAR SSI plug-in is very forgiving about the blank spaces in commands. In general, zero or more spaces may appear between any two symbols inside the comment markers; but at least one space must appear immediately before any tag name. All commands, tags, and values are case insensitive.</p>
+
+<p>If for any reason an SSI command generates an error, the appropriate error message is generated within an HTML comment and will appear at the original position of the command.</p>
+
+<h4 id="webstar-ssi-command-summary">WebSTAR SSI Command Summary</h4>
+
+<p>The commands supported by the WebSTAR SSI plug-in are defined below.</p>
+
+<blockquote>
+  <p>Functionality that extends the NCSA SSI specification (found at http://hoohoo.ncsa.uiuc.edu/docs/tutorials/includes.html) are in italics.</p>
+</blockquote>
+
+<h5 id="config">config</h5>
+
+<p>The config command allows you to customize the format of three types of values that are generated by the SSI plug-in. For example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--#config errmsg="Sorry, an error occurred."--&gt;
+</code></pre></div></div>
+
+<p>There are three valid tags that apply to this command: errmsg, timefmt, and sizefmt. Only one tag may be defined in each command.</p>
+
+<ul>
+  <li><strong>errmsg</strong>: The value assigned to this tag defines an error message that is to be used instead of the built-in error messages.</li>
+  <li><strong>timefmt</strong>: The value assigned to this tag defines the format of all time/date values generated by other SSI commands. The value must be a standard UNIX time format string. The default time format is “%Y/%m/%d:%H:%M:%S”, (e.g., “1996/10/01:22:13:47”) for which an alphabetical sorting is identical to a chronological sorting.</li>
+  <li><strong>sizefmt</strong>: The value assigned to this tag defines the format of all file size values generated by other SSI commands. Valid values for this tag are: “</li>
+</ul>
+
+<p>“bytes”: Output the file size in bytes. For example, “1,234,567 bytes”.</p>
+
+<p>“abbrev”: Output the file size in kilobytes. For example, “1,234 K”.</p>
+
+<h5 id="include">include</h5>
+
+<p>The include command allows you to dynamically insert other HTML files into the current HTML file. For example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--#include virtual="/stuff/address.shtml"--&gt;
+</code></pre></div></div>
+
+<p>All included file names must end in the suffix (e.g., “.shtml”) you have defined for the WebSTAR SSI plug-in. File inclusion is only allowed three levels deep. The valid tags for this command: “virtual” and “file”, define the format of the file/path name provided in the associated value. Although an SSI file accessed via a normal HTML link may be an alias, included files may not be aliases.</p>
+
+<ul>
+  <li><strong>virtual</strong>: A “virtual” type file path is a local URL that references a file within the WebSTAR folder hierarchy. Such URLs must NOT contain “http://your.host.name/”. To reference a file immediately within the WebSTAR folder, the URL should begin with a slash (e.g., “/myfile.shtml”).</li>
+  <li><strong>file</strong>: A “file” type file path is essentially just a Macintosh pathname. Although relative paths may be used, it is recommended that full path names be used instead (e.g., “Volume:Folder:File”).</li>
+</ul>
+
+<h5 id="echo">echo</h5>
+
+<p>According to the NCSA definition, the echo command allows you to insert various server related values into the HTML output stream. For example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--#echo var="date_gmt"--&gt;
+</code></pre></div></div>
+
+<p>In addition, all of the server variables defined in the W<em>API plug-in specification are also available, as are the counters defined by the counter command (see below). Counters displayed via the echo command are not incremented. The only valid tag for this command is “var”. The associated value is one of the standard SSI variable names, *a counter variable name (defined by a previous counter command), or one of the W</em>API variables (e.g., piServerName, piServerPort, etc.).*</p>
+
+<p>The NCSA standard SSI variables are listed below. Unless otherwise indicated, they return the value defined at: http://hoohoo.ncsa.uiuc.edu/docs/tutorials/includes.html</p>
+
+<ul>
+  <li>DOCUMENT_NAME</li>
+  <li>DOCUMENT_URI</li>
+  <li>QUERY_STRING_UNESCAPED</li>
+  <li>QUERY_STRING</li>
+  <li>DATE_LOCAL</li>
+  <li>DATE_GMT</li>
+  <li>LAST_MODIFIED</li>
+  <li>SERVER_NAME</li>
+  <li>SERVER_SOFTWARE</li>
+  <li>GATEWAY_INTERFACE</li>
+  <li>SERVER_PROTOCOL</li>
+  <li>SERVER_PORT</li>
+  <li>REQUEST_METHOD</li>
+  <li>PATH_INFO</li>
+  <li>PATH_TRANSLATED</li>
+  <li>SCRIPT_NAME</li>
+  <li>REMOTE_HOST</li>
+  <li>REMOTE_ADDR</li>
+  <li>REMOTE_USER</li>
+  <li>REMOTE_IDENT (not implemented).</li>
+  <li>AUTH_TYPE (not implemented).</li>
+  <li>CONTENT_TYPE</li>
+  <li>CONTENT_LENGTH</li>
+  <li>HTTP_ACCEPT</li>
+  <li>HTTP_USER_AGENT</li>
+  <li>DOCUMENT_NAME</li>
+</ul>
+
+<h5 id="fsize">fsize</h5>
+
+<p>The fsize command inserts the size of the indicated file into the HTML data stream. For example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--#fsize virtual="/stuff/address.shtml"--&gt;
+</code></pre></div></div>
+
+<p>Valid tags are the same as in the include command. The format of the output is determined by the sizefmt version of the config command. The default format is “bytes”.</p>
+
+<h5 id="flastmod">flastmod</h5>
+
+<p>The flastmod command inserts the last modified date of the indicated file into the HTML data stream. For example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--#flastmod virtual="/stuff/address.shtml"--&gt;
+</code></pre></div></div>
+
+<p>Valid tags are the same as in the include command. The format of the output is determined by the timefmt version of the config command. The default format is “%Y/%m/%d:%H:%M:%S”, (e.g., “1996/10/01:22:13:47”)</p>
+
+<h5 id="exec">exec</h5>
+
+<p>The exec command inserts the results (if any) of an external CGI into the HTML data stream. For example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--#exec cgi="/Tango" post="sales"--&gt;
+</code></pre></div></div>
+
+<p>The tag used to invoke a CGI application is “cgi”. The value assigned to this tag is a file path name in “virtual” format, as defined in the include command. An optional POST argument parameter (i.e., a URL Encoded text string) may be passed to the cgi via the “post” tag.</p>
+
+<p><em>In addition, the exec command may be used to extend the functionality of the SSI plug-in by calling Plug-In Service routines defined by other W</em>API Plug-Ins. A second tag called “param” allows you to pass a single text parameter to the service routine. For example:*</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--#exec piservice="TimeOfDay"--&gt;
+</code></pre></div></div>
+
+<p>The NCSA SSI specification also defines a “cmd” tag, that allows for the execution of UNIX Shell scripts. This tag is not implemented in this WebSTAR SSI plug-in.</p>
+
+<h5 id="counter">counter</h5>
+
+<p>The counter command increments a named counter variable, and inserts the new value into the HTML output stream. If the counter variable name has not yet been defined a new counter variable of that name is created and assigned a value of 1. For example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--#counter var="main_page"--&gt;
+</code></pre></div></div>
+
+<p>The only valid tag for this command is “var”, as in the echo command. The associated value is a user defined counter name (up to 32 characters). Counter variables may be modified or deleted via the WebSTAR SSI plug-in administration page <a href="http://your.server/pi_admin.ssi">http://your.server/pi_admin.ssi</a>. Counter variable values are stored in the WebSTAR Settings file, and will disappear if you delete that file.</p>
+
+<h5 id="show-and-hide">show and hide</h5>
+
+<p>The show and hide commands allow you to conditionally turn the HTML output stream on and off based on: date and time, the browser used by the client, or a random value. By default, the HTML output stream is on, so an initial <!--#show--> command is not needed. For example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--#hide--&gt;
+
+&lt;!--#show http_user_agent="Mozilla"--&gt;
+
+&lt;!--#show after="1996/12/24:23:59:59"--&gt;
+
+&lt;!--#hide below="10""--&gt;
+</code></pre></div></div>
+
+<p>The tag and value, if present in the command, define a condition that must be true for the command to be effected. If the condition fails, the command has no effect. All conditions take the form of a fixed-length string comparison. The comparison is always case insensitive.</p>
+
+<p>The http_user_agent tag specifies that the first N characters of the User_Agent field in the HTTP header, must match the first N characters of the value associated with this tag, where N is the length of that value. The longer the value string, the more restrictive your condition. For example, “Mozilla/3.0” is more restrictive than just “Mozilla”.</p>
+
+<p>The before, after, and during tags restrict the show or hide command to work only before, after, or during specific dates and times. All date/time values are specified in the default time format (e.g., 1996/12/24:23:59:59). As above, only the first N characters of the current date/time are compared with the N characters of the specified value, where N is the length of the supplied value. Thus, to show a section only during December, 1996, you might use:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--#show during="1996/12"-&gt;
+</code></pre></div></div>
+
+<p>The below, above, and exact tags restrict the show or hide command to work only when an internally generated random integer is below, above, or exactly the same as the supplied value. The random integer is generated once for each SSI file processed by the plug-in. The random value is between 1 and 99, inclusive. For example, to show a section of HTML only 60 percent of the times that the file is accessed, you would precede the HTML with the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--#hide--&gt; &lt;!--#show below="60"--&gt;
+</code></pre></div></div>
+:ET

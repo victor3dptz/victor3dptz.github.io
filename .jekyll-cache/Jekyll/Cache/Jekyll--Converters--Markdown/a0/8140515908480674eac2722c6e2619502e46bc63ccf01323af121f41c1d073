@@ -1,0 +1,87 @@
+I"R<p><img src="/mac/powermac6100/img/07graphics.gif" alt="Logo" /> This page describes the methodology used to test the graphics performance of my Power Mac 6100 under several different hardware configurations, plus the results from MacBench and Marathon 2. It’s been more than three years since I first wrote this page, and I need to update it with some current information. But here it is the way it’s always been.</p>
+
+<h3 id="methodology">Methodology</h3>
+
+<p>Performance in a computer is very subjective. Regardless of what the benchmark numbers tell you in terms of MHz, SPECInt, SPECfp, MIPS or what-have-you, what really matters is how fast the machine performs doing what you ask it to do. With that caveat, I evaluated my video performance two ways.</p>
+
+<p>First, I ran Ziff-Davis’ standard MacBench utility, version 3.0. I ran the standard Graphics Mix test with varying configurations at 8 bits and 16 bits of color depth. The base system is profiled in the legalese that follows, and is almost identical to the 6100/60 that Ziff-Davis uses as the 100% benchmark system at 8 bits. My measurements are slightly faster, which I believe results from having Virtual Memory turned off, and having a larger disk cache (256K vs. 96K).</p>
+
+<p>Options added in subsequent tests were a 256K Level 2 cache from PowerLogic, the HPV card from Apple, and a 78 MHz Rocket Socket clock accelerator from Output Enablers.</p>
+
+<p>Using the same configurations, I played the most excellent game, Marathon 2, and recorded the frame rates I observed.</p>
+
+<h3 id="macbench">MacBench</h3>
+
+<p><strong>Note: The numbers 8 and 16 refer to the bit depth setting of the monitor, not the amount of RAM in the machine.</strong> All tests were performed with 16 MB of physical RAM, extensions off, and Virtual Memory turned off.</p>
+
+<p><img src="/mac/powermac6100/img/benchmarks.gif" alt="benchmarks" /></p>
+
+<h3 id="legalese">Legalese</h3>
+
+<ul>
+  <li>All tests were performed using Ziff-Davis’ MacBench® 3.0.</li>
+  <li>The above graph shows Ziff-Davis’ MacBench® 3.0 Graphics Mix score.</li>
+  <li>Hardware used is Apple Power Macintosh® 6100/60 with 60-MHz PowerPC 601 CPU, 16 MB of RAM, 256K level 2 cache (when specified), 500 MB hard disk, SCSI controller, and no hardware disk cache. Clock speed is 78 MHz using Output Enablers’ Rocket Socket (when specified). Virtual Memory is off.</li>
+  <li>Base graphics system is the standard on-board video. The video card (when specified) is the Apple High Performance Video card with 1 MB VRAM. All video was output to an Apple 15 Multiple Scan Monitor.</li>
+  <li>System Software is System 7.5.3, software disk cache is 256K, graphics resolution is 640 by 480 pixels at 8 or 16 bits color depth (as specified), and all extensions are off.</li>
+  <li>All products used in the test were shipping versions available to the general public.</li>
+  <li>The test was performed without independent verification by Ziff-Davis and Ziff-Davis makes no representations or warranties as to the result of the test.</li>
+  <li>MacBench is a registered trademark of Ziff-Davis Publishing Company.</li>
+</ul>
+
+<h3 id="marathon-2">Marathon 2</h3>
+
+<p>Of course, as I said above, what really matters is how fast Marathon 2 runs. I played Marathon 2 (the excellent shareware demo version from Bungie Software) with each configuration, and noted the minimum and maximum frame rates observed. I booted my machine with all extensions off, then launched Marathon 2 with the Finder in the background. I played with the window at full size (but with the console visible), four channels of sound, and all sound features enabled.</p>
+
+<p><img src="/mac/powermac6100/img/M2hires.jpg" alt="M2" /></p>
+
+<p>While I also play DOOM, Hexen, and Descent on my machine, Marathon 2 is the only game I’ve got that will calculate frame rates for me. To get frame rates in Marathon 2, press <strong>shift-?</strong> while you’re playing. The frame rate will be displayed in the lower left-hand corner. Here are the results:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Configuration</th>
+      <th>fps Low-Res 256 Colors Min/Max</th>
+      <th>fps Hi-Res Thousands Min/Max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Base System</td>
+      <td>15.38/32.43</td>
+      <td>4.17/ 8.45</td>
+    </tr>
+    <tr>
+      <td>cache</td>
+      <td>16.22/33.33</td>
+      <td>4.84/11.65</td>
+    </tr>
+    <tr>
+      <td>HPV card</td>
+      <td>16.35/32.43</td>
+      <td>6.59/14.59</td>
+    </tr>
+    <tr>
+      <td>cache and HPV card</td>
+      <td>20.69/33.33</td>
+      <td>7.69/15.79</td>
+    </tr>
+    <tr>
+      <td>cache, HPV and clock chip</td>
+      <td>25.69/33.33</td>
+      <td>8.48/19.67</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Note that these are the extremes of the frame rates achieved. Maximum rates were achieved when there were relatively few textures and no live bad guys in view. The minimum frame rates were observed during firefights with lots of things happening at once, and the frame rates didn’t stay down that low for very long.</p>
+
+<p>The average sustained frame rate was usually about halfway between the slowest and fastest, or maybe slightly faster. So in Low-Res, 256 color mode, I usually got around 25 fps or better.</p>
+
+<p>Unfortunately, what the numbers can’t convey is the qualitative feel of how the game plays with the various configurations. It’s my personal preference, but I always play with the largest viewable area I can. I consider a sustained 25 fps to be pretty darn good, and a sustained 20 fps is acceptable. Below that, the motion is jerky enough to be distracting, and important things (like getting shot) can happen in the interstices between frames. Anywhere south of 15 fps is ridiculous, and looks like a time-lapse movie.</p>
+
+<p>Unfortunately (again), what the data shows and what my anecdotal experience bears out, is that Marathon 2 doesn’t run very well on my machine at its maximum settings. Sigh. All those fantastic graphics, and I’m missing out. Then again, from the test results, I’m guessing that it would take a fairly fast 604 to run well at the highest resolution.</p>
+
+<p>On the plus side, the data also show that Marathon 2 runs great on my machine at a lower graphics setting. Even at Low-Res, 256 colors, Marathon 2 blows away Doom for visual impact. The graphic resolution is far less important than the frame rate and and the action. Furthermore, a stock 6100/60 can achieve an impressive 30+ fps when you’re cruising around. In Marathon, this happens quite a bit as it’s more puzzle-solving and exploring oriented than the shoot-em-up Doom. Kudos to Bungie for writing an engine that cranks so well on an entry level machine!</p>
+
+:ET

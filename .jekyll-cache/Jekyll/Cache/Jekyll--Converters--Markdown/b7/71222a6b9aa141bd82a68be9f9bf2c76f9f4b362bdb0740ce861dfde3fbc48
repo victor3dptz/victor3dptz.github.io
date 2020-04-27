@@ -1,0 +1,9 @@
+I"<p>На самом деле установке нерусских программ после “русификации” системы средстваи IMC Apple.ru мешает невидимый файлик .AppleTier3Language, спрятаный в невидимой папке. Для его удаления в терминале пишем</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo rm</span> <span class="nt">-f</span> /var/db/.AppleTier3Language
+</code></pre></div></div>
+
+<p>Энтер, вслепую пароль, энтер.</p>
+
+<p>Теперь можно ставить нерусифицированные программы, оно будет работать.</p>
+:ET
