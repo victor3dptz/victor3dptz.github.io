@@ -1,4 +1,0 @@
-I"a<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/bin/find ~/Library <span class="nt">-mmin</span> <span class="nt">-1</span> 
-</code></pre></div></div>
-<p>Получаем cписок файлофф измененных за 1 (одну) последнюю минуту. И ващще: man find</p>
-:ET

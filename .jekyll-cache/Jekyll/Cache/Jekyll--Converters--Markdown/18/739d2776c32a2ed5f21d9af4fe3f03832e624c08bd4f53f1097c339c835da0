@@ -1,9 +1,0 @@
-I"3<p>Разумеется, шифрование пароля отключено. В СкриптЭдиторе пишем</p>
-
-<div class="language-applescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">try</span><span class="w">
-</span><span class="nb">mount volume</span><span class="w"> </span><span class="s2">"smb://username:password@10.0.0.10/Media 1 HD"</span><span class="w">
-</span><span class="k">end</span><span class="w"> </span><span class="k">try</span><span class="w">
-</span></code></pre></div></div>
-
-<p>Сохраняем как программу и имеем щасте. Опять же, username, пароль, адрес пицука и название шары пишем реальные, а не отсюда, где они для примера</p>
-:ET

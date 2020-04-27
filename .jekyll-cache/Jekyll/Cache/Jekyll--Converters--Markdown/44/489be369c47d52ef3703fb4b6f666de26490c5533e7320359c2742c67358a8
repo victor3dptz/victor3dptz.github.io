@@ -1,9 +1,0 @@
-I"I<p>I found it myself in search of a solution, so perhaps someone else will too.</p>
-
-<p>So an update: I found that under 12.04 two things helped get links2 -g working in framebuffer right after installing links2:</p>
-
-<p>installing gpm (not sure if #2 would have worked already on its own - I installed gpm before)</p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dpkg-statoverride <span class="nt">--update</span> <span class="nt">--add</span> root root 4755 /usr/bin/links2
-</code></pre></div></div>
-:ET

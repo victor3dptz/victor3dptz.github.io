@@ -1,15 +1,0 @@
-I"<form class="form-horizontal" action="https://sev.victor3d.com.br/fale_conosco/index.php" role="form" name="livro" method="POST">
-
-<input type="text" placeholder="Name" size="35" name="nome" required="" />
-<br />
-<input type="email" placeholder="E-mail" size="35" name="email" required="" />
-<br />
-<input type="url" placeholder="http://" size="35" name="url" />
-<br />
-<textarea class="form-control" placeholder="Message" rows="4" cols="35" name="comment" required=""></textarea>
-<br />
-<button type="submit">Send message</button>
-
-
-</form>
-:ET
