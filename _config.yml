@@ -6,7 +6,7 @@ title:               Wiki
 tagline:             Info
 url:                 https://wiki.victor3d.com.br
 paginate:            1
-baseurl:             "https://wiki.victor3d.com.br"
+baseurl:             ""
 
 # Assets
 #
