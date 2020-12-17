@@ -3,7 +3,7 @@ layout: page
 title: QSSL’s Unsupported Repository
 ---
 
-QNX 6.2 contains only basic software. If you wish to install additional software you may use repository grabbed by me from **http://download.qnx.com/contrib/repository621a** (No longer available from QNX website). To use the repository, launch the **Installer** and Add Bookmark:
+QNX 6.2 contains only basic software. If you wish to install additional software you may use repository grabbed by me from *http://download.qnx.com/contrib/repository621a* (No longer available from QNX website). To use the repository, launch the **Installer** and Add Bookmark:
 
 ```
 http://qnx.victor3d.com.br/repository621a/
