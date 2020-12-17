@@ -59,6 +59,7 @@ Bitcoin (BTC): **[1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW](bitcoin:1PxNxDCBH5MbM6S4Hf
 * [Инсталляция системы QNX4](/qnx/qnx4_install.html)
 * [Создание bootable CD для QNX 4.25](/qnx/qnx4_bootcd.html)
 * [Extending possibilities of QNX Demo Disk](/qnx/demo/)
+* [QSSL’s Unsupported Repository](/qnx/repository621a/)
 
 ### BeOS
 ![BeOS](https://wiki.victor3d.com.br/img/beos.gif)
