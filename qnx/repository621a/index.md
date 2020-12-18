@@ -221,7 +221,7 @@ Enjoy! May not be compatible with newer QNX releases.
 
 ### Extra Repository
 
-The is an additional small repository with untested and probably unsupported software. Use it at your own risk. To use the repository, launch the **Installer** and Add Bookmark:
+There is an additional small repository with untested and probably unsupported software. Use it at your own risk. To use the repository, launch the **Installer** and Add Bookmark:
 
 ```
 http://qnx.victor3d.com.br/extra/
