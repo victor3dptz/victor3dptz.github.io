@@ -33,4 +33,4 @@ QNX is installed!
 
 ![QNX](https://wiki.victor3d.com.br/qnx/qnx621install/screen7.png)
 
-To install additional software you may set-up [repository](https://wiki.victor3d.com.br/qnx/repository621a/).
+To install additional software you may set-up the [repository](https://wiki.victor3d.com.br/qnx/repository621a/).
