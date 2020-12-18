@@ -218,3 +218,17 @@ http://qnx.victor3d.com.br/repository621a/
 ![Repo](https://wiki.victor3d.com.br/qnx/repository621a/repo.png)
 
 Enjoy! May not be compatible with newer QNX releases.
+
+### Extra Repository
+
+The is an additional small repository with untested and probably unsupported software. Use it at your own risk. To use the repository, launch the **Installer** and Add Bookmark:
+
+```
+http://qnx.victor3d.com.br/extra/
+```
+
+![Add bookmark](https://wiki.victor3d.com.br/qnx/repository621a/add_extra.png)
+
+If anyone knows why some software has status - "Unsupported" please contact Me.
+
+![Repo](https://wiki.victor3d.com.br/qnx/repository621a/repo2.png)
