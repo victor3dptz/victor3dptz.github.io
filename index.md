@@ -61,6 +61,7 @@ Bitcoin (BTC): **[1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW](bitcoin:1PxNxDCBH5MbM6S4Hf
 * [Extending possibilities of QNX Demo Disk](/qnx/demo/)
 * [QSSL’s Unsupported Repository](/qnx/repository621a/)
 * [QNX 6.2.1 Install](/qnx/qnx621install/)
+* [Русификация QNX6](/qnx/qnx6russian/)
 
 ### BeOS
 ![BeOS](https://wiki.victor3d.com.br/img/beos.gif)
