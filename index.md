@@ -62,6 +62,14 @@ Bitcoin (BTC): **[1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW](bitcoin:1PxNxDCBH5MbM6S4Hf
 * [QSSL’s Unsupported Repository](/qnx/repository621a/)
 * [QNX 6.2.1 Install](/qnx/qnx621install/)
 * [Русификация QNX6](/qnx/qnx6russian/)
+* [DFS (ФАЙЛОВАЯ СИСТЕМА DOS) Пpогpамма-обpаботчик файлов DOS](/qnx/doc4qnx/dfs.txt)
+* [Сетевая операционная система QNX](/qnx/doc4qnx/qnx_doc.txt)
+* [Характеристики QNX 4.0](/qnx/doc4qnx/qnx4_inf.txt)
+* [Операционная система QNX 4. Руководство пользователя](/qnx/doc4qnx/qnx4_usr.txt)
+* [Операционная система QNX 4. Архитектура системы](/qnx/doc4qnx/qnx4a.txt)
+* [RunDOS. Руководство пользователя](/qnx/doc4qnx/rundos.txt)
+* [TCP/IP для QNX4](/qnx/doc4qnx/tcpip_4.txt)
+
 
 ### BeOS
 ![BeOS](https://wiki.victor3d.com.br/img/beos.gif)
