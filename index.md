@@ -47,6 +47,7 @@ Bitcoin (BTC): **[1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW](bitcoin:1PxNxDCBH5MbM6S4Hf
 ![Mac OS X](https://wiki.victor3d.com.br/img/osx.gif)
 * [ABR's Mac OS X FAQ: Advanced](/osx/abrmacosxfaq/)
 * [PowerMac G4 SATA Support](/osx/sata/)
+* [Процесс MRT съедает всю оперативную память и все ресурсы CPU](/osx/mrt/)
 
 ### Mac OS X Server
 ![Mac OS X Server](https://wiki.victor3d.com.br/img/osxserver.gif)
