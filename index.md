@@ -43,6 +43,8 @@ Bitcoin (BTC): **[1PxNxDCBH5MbM6S4HfAM3f8j6X355pvKVW](bitcoin:1PxNxDCBH5MbM6S4Hf
 * [68k Mac FAQ](https://wiki.victor3d.com.br/mac/68000.txt)
 * [WebSTAR Technical Reference](/mac/webstar/)
 
+[![Get free bitcoins](https://static1.freebitco.in/banners/728x90-3.png)](https://freebitco.in/?r=55417)
+
 ### Mac OS X
 ![Mac OS X](https://wiki.victor3d.com.br/img/osx.gif)
 * [ABR's Mac OS X FAQ: Advanced](/osx/abrmacosxfaq/)
